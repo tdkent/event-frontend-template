@@ -13,7 +13,9 @@ export default defineNuxtConfig({
 	},
 	googleFonts: {
 		families: {
-			'Open Sans': true
+			'Open Sans': true,
+			'Arvo': [400, 700],
+			'Dancing Script': [400]
 		}
 	}
 })
