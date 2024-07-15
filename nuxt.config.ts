@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: true },
-	modules: ['@nuxt/ui','@nuxtjs/tailwindcss'],
+	modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', "@nuxtjs/google-fonts"],
 	app: {
 		head: {
 			titleTemplate: '%s | Gold Country Model Horse Show',
@@ -10,5 +10,10 @@ export default defineNuxtConfig({
 	//TODO: change preference to 'system'
 	colorMode: {
 		preference: 'light'
+	},
+	googleFonts: {
+		families: {
+			'Open Sans': true
+		}
 	}
 })
