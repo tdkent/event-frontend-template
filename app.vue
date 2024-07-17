@@ -1,9 +1,9 @@
 <template>
 	<div>
-		<HeaderContainer />
-		<main class="min-h-[calc(100vh-64px-56px)]">
+		<Header />
+		<Main>
 			<NuxtPage />
-		</main>
-		<FooterComponent />
+		</Main>
+		<Footer />
 	</div>
 </template>

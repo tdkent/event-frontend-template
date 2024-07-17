@@ -1,16 +1,17 @@
 <script setup lang="ts">
+	import { Bars3Icon } from '@heroicons/vue/24/solid';
 	const isOpen = ref(false);
 </script>
 
 <template>
 	<div>
 		<UButton
-			icon="i-heroicons-bars-3-16-solid"
-			variant="ghost"
-			square
 			color="white"
+			variant="ghost"
 			size="xl"
-			@click="isOpen = true" />
+			@click="isOpen = true">
+			<Bars3Icon class="size-8 fill-white" />
+		</UButton>
 		<USlideover v-model="isOpen">
 			<div class="p-4 flex-1">
 				<UButton
@@ -22,7 +23,7 @@
 					square
 					padded
 					@click="isOpen = false" />
-				<Placeholder class="h-full" />
+				<div class="h-full bg-green-400">Hello world</div>
 			</div>
 		</USlideover>
 	</div>
