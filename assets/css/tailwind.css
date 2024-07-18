@@ -4,6 +4,19 @@
 
 @layer base {
 	body {
-		@apply text-gray-900 font-sans;
+		@apply text-gray-700 font-sans;
+	}
+	section {
+		@apply flex flex-col items-center;
+	}
+	h2,
+	h3 {
+		@apply font-script bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text;
+	}
+	h2 {
+		@apply text-5xl;
+	}
+	h3 {
+		@apply text-3xl;
 	}
 }
