@@ -1,3 +1,3 @@
 <template>
-	<h2>Classlist</h2>
+	<h2>Show Rules</h2>
 </template>

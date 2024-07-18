@@ -9,6 +9,6 @@
 				<span class="font-script">Model Horse Show</span>
 			</h1>
 		</div>
-		<NavMobileButton />
+		<NavMobile />
 	</header>
 </template>
