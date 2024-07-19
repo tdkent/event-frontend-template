@@ -1,9 +1,9 @@
 <template>
 	<header
-		class="flex items-center justify-between h-16 border-b-2 shadow-sm px-4 bg-gradient-to-r from-yellow-400 from-40% to-yellow-600">
+		class="flex h-16 items-center justify-between border-b-2 bg-gradient-to-r from-yellow-400 from-40% to-yellow-600 px-4 shadow-sm">
 		<div class="flex items-center justify-between gap-4">
 			<HeaderLogo />
-			<h1 class="text-yellow-50 leading-[8px] translate-y-[-4px]">
+			<h1 class="translate-y-[-4px] leading-[8px] text-yellow-50">
 				<span class="font-display text-xl">Gold Country</span>
 				<br />
 				<span class="font-script">Model Horse Show</span>

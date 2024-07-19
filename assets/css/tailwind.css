@@ -4,14 +4,14 @@
 
 @layer base {
 	body {
-		@apply text-gray-700 font-sans;
+		@apply font-sans text-gray-700;
 	}
 	section {
 		@apply flex flex-col items-center;
 	}
 	h2,
 	h3 {
-		@apply font-script bg-gradient-to-r from-yellow-400 to-yellow-600 text-transparent bg-clip-text;
+		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text font-script text-transparent;
 	}
 	h2 {
 		@apply text-5xl;

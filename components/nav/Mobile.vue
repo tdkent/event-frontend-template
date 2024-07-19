@@ -27,14 +27,14 @@
 					@click="isOpen = false">
 					<XMarkIcon class="size-8 fill-gray-500" />
 				</UButton>
-				<div class="h-full px-6 mt-16">
+				<div class="mt-16 h-full px-6">
 					<!-- Slideover Header -->
-					<div class="flex justify-center mt-8 pb-4">
-						<div class="rounded-full w-20 h-20 bg-gray-50 ring-1 ring-gray-300">
+					<div class="mt-8 flex justify-center pb-4">
+						<div class="h-20 w-20 rounded-full bg-gray-50 ring-1 ring-gray-300">
 							<img
 								alt="Logo image with a brown horse"
 								role="img"
-								class="rounded-full w-20 h-20"
+								class="h-20 w-20 rounded-full"
 								src="~/assets/icon/NotoV1HorseFace.svg" />
 						</div>
 					</div>
@@ -46,7 +46,7 @@
 								:key="link.label"
 								class="border-b border-gray-200 py-4">
 								<NuxtLink
-									class="font-script text-gray-500 text-3xl"
+									class="font-script text-3xl text-gray-500"
 									:to="link.to"
 									@click="isOpen = false"
 									>{{ link.label }}</NuxtLink
