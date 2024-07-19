@@ -2,7 +2,7 @@
 	// Imports
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid';
 	// Internal Imports
-	import links from '../data/links';
+	import links from '~/data/nav';
 	// State
 	const isOpen = ref(false);
 </script>

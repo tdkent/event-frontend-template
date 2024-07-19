@@ -8,5 +8,14 @@ export default defineAppConfig({
 				},
 			},
 		},
+		table: {
+			th: {
+				font: 'uppercase text-xs',
+			},
+			td: {
+				base: 'whitespace-normal',
+				font: 'text-xs',
+			},
+		},
 	},
 });
