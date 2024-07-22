@@ -21,11 +21,9 @@
 
 <template>
 	<div>
+		<h2>Welcome</h2>
 		<!-- GENERAL INFORMATION -->
 		<section>
-			<div class="w-fit">
-				<h2>Welcome</h2>
-			</div>
 			<div
 				class="my-8 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
 				<p class="text-xs uppercase text-gray-400">Next Show Dates</p>
@@ -34,10 +32,9 @@
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
-				<div
-					class="flex w-full justify-between rounded-md border border-gray-200 bg-gray-50 p-2">
+				<div class="bg-subtle flex w-full justify-between rounded-md p-2">
 					<div class="flex w-1/2 items-center gap-2">
-						<div class="rounded-full border border-gray-200 bg-gray-50 p-1.5">
+						<div class="rounded-full p-1.5">
 							<BuildingLibraryIcon class="h-5 w-5 fill-yellow-500" />
 						</div>
 						<span class="text-xs uppercase text-gray-400">Location</span>
@@ -49,10 +46,9 @@
 					</div>
 				</div>
 				<!-- Show Times -->
-				<div
-					class="flex w-full justify-between rounded-md border border-gray-200 bg-gray-50 p-2">
+				<div class="bg-subtle flex w-full justify-between rounded-md p-2">
 					<div class="flex w-1/2 items-center gap-2">
-						<div class="rounded-full border border-gray-200 bg-gray-50 p-1.5">
+						<div class="rounded-full p-1.5">
 							<ClockIcon class="h-5 w-5 fill-yellow-500" />
 						</div>
 						<span class="text-xs uppercase text-gray-400">Show Times</span>

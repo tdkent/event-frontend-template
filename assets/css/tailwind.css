@@ -14,12 +14,25 @@
 		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text font-script text-transparent;
 	}
 	h2 {
-		@apply text-5xl;
+		@apply text-center text-[2.4rem];
 	}
 	h3 {
 		@apply text-3xl;
 	}
 	h4 {
 		@apply mb-2 mt-6 text-sm font-bold uppercase text-gray-500;
+	}
+
+	.show-rules {
+		@apply px-8;
+	}
+	.show-rules li {
+		@apply list-disc py-2;
+	}
+	.show-rules li > ul > li {
+		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
+	}
+	.bg-subtle {
+		@apply border border-gray-200 bg-gray-50;
 	}
 }

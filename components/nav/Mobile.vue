@@ -2,7 +2,7 @@
 	// Imports
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid';
 	// Internal Imports
-	import links from '~/data/nav';
+	import { navLinks } from '~/data/nav';
 	// State
 	const isOpen = ref(false);
 </script>
@@ -42,7 +42,7 @@
 					<nav class="mt-6">
 						<ul>
 							<li
-								v-for="link in links"
+								v-for="link in navLinks"
 								:key="link.label"
 								class="border-b border-gray-200 py-4">
 								<NuxtLink
