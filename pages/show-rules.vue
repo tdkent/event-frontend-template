@@ -1,4 +1,7 @@
 <script setup>
+	// Imports
+	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
+	// Internal Imports
 	import { showRulesLinks } from '~/data/nav';
 </script>
 
@@ -9,7 +12,7 @@
 			color="white"
 			variant="ghost"
 			size="lg"
-			class="bg-subtle my-10 mt-6 rounded-lg border"
+			class="bg-subtle my-10 mt-6"
 			:items="[{ label: 'On this page', slot: 'sub-nav' }]">
 			<template #sub-nav>
 				<UVerticalNavigation :links="showRulesLinks" />
@@ -280,7 +283,7 @@
 					</ul>
 				</li>
 			</ul>
-			<p class="bg-subtle rounded-lg p-4 text-sm leading-6">
+			<p class="bg-subtle p-4 text-sm leading-6">
 				Please note: Performance classes will be judged based on USA Equestrian
 				(formerly AHSA) rules, appropriate show association rules or appropriate
 				breed association rules, whichever the judge thinks is most appropriate,
@@ -293,15 +296,15 @@
 			</p>
 		</section>
 		<!-- BREED GUIDELINES -->
-		<section>
+		<section class="items-start">
 			<UDivider
 				id="breed-guidelines"
 				label="Breed Guidelines" />
-			<h4>Arabian</h4>
+			<h4 class="mt-0">Arabian</h4>
 			<p>
 				All purebred Arabian strains recognized by the Arabian Horse Registry.
 			</p>
-			<p class="bg-subtle mt-4 rounded-lg p-4 text-sm leading-6">
+			<p class="bg-subtle mt-4 p-4 text-sm leading-6">
 				Please Note: The Shagya Arabian although of Arabian ancestry is not "of
 				type" as recognized by AHR and should be shown in Other Sport.
 			</p>
@@ -412,6 +415,20 @@
 				Donkeys, Burros, Mules, Przewalski, Tarpan/Wild Pony/ Wild Ass, Onager,
 				Quagga, and Zebra.
 			</p>
+		</section>
+		<!-- SHOW HOLDERS -->
+		<section>
+			<UDivider
+				id="show-holders"
+				label="Show Holders" />
+
+			<div class="flex w-full items-center justify-between">
+				<span> Robin Kent </span>
+				<div class="flex items-center gap-1 text-sm">
+					<EnvelopeIcon class="h-4 w-4 translate-y-[1px]" />
+					<a href="mailto:saklani2@gmail.com">saklani2@gmail.com</a>
+				</div>
+			</div>
 		</section>
 	</div>
 </template>

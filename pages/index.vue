@@ -32,7 +32,7 @@
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
-				<div class="bg-subtle flex w-full justify-between rounded-md p-2">
+				<div class="bg-subtle flex w-full justify-between p-2">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
 							<BuildingLibraryIcon class="h-5 w-5 fill-yellow-500" />
@@ -46,7 +46,7 @@
 					</div>
 				</div>
 				<!-- Show Times -->
-				<div class="bg-subtle flex w-full justify-between rounded-md p-2">
+				<div class="bg-subtle flex w-full justify-between p-2">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
 							<ClockIcon class="h-5 w-5 fill-yellow-500" />
@@ -118,12 +118,15 @@
 					A number of items will be available for raffle at the show. Please let
 					Robin know if you have items you would like to donate to the raffle.
 				</p>
-				<p class="mt-12">
-					If you have any questions regarding the show (classes, judges, etc.)
-					or questions about the location (booking rooms, directions, meals),
-					please send them to
-					<a href="mailto:saklani2@gmail.com">Robin Kent</a>.
-				</p>
+				<div class="bg-subtle mt-12 p-4">
+					<!-- TODO: add mail icon -->
+					<p>
+						If you have any questions regarding the show (classes, judges, etc.)
+						or questions about the location (booking rooms, directions, meals),
+						please send them to
+						<a href="mailto:saklani2@gmail.com">Robin Kent</a>.
+					</p>
+				</div>
 			</div>
 		</section>
 	</div>
