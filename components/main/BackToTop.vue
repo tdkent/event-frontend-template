@@ -1,10 +1,10 @@
 <script setup lang="ts">
 	import { ArrowUpCircleIcon } from '@heroicons/vue/24/solid';
 	const route = useRoute();
-	console.log('🚀 ~ route:', route.path);
 </script>
 
 <template>
+	<!-- TODO: react intersection observer -->
 	<!-- <a
       href="#"
       className={`${pathname === "/" && "hidden"} ${

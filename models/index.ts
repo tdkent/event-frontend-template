@@ -4,3 +4,10 @@ export type Division = {
 	day: number;
 	judge: string;
 };
+
+export type ListItem = {
+	name: string;
+	url: string;
+	address: string;
+	phone: string;
+};
