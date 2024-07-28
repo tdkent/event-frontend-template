@@ -1,0 +1,159 @@
+{
+	"class_list": [
+		{
+			"ring_number": 1,
+			"ring_title": "OF Plastic Breyer/Other",
+			"day": 1,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall Breyer Champion",
+			"divisions": [
+				{
+					"division_title": "Foals",
+					"sponsor": "Mary Reardon",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Stock Foals"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Sport Foals"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Pony Foals"
+						},
+						{
+							"class_number": 5,
+							"class_title": "Draft Foals"
+						},
+						{
+							"class_number": 6,
+							"class_title": "Longears/Other Foals"
+						}
+					]
+				},
+				{
+					"division_title": "Light Breeds",
+					"sponsor": "Debb Parrish",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Andalusians"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Other Spanish Breeds (Non-Gaited)"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Arabian Mares"
+						},
+						{ "class_number": 10, "class_title": "Arabian Stallions/Geldings" },
+						{
+							"class_number": 11,
+							"class_title": "National Show Horses / Part-Arabian"
+						},
+						{ "class_number": 12, "class_title": "Other Light" }
+					]
+				},
+				{
+					"division_title": "Sport Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 13,
+							"class_title": "Thoroughbred"
+						},
+						{ "class_number": 14, "class_title": "German Warmblood" },
+						{
+							"class_number": 15,
+							"class_title": "European Warmblood - Gelding"
+						},
+						{
+							"class_number": 16,
+							"class_title": "European Warmblood - Stallion"
+						},
+						{ "class_number": 17, "class_title": "European Warmblood - Mare" },
+						{ "class_number": 18, "class_title": "American Warmblood" },
+						{ "class_number": 19, "class_title": "Other Sportbreeds" },
+						{ "class_number": 20, "class_title": "Carriage Breeds" }
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 2,
+			"ring_title": "OF Stone",
+			"day": 1,
+			"judge": "",
+			"judge_breed": "Heather Visser",
+			"judge_collect": "",
+			"sponsor": "Carolyn Burrell",
+			"medal_title": "Overall Stone Champion",
+			"divisions": [
+				{
+					"division_title": "Light and Gaited Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Arabian Stallions"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Arabian Mares / Geldings"
+						},
+						{
+							"class_number": 3,
+							"class_title": "National Show Horses / Part-Arab"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Morgans"
+						},
+						{ "class_number": 5, "class_title": "ASB" },
+						{ "class_number": 6, "class_title": "Andalusions" },
+						{ "class_number": 7, "class_title": "Other Spanish" },
+						{
+							"class_number": 8,
+							"class_title": "Other Light and Gaited Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 10,
+							"class_title": "Paints: Mares / Geldings"
+						},
+						{
+							"class_number": 11,
+							"class_title": "Paints: Stallions"
+						},
+						{
+							"class_number": 12,
+							"class_title": "Appaloosas: Mares / Geldings"
+						},
+						{
+							"class_number": 13,
+							"class_title": "Appaloosas: Stallions"
+						},
+						{ "class_number": 14, "class_title": "Mustang" },
+						{ "class_number": 15, "class_title": "Other Stock" },
+						{ "class_number": 16, "class_title": "Longears" }
+					]
+				}
+			]
+		}
+	]
+}
