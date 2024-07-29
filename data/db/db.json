@@ -50,7 +50,7 @@
 						},
 						{
 							"class_number": 8,
-							"class_title": "Other Spanish Breeds (Non-Gaited)"
+							"class_title": "Other Spanish Breeds: Non-Gaited"
 						},
 						{
 							"class_number": 9,
@@ -85,6 +85,145 @@
 						{ "class_number": 18, "class_title": "American Warmblood" },
 						{ "class_number": 19, "class_title": "Other Sportbreeds" },
 						{ "class_number": 20, "class_title": "Carriage Breeds" }
+					]
+				},
+				{
+					"division_title": "Gaited Breeds",
+					"sponsor": "Lauren Babcock",
+					"classes": [
+						{
+							"class_number": 21,
+							"class_title": "ASB"
+						},
+						{ "class_number": 22, "class_title": "Other American Gaited" },
+						{
+							"class_number": 23,
+							"class_title": "Spanish Gaited"
+						},
+						{
+							"class_number": 24,
+							"class_title": "All Other Gaited"
+						}
+					]
+				},
+				{
+					"division_title": "Draft Breeds",
+					"sponsor": "Kaeli Denna",
+					"classes": [
+						{
+							"class_number": 25,
+							"class_title": "Clydesdale/Shire"
+						},
+						{ "class_number": 26, "class_title": "Belgians/Percherons" },
+						{
+							"class_number": 27,
+							"class_title": "Other UK/European Draft"
+						},
+						{
+							"class_number": 28,
+							"class_title": "American Draft"
+						},
+						{
+							"class_number": 29,
+							"class_title": "Other Draft"
+						}
+					]
+				},
+				{
+					"division_title": "Pony Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 30,
+							"class_title": "UK Pony"
+						},
+						{ "class_number": 31, "class_title": "European Pony" },
+						{
+							"class_number": 32,
+							"class_title": "USA Ponies"
+						},
+						{
+							"class_number": 33,
+							"class_title": "Other Ponies"
+						}
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 34,
+							"class_title": "Quarter Horses"
+						},
+						{ "class_number": 35, "class_title": "Paints" },
+						{
+							"class_number": 36,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 37,
+							"class_title": "Spanish Stock"
+						},
+						{
+							"class_number": 38,
+							"class_title": "Mustangs"
+						},
+						{
+							"class_number": 39,
+							"class_title": "Other Stock Breeds"
+						},
+						{
+							"class_number": 40,
+							"class_title": "Longears/Exotics"
+						},
+						{
+							"class_number": 41,
+							"class_title": "Part-Breed/Grade"
+						}
+					]
+				},
+				{
+					"division_title": "Collectibility/Other",
+					"sponsor": "Vic Zanutto",
+					"classes": [
+						{
+							"class_number": 42,
+							"class_title": "Decorators: Pre-1980"
+						},
+						{ "class_number": 43, "class_title": "Decorators: Post-1980" },
+						{
+							"class_number": 44,
+							"class_title": "Charcoals/Smokes"
+						},
+						{
+							"class_number": 45,
+							"class_title": "Woodgrains"
+						},
+						{
+							"class_number": 46,
+							"class_title": "Other Non-Realistic Models"
+						},
+						{
+							"class_number": 47,
+							"class_title": "Scenes/Patterns"
+						},
+						{
+							"class_number": 48,
+							"class_title": "Fantasy Models: Pegasus/Unicorns"
+						},
+						{
+							"class_number": 49,
+							"class_title": "Wildlife (Non-NAN)"
+						},
+						{
+							"class_number": 50,
+							"class_title": "Livestock (Non-NAN)"
+						},
+						{
+							"class_number": 51,
+							"class_title": "Other Animals (Non-NAN)"
+						}
 					]
 				}
 			]
@@ -134,7 +273,7 @@
 					"classes": [
 						{
 							"class_number": 10,
-							"class_title": "Paints: Mares / Geldings"
+							"class_title": "Paints: Mares/Geldings"
 						},
 						{
 							"class_number": 11,
@@ -142,7 +281,7 @@
 						},
 						{
 							"class_number": 12,
-							"class_title": "Appaloosas: Mares / Geldings"
+							"class_title": "Appaloosas: Mares/Geldings"
 						},
 						{
 							"class_number": 13,
@@ -151,6 +290,1473 @@
 						{ "class_number": 14, "class_title": "Mustang" },
 						{ "class_number": 15, "class_title": "Other Stock" },
 						{ "class_number": 16, "class_title": "Longears" }
+					]
+				},
+				{
+					"division_title": "Draft Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 17,
+							"class_title": "Clydesdale/Shire"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Percheron/Belgian"
+						},
+						{
+							"class_number": 19,
+							"class_title": "Other European Draft: Mare"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Other European Draft: Gelding"
+						},
+						{
+							"class_number": 21,
+							"class_title": "Other European Draft: Stallion"
+						},
+						{ "class_number": 22, "class_title": "American Drafters" },
+						{ "class_number": 23, "class_title": "Other Draft" }
+					]
+				},
+				{
+					"division_title": "Sport/Pony Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 24,
+							"class_title": "TB Mold: All"
+						},
+						{
+							"class_number": 25,
+							"class_title": "Palouse Mold: All"
+						},
+						{
+							"class_number": 26,
+							"class_title": "Other Warmblood: All"
+						},
+						{
+							"class_number": 27,
+							"class_title": "Pony Mold"
+						}
+					]
+				},
+				{
+					"division_title": "Foals",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 28,
+							"class_title": "Solid Stock"
+						},
+						{
+							"class_number": 29,
+							"class_title": "Patterned Stock"
+						},
+						{
+							"class_number": 30,
+							"class_title": "Arabian Molds: All"
+						},
+						{
+							"class_number": 31,
+							"class_title": "Other Pure or Part Foal"
+						}
+					]
+				},
+				{
+					"division_title": "Collectibility",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 32,
+							"class_title": "Woodgrain/Gem Stones"
+						},
+						{
+							"class_number": 33,
+							"class_title": "Scene Models"
+						},
+						{
+							"class_number": 34,
+							"class_title": "Non-Realistic Colors"
+						},
+						{
+							"class_number": 35,
+							"class_title": "Pegasus/Unicorns"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 3,
+			"ring_title": "OF Mini",
+			"day": 1,
+			"judge": "Carolyn Burrell",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "Shawn McNeeley, Scott McNeeley",
+			"medal_title": "Overall Mini Champion",
+			"divisions": [
+				{
+					"division_title": "Foals",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Stock Foals: Solid"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Stock Foals: Patterned"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Sport Foals"
+						},
+						{ "class_number": 5, "class_title": "Pony Foals" },
+						{ "class_number": 6, "class_title": "Other Foals" }
+					]
+				},
+				{
+					"division_title": "Light Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Pebbles: Arabians"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Pebbles: Part-Arabians"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Arabians: All Other Molds"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Part-Arabians: All Other Molds"
+						},
+						{ "class_number": 11, "class_title": "NSH" },
+						{ "class_number": 12, "class_title": "Andalusians" },
+						{ "class_number": 13, "class_title": "Other Spanish Breeds" },
+						{ "class_number": 14, "class_title": "Other Light Breeds" }
+					]
+				},
+				{
+					"division_title": "Gaited Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 15,
+							"class_title": "Pebbles: ASB"
+						},
+						{
+							"class_number": 16,
+							"class_title": "Pebbles: Other Gaited"
+						},
+						{
+							"class_number": 17,
+							"class_title": "ASB"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Tennessee Walking Horses"
+						},
+						{
+							"class_number": 19,
+							"class_title": "Spanish Gaited"
+						},
+						{ "class_number": 20, "class_title": "Other Gaited" }
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 21,
+							"class_title": "Quarter Horses"
+						},
+						{
+							"class_number": 22,
+							"class_title": "Paints"
+						},
+						{
+							"class_number": 23,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 24,
+							"class_title": "Mustangs"
+						},
+						{
+							"class_number": 25,
+							"class_title": "Other Stock Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Sport Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 26,
+							"class_title": "Thoroughbreds/Standardbreds"
+						},
+						{
+							"class_number": 27,
+							"class_title": "European Warmbloods"
+						},
+						{
+							"class_number": 28,
+							"class_title": "American Warmbloods"
+						},
+						{
+							"class_number": 29,
+							"class_title": "Other Warmbloods/Sportbreeds"
+						},
+						{
+							"class_number": 30,
+							"class_title": "Carriage Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Pony Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 31,
+							"class_title": "Light Ponies"
+						},
+						{
+							"class_number": 32,
+							"class_title": "Sport Ponies"
+						},
+						{
+							"class_number": 33,
+							"class_title": "Draft and Stock Ponies"
+						},
+						{
+							"class_number": 34,
+							"class_title": "Other Ponies"
+						}
+					]
+				},
+				{
+					"division_title": "Drafts and Longears",
+					"sponsor": "Melissa Lauritzen, Shawn McNeely",
+					"classes": [
+						{
+							"class_number": 35,
+							"class_title": "Chips Mold: European Draft"
+						},
+						{
+							"class_number": 36,
+							"class_title": "Other Molds: European Draft"
+						},
+						{
+							"class_number": 37,
+							"class_title": "Chips Molds: American Draft"
+						},
+						{
+							"class_number": 38,
+							"class_title": "Other Molds: American Draft"
+						},
+						{
+							"class_number": 39,
+							"class_title": "Other Drafts: All Molds"
+						},
+						{
+							"class_number": 40,
+							"class_title": "Longears: Solids"
+						},
+						{
+							"class_number": 41,
+							"class_title": "Longears: Patterns"
+						}
+					]
+				},
+				{
+					"division_title": "Collectibility",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 42,
+							"class_title": "Vintage: Breyer Pre-1980"
+						},
+						{
+							"class_number": 43,
+							"class_title": "Decorators: Breyer"
+						},
+						{
+							"class_number": 44,
+							"class_title": "Precious Stones"
+						},
+						{
+							"class_number": 45,
+							"class_title": "Unrealistic Colors: Stones"
+						},
+						{
+							"class_number": 46,
+							"class_title": "Unrealistic Colors: Other"
+						},
+						{
+							"class_number": 47,
+							"class_title": "Patterns/Scenes: Stones"
+						},
+						{
+							"class_number": 48,
+							"class_title": "Patterns/Scenes: Other"
+						},
+						{
+							"class_number": 49,
+							"class_title": "DAH/OOAK/Test"
+						},
+						{
+							"class_number": 50,
+							"class_title": "Pegasus/Unicorns"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 4,
+			"ring_title": "OF China/Resin",
+			"day": 1,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall OF China/Resin Champion",
+			"divisions": [
+				{
+					"division_title": "Foals",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Stock Foals"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Draft Foals"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Pony Foals"
+						},
+						{ "class_number": 5, "class_title": "Sport Foals" },
+						{ "class_number": 6, "class_title": "Other Foals" }
+					]
+				},
+				{
+					"division_title": "Light Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Arabians/Part-Arabians"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Andalusians"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Other Spanish Breeds"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Other Light Breeds"
+						},
+						{ "class_number": 11, "class_title": "American Saddlebreds" },
+						{ "class_number": 12, "class_title": "Other Gaited" }
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 13,
+							"class_title": "Quarter Horses"
+						},
+						{
+							"class_number": 14,
+							"class_title": "Paints and Appaloosas"
+						},
+						{
+							"class_number": 15,
+							"class_title": "Mustangs"
+						},
+						{
+							"class_number": 16,
+							"class_title": "Other Stock Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Draft Breeds",
+					"sponsor": "Melissa Lauritzen",
+					"classes": [
+						{
+							"class_number": 17,
+							"class_title": "All Mini Draft (curio and smaller)"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Clydesdale/Shire"
+						},
+						{
+							"class_number": 19,
+							"class_title": "Belgian/Percheron/Shire"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Other European Draft: Mare"
+						},
+						{
+							"class_number": 21,
+							"class_title": "Other European Draft: Stallion and Gelding"
+						},
+						{
+							"class_number": 22,
+							"class_title": "American Draft Breeds"
+						},
+						{
+							"class_number": 23,
+							"class_title": "Other Draft Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Sport Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 24,
+							"class_title": "Thoroughbreds/Standardbreds"
+						},
+						{
+							"class_number": 25,
+							"class_title": "European Warmbloods/Sporthorse"
+						},
+						{
+							"class_number": 26,
+							"class_title": "American Warmbloods/Sporthorse"
+						},
+						{
+							"class_number": 27,
+							"class_title": "Carriage Breeds"
+						},
+						{
+							"class_number": 28,
+							"class_title": "Other Warmbloods/Sportbreeds"
+						}
+					]
+				},
+				{
+					"division_title": "Pony Breeds and Other Equines",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 29,
+							"class_title": "Welsh Ponies"
+						},
+						{
+							"class_number": 30,
+							"class_title": "Shetland Ponies"
+						},
+						{
+							"class_number": 31,
+							"class_title": "USA Pony"
+						},
+						{
+							"class_number": 32,
+							"class_title": "Other Ponies"
+						},
+						{
+							"class_number": 33,
+							"class_title": "Part-Bred"
+						},
+						{
+							"class_number": 34,
+							"class_title": "Longears/Exotics"
+						}
+					]
+				},
+				{
+					"division_title": "Other Animal",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 35,
+							"class_title": "Livestock"
+						},
+						{
+							"class_number": 36,
+							"class_title": "Cats"
+						},
+						{
+							"class_number": 37,
+							"class_title": "Dogs"
+						},
+						{
+							"class_number": 38,
+							"class_title": "Wildlife (Non-Aquatic)"
+						},
+						{
+							"class_number": 39,
+							"class_title": "Other Animals"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 5,
+			"ring_title": "AR/CM Performance",
+			"day": 1,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "Kim Egbert",
+			"medal_title": "Overall AR/CM Performance Champion",
+			"divisions": [
+				{
+					"division_title": "Other Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Diorama"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Harness"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Arabian Costume"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Other Costume/Parade"
+						},
+						{ "class_number": 5, "class_title": "In-hand Showmanship" },
+						{ "class_number": 6, "class_title": "Other Performance" }
+					]
+				},
+				{
+					"division_title": "Western Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Western Games"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Stock Work"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Western Pattern"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Western Arena Trail"
+						},
+						{ "class_number": 11, "class_title": "Western Pleasure" },
+						{ "class_number": 12, "class_title": "Other Western" }
+					]
+				},
+				{
+					"division_title": "English Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 13,
+							"class_title": "Fence Work"
+						},
+						{
+							"class_number": 14,
+							"class_title": "English Games"
+						},
+						{
+							"class_number": 15,
+							"class_title": "English Trail"
+						},
+						{
+							"class_number": 16,
+							"class_title": "English Pleasure"
+						},
+						{
+							"class_number": 17,
+							"class_title": "Dressage"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Other English"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 1,
+			"ring_title": "Custom Halter",
+			"day": 2,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall Custom Halter Champion",
+			"divisions": [
+				{
+					"division_title": "Foals",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Pony Foals"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Draft Foals"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Stock Foals"
+						},
+						{ "class_number": 5, "class_title": "Sport Foals" },
+						{ "class_number": 6, "class_title": "Other Foals" }
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "Renata Zapara",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Quarter Horses"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Paints"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Mustangs and Other Stock"
+						}
+					]
+				},
+				{
+					"division_title": "Light Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 11,
+							"class_title": "Spanish Breeds: All"
+						},
+						{
+							"class_number": 12,
+							"class_title": "Arabians"
+						},
+						{
+							"class_number": 13,
+							"class_title": "Part-Arabians/NSH"
+						},
+						{
+							"class_number": 14,
+							"class_title": "Other Light Breeds"
+						},
+						{
+							"class_number": 15,
+							"class_title": "American Saddlebreds"
+						},
+						{
+							"class_number": 16,
+							"class_title": "Other Gaited Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Draft Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 17,
+							"class_title": "Clydesdales"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Shires"
+						},
+						{
+							"class_number": 19,
+							"class_title": "Spotted Drafts"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Other Drafts"
+						}
+					]
+				},
+				{
+					"division_title": "Sport and Carriage Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 21,
+							"class_title": "Thoroughbreds/Standardbreds"
+						},
+						{
+							"class_number": 22,
+							"class_title": "European Warmbloods/Sporthorse"
+						},
+						{
+							"class_number": 23,
+							"class_title": "American Warmbloods/Sporthorse"
+						},
+						{
+							"class_number": 24,
+							"class_title": "Other Warmbloods/Sportbreeds"
+						},
+						{
+							"class_number": 25,
+							"class_title": "Carriage Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Pony/Other Equine",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 26,
+							"class_title": "UK/European Ponies"
+						},
+						{
+							"class_number": 27,
+							"class_title": "USA Ponies"
+						},
+						{
+							"class_number": 28,
+							"class_title": "Other Ponies"
+						},
+						{
+							"class_number": 29,
+							"class_title": "Longears"
+						},
+						{
+							"class_number": 30,
+							"class_title": "Part-Breds and Grades"
+						},
+						{
+							"class_number": 31,
+							"class_title": "Exotics"
+						}
+					]
+				},
+				{
+					"division_title": "Fantasy",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 32,
+							"class_title": "Pegasus/Unicorns"
+						},
+						{
+							"class_number": 33,
+							"class_title": "Other Equine Fantasy"
+						},
+						{
+							"class_number": 34,
+							"class_title": "Other Animals (Non-NAN)"
+						}
+					]
+				},
+				{
+					"division_title": "Workmanship",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 35,
+							"class_title": "Bay/Brown/Black"
+						},
+						{
+							"class_number": 36,
+							"class_title": "Gray"
+						},
+						{
+							"class_number": 37,
+							"class_title": "Palominos"
+						},
+						{
+							"class_number": 38,
+							"class_title": "Roans"
+						},
+						{
+							"class_number": 39,
+							"class_title": "Other Dilutes"
+						},
+						{
+							"class_number": 40,
+							"class_title": "Chestnut"
+						},
+						{
+							"class_number": 41,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 42,
+							"class_title": "Pintos"
+						},
+						{
+							"class_number": 43,
+							"class_title": "Other Color"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 2,
+			"ring_title": "Artist Resin Halter",
+			"day": 2,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall Artist Resin Halter Champion",
+			"divisions": [
+				{
+					"division_title": "Foals",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Pony Foals"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Draft Foals"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Solid Stock Foals"
+						},
+						{ "class_number": 5, "class_title": "Patterned Stock Foals" },
+						{ "class_number": 6, "class_title": "Sport Foals" },
+						{ "class_number": 7, "class_title": "Other Foals" }
+					]
+				},
+				{
+					"division_title": "Stock Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 8,
+							"class_title": "Quarter Horses"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Paints"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 11,
+							"class_title": "Mustangs"
+						},
+						{
+							"class_number": 12,
+							"class_title": "Other Stock Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Pony/Other Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 13,
+							"class_title": "UK Ponies"
+						},
+						{
+							"class_number": 14,
+							"class_title": "USA Ponies"
+						},
+						{
+							"class_number": 15,
+							"class_title": "Other Ponies"
+						},
+						{
+							"class_number": 16,
+							"class_title": "Longears"
+						},
+						{
+							"class_number": 17,
+							"class_title": "Part-Breds and Grades"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Exotics"
+						}
+					]
+				},
+				{
+					"division_title": "Light Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 19,
+							"class_title": "Morgans"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Andalusians"
+						},
+						{
+							"class_number": 21,
+							"class_title": "Other Spanish: Non-Gaited"
+						},
+						{
+							"class_number": 22,
+							"class_title": "Arabian"
+						},
+						{
+							"class_number": 23,
+							"class_title": "NSH/Part-Arab"
+						},
+						{
+							"class_number": 24,
+							"class_title": "Other Light Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Gaited Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 25,
+							"class_title": "American Saddlebreds"
+						},
+						{
+							"class_number": 26,
+							"class_title": "Tennessee Walking Horses"
+						},
+						{
+							"class_number": 27,
+							"class_title": "Spanish Gaited Breeds"
+						},
+						{
+							"class_number": 28,
+							"class_title": "Other Gaited Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Draft Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 29,
+							"class_title": "Clydesdales"
+						},
+						{
+							"class_number": 30,
+							"class_title": "Shires"
+						},
+						{
+							"class_number": 31,
+							"class_title": "Belgian/Percherons"
+						},
+						{
+							"class_number": 32,
+							"class_title": "Other European Draft"
+						},
+						{
+							"class_number": 33,
+							"class_title": "American Draft"
+						},
+						{
+							"class_number": 34,
+							"class_title": "Other Draft"
+						}
+					]
+				},
+				{
+					"division_title": "Sport and Carriage Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 35,
+							"class_title": "Thoroughbreds/Standardbreds"
+						},
+						{
+							"class_number": 36,
+							"class_title": "American WB/Sport"
+						},
+						{
+							"class_number": 37,
+							"class_title": "European WB/Sport"
+						},
+						{
+							"class_number": 38,
+							"class_title": "Other WB/Sport"
+						},
+						{
+							"class_number": 39,
+							"class_title": "Carriage Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Fantasy",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 40,
+							"class_title": "Pegasus/Unicorns"
+						},
+						{
+							"class_number": 41,
+							"class_title": "Other Equine Fantasy (NAN)"
+						},
+						{
+							"class_number": 42,
+							"class_title": "Other Animals (Non-NAN)"
+						}
+					]
+				},
+				{
+					"division_title": "Workmanship",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 43,
+							"class_title": "Bay/Brown/Black"
+						},
+						{
+							"class_number": 44,
+							"class_title": "Gray"
+						},
+						{
+							"class_number": 45,
+							"class_title": "Palominos"
+						},
+						{
+							"class_number": 46,
+							"class_title": "Other Dilutes"
+						},
+						{
+							"class_number": 47,
+							"class_title": "Chestnut"
+						},
+						{
+							"class_number": 48,
+							"class_title": "Roans"
+						},
+						{
+							"class_number": 49,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 50,
+							"class_title": "Pintos"
+						},
+						{
+							"class_number": 51,
+							"class_title": "Other Color"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 3,
+			"ring_title": "Custom Glazed China",
+			"day": 2,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "Pat Noble",
+			"medal_title": "Overall Custom Glazed China Champion",
+			"divisions": [
+				{
+					"division_title": "Stock/Pony/Draft Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Colored Stock Breeds"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Solid Stock Breeds"
+						},
+						{
+							"class_number": 3,
+							"class_title": "UK Ponies"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Other Ponies"
+						},
+						{ "class_number": 5, "class_title": "UK Draft Breeds" },
+						{ "class_number": 6, "class_title": "Other Draft Breeds" }
+					]
+				},
+				{
+					"division_title": "Light and Gaited Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Arabians"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Spanish Breeds: All"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Other Light"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Gaited Breeds"
+						}
+					]
+				},
+				{
+					"division_title": "Sport and Other Breeds",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 11,
+							"class_title": "Warmbloods"
+						},
+						{
+							"class_number": 12,
+							"class_title": "Sport and Carriage Breeds"
+						},
+						{
+							"class_number": 13,
+							"class_title": "Longears/Other Breeds"
+						},
+						{
+							"class_number": 14,
+							"class_title": "Other Animals (Non-NAN)"
+						}
+					]
+				},
+				{
+					"division_title": "Foals",
+					"sponsor": "Ryan Jaeger",
+					"classes": [
+						{
+							"class_number": 15,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 16,
+							"class_title": "Sport Foals"
+						},
+						{
+							"class_number": 17,
+							"class_title": "Pony/Draft Foals"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Other Foals"
+						}
+					]
+				},
+				{
+					"division_title": "Workmanship",
+					"sponsor": "Tracy Wells",
+					"classes": [
+						{
+							"class_number": 19,
+							"class_title": "Bay/Brown/Chestnut"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Black/Gray/White"
+						},
+						{
+							"class_number": 21,
+							"class_title": "Palominos/Other Dilute"
+						},
+						{
+							"class_number": 22,
+							"class_title": "Roans"
+						},
+						{
+							"class_number": 23,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 24,
+							"class_title": "Pintos"
+						},
+						{
+							"class_number": 25,
+							"class_title": "Other Color"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 4,
+			"ring_title": "OF Performance",
+			"day": 2,
+			"judge": "",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "Julia Turner",
+			"medal_title": "Overall OF Performance Champion",
+			"divisions": [
+				{
+					"division_title": "Other Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Diorama"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Harness"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Arabian Costume"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Other Costume/Parade"
+						},
+						{ "class_number": 5, "class_title": "In-hand Showmanship" },
+						{ "class_number": 6, "class_title": "Other Performance" }
+					]
+				},
+				{
+					"division_title": "Western Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 7,
+							"class_title": "Western Games"
+						},
+						{
+							"class_number": 8,
+							"class_title": "Stock Work"
+						},
+						{
+							"class_number": 9,
+							"class_title": "Western Pattern"
+						},
+						{
+							"class_number": 10,
+							"class_title": "Western Arena Trail"
+						},
+						{
+							"class_number": 11,
+							"class_title": "Western Pleasure"
+						},
+						{
+							"class_number": 12,
+							"class_title": "Other Western"
+						}
+					]
+				},
+				{
+					"division_title": "English Performance",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 13,
+							"class_title": "Fence Work"
+						},
+						{
+							"class_number": 14,
+							"class_title": "English Games"
+						},
+						{
+							"class_number": 15,
+							"class_title": "English Trail"
+						},
+						{
+							"class_number": 16,
+							"class_title": "English Pleasure"
+						},
+						{
+							"class_number": 17,
+							"class_title": "Dressage"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Other English"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 4,
+			"ring_title": "Vintage Custom",
+			"day": 2,
+			"judge": "Pat Noble",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall Vintage Custom Champion",
+			"divisions": [
+				{
+					"division_title": "Halter",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Light/Gaited Foals"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Sport/Stock Foals"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Other Foals"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Arabian"
+						},
+						{ "class_number": 5, "class_title": "Light" },
+						{ "class_number": 6, "class_title": "Gaited (Non-Spanish)" },
+						{ "class_number": 7, "class_title": "Spanish" },
+						{ "class_number": 8, "class_title": "Sport/Carriage" },
+						{ "class_number": 9, "class_title": "Stock" },
+						{ "class_number": 10, "class_title": "Pony" },
+						{ "class_number": 11, "class_title": "Draft" },
+						{ "class_number": 12, "class_title": "Part-Bred/Other Pure" },
+						{ "class_number": 13, "class_title": "Longears/Exotics" },
+						{ "class_number": 14, "class_title": "Fantasy" },
+						{ "class_number": 15, "class_title": "Other Animals (Non-NAN)" }
+					]
+				},
+				{
+					"division_title": "Workmanship",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 16,
+							"class_title": "Chestnut"
+						},
+						{
+							"class_number": 17,
+							"class_title": "Bay/Brown/Black"
+						},
+						{
+							"class_number": 18,
+							"class_title": "Gray/White"
+						},
+						{
+							"class_number": 19,
+							"class_title": "Dilutes"
+						},
+						{
+							"class_number": 20,
+							"class_title": "Appaloosas"
+						},
+						{
+							"class_number": 21,
+							"class_title": "Pintos"
+						},
+						{
+							"class_number": 22,
+							"class_title": "Other Colors"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ring_number": 4,
+			"ring_title": "Medallions",
+			"day": 2,
+			"judge": "Heather Visser",
+			"judge_breed": "",
+			"judge_collect": "",
+			"sponsor": "",
+			"medal_title": "Overall Medallions Champion",
+			"divisions": [
+				{
+					"division_title": "Halter",
+					"sponsor": "",
+					"classes": [
+						{
+							"class_number": 1,
+							"class_title": "Stock Breeds"
+						},
+						{
+							"class_number": 2,
+							"class_title": "Light Breeds"
+						},
+						{
+							"class_number": 3,
+							"class_title": "Spanish Breeds"
+						},
+						{
+							"class_number": 4,
+							"class_title": "Gaited Breeds"
+						},
+						{ "class_number": 5, "class_title": "Sport Breeds" },
+						{ "class_number": 6, "class_title": "Draft Breeds" },
+						{ "class_number": 7, "class_title": "Pony Breeds" },
+						{ "class_number": 8, "class_title": "Longears/Exotics" },
+						{ "class_number": 9, "class_title": "All Foals" },
+						{ "class_number": 10, "class_title": "Fantasy" },
+						{ "class_number": 11, "class_title": "Unrealistic Colors" },
+						{
+							"class_number": 12,
+							"class_title": "Mare and Foal/Multiple Horses"
+						},
+						{ "class_number": 13, "class_title": "Full Horses" },
+						{ "class_number": 14, "class_title": "Tiny Medallions: Under 2\"" },
+						{ "class_number": 15, "class_title": "Busts" }
 					]
 				}
 			]
