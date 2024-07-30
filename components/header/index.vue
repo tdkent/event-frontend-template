@@ -11,4 +11,5 @@
 		</div>
 		<NavMobile />
 	</header>
+	<HeaderShowDates />
 </template>

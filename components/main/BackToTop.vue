@@ -15,8 +15,8 @@
       <ArrowUpCircleIcon className="h-4 w-4" />
     </a> -->
 	<a
+		v-if="route.path === '/class-list' || route.path === '/show-rules'"
 		href="#"
-		:class="[route.path === '/' && 'hidden']"
 		class="sticky bottom-6 left-full mb-6 mr-6 flex w-fit items-center justify-end gap-x-2 place-self-end whitespace-nowrap rounded-xl bg-black/60 p-4 text-sm text-white transition-opacity duration-300 lg:hidden">
 		Back
 		<ArrowUpCircleIcon class="h-4 w-4"

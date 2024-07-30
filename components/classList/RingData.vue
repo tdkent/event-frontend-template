@@ -2,7 +2,9 @@
 	// Internal Imports
 	import type { ClassListRing } from '~/models';
 	// Props
-	const { data } = defineProps<{ data: ClassListRing[] }>();
+	const { data } = defineProps<{
+		data: ClassListRing[];
+	}>();
 	const {
 		divisions,
 		judge,
@@ -14,19 +16,27 @@
 </script>
 
 <template>
-	<div v-if="judge || judgeBreed || judgeCollect || sponsor">
-		<p v-if="judge">Judge: {{ judge }}</p>
-		<p v-if="judgeBreed">Judge Breed: {{ judgeBreed }}</p>
-		<p v-if="judgeCollect">Judge Collect: {{ judgeCollect }}</p>
-		<p v-if="sponsor">Sponsor: {{ sponsor }}</p>
+	<div class="px-6">
+		<div
+			v-if="judge || judgeBreed || judgeCollect || sponsor"
+			class="mb-8 mt-4 flex flex-col gap-4">
+			<p v-if="judge">Judge: {{ judge }}</p>
+			<p v-if="judgeBreed">Judge Breed: {{ judgeBreed }}</p>
+			<p v-if="judgeCollect">Judge Collect: {{ judgeCollect }}</p>
+			<p v-if="sponsor">Sponsor: {{ sponsor }}</p>
+		</div>
+		<div
+			v-for="(d, index) in divisions"
+			:key="d.division_title">
+			<span class="my-4 block text-base uppercase text-gray-500">{{
+				d.division_title
+			}}</span>
+			<ClassListClass
+				:index="index"
+				:length="divisions.length"
+				:classes="d.classes"
+				:division="d.division_title" />
+		</div>
+		<ClassListChampion :medal="medalTitle" />
 	</div>
-	<div
-		v-for="d in divisions"
-		:key="d.division_title">
-		<span>{{ d.division_title }}</span>
-		<ClassListClass
-			:classes="d.classes"
-			:division="d.division_title" />
-	</div>
-	<ClassListChampion :medal="medalTitle" />
 </template>

@@ -1,14 +1,27 @@
 <script setup lang="ts">
-	import type { ClassListRing } from '~/models';
 	// Internal Imports
+	import type { ClassListRing } from '~/models';
 	import type { AccordionItem } from '~/models';
 	import { class_list } from '../data/db/db.json';
+	const { showStartDayOfWeek, showEndDayOfWeek } = generateShowDates();
 	// Coerce imported type
-	const classListData = [...class_list] as ClassListRing[];
-	// Create accordion data
-	const accordionItems: AccordionItem[] = [];
-	for (const r of classListData) {
-		accordionItems.push({
+	const startDayData = [...class_list].filter(
+		(r) => r.day === 1
+	) as ClassListRing[];
+	const endDayData = [...class_list].filter(
+		(r) => r.day === 2
+	) as ClassListRing[];
+	// NuxtUI Accordion items
+	const startDayAccordionItems: AccordionItem[] = [];
+	for (const r of startDayData) {
+		startDayAccordionItems.push({
+			label: 'Ring ' + r.ring_number + ' ' + r.ring_title,
+			slot: 'ring-data',
+		});
+	}
+	const endDayAccordionItems: AccordionItem[] = [];
+	for (const r of endDayData) {
+		endDayAccordionItems.push({
 			label: 'Ring ' + r.ring_number + ' ' + r.ring_title,
 			slot: 'ring-data',
 		});
@@ -19,17 +32,35 @@
 	<div>
 		<h2>Class List</h2>
 		<section>
-			<h3></h3>
+			<UDivider :label="showStartDayOfWeek" />
 			<UAccordion
+				multiple
 				color="white"
 				variant="ghost"
 				size="xl"
 				class="my-10 mt-6 w-full"
-				:items="accordionItems">
+				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
 					<ClassListRingData
 						:data="
-							classListData.filter((r) => r.ring_title === item.label.slice(7))
+							startDayData.filter((r) => r.ring_title == item.label.slice(7))
+						" />
+				</template>
+			</UAccordion>
+		</section>
+		<section>
+			<UDivider :label="showEndDayOfWeek" />
+			<UAccordion
+				multiple
+				color="white"
+				variant="ghost"
+				size="xl"
+				class="my-10 mt-6 w-full"
+				:items="endDayAccordionItems">
+				<template #ring-data="{ item }">
+					<ClassListRingData
+						:data="
+							endDayData.filter((r) => r.ring_title === item.label.slice(7))
 						" />
 				</template>
 			</UAccordion>

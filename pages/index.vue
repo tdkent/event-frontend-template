@@ -4,7 +4,12 @@
 	// Internal Imports
 	import { divisions } from '~/data/db';
 	// Functions
-	const { eventStart, eventEnd, startDay, endDay } = formatDate();
+	const {
+		showStartDateString,
+		showEndDateString,
+		showStartDayOfWeek,
+		showEndDayOfWeek,
+	} = generateShowDates();
 	const startDayDivisions = divisions.filter((d) => d.day === 0);
 	const endDayDivisions = divisions.filter((d) => d.day === 1);
 	const columns = [
@@ -27,8 +32,8 @@
 			<div
 				class="my-8 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
 				<p class="text-xs uppercase text-gray-400">Next Show Dates</p>
-				<p class="font-bold">{{ eventStart }}</p>
-				<p class="font-bold">{{ eventEnd }}</p>
+				<p class="font-bold">{{ showStartDateString }}</p>
+				<p class="font-bold">{{ showEndDateString }}</p>
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
@@ -72,7 +77,7 @@
 					<template #caption>
 						<caption>
 							{{
-								startDay
+								showStartDayOfWeek
 							}}
 						</caption>
 					</template>
@@ -84,7 +89,7 @@
 					<template #caption>
 						<caption>
 							{{
-								endDay
+								showEndDayOfWeek
 							}}
 						</caption>
 					</template>
