@@ -15,14 +15,14 @@
 	const startDayAccordionItems: AccordionItem[] = [];
 	for (const r of startDayData) {
 		startDayAccordionItems.push({
-			label: 'Ring ' + r.ring_number + ' ' + r.ring_title,
+			label: 'Ring ' + r.ring_number + ' - ' + r.ring_title,
 			slot: 'ring-data',
 		});
 	}
 	const endDayAccordionItems: AccordionItem[] = [];
 	for (const r of endDayData) {
 		endDayAccordionItems.push({
-			label: 'Ring ' + r.ring_number + ' ' + r.ring_title,
+			label: 'Ring ' + r.ring_number + ' - ' + r.ring_title,
 			slot: 'ring-data',
 		});
 	}
@@ -39,11 +39,17 @@
 				variant="ghost"
 				size="xl"
 				class="my-10 mt-6 w-full"
+				:ui="{
+					container: 'border w-full flex flex-col my-4 rounded-lg bg-gray-50',
+					wrapper: 'w-full flex flex-col',
+					item: { padding: 'py-8' },
+					default: { class: 'py-4 text-sm' },
+				}"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
 					<ClassListRingData
 						:data="
-							startDayData.filter((r) => r.ring_title == item.label.slice(7))
+							startDayData.filter((r) => r.ring_title == item.label.slice(9))
 						" />
 				</template>
 			</UAccordion>
@@ -56,11 +62,17 @@
 				variant="ghost"
 				size="xl"
 				class="my-10 mt-6 w-full"
+				:ui="{
+					container: 'border w-full flex flex-col my-4 rounded-lg bg-gray-50',
+					wrapper: 'w-full flex flex-col',
+					item: { padding: 'py-8' },
+					default: { class: 'py-4 text-sm' },
+				}"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
 					<ClassListRingData
 						:data="
-							endDayData.filter((r) => r.ring_title === item.label.slice(7))
+							endDayData.filter((r) => r.ring_title === item.label.slice(9))
 						" />
 				</template>
 			</UAccordion>

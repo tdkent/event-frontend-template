@@ -6,7 +6,7 @@
 
 <template>
 	<div
-		class="border-b bg-gray-50 py-2.5 text-center text-xs"
+		class="border-b bg-gray-50 px-4 py-1 text-center text-xs"
 		:class="[route.path === '/' && 'hidden']">
 		Next Show Dates: {{ showStartDateStringHeader }} &amp;
 		{{ showEndDateStringHeader }}
