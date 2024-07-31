@@ -12,7 +12,7 @@
 			<h3>Show Location</h3>
 			<div class="mt-6 flex w-full items-center justify-start gap-4">
 				<div
-					class="flex h-16 w-16 items-center justify-center rounded-full border bg-gray-50">
+					class="flex h-16 w-16 flex-none items-center justify-center rounded-full border bg-gray-50">
 					<BuildingLibraryIcon class="h-10 w-10 stroke-gray-500 stroke-1" />
 				</div>
 				<div>
