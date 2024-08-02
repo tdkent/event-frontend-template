@@ -4,7 +4,7 @@
 
 <template>
 	<div
-		class="my-8 flex items-center justify-start gap-2 border-b border-t border-gray-300 p-2">
+		class="mb-8 mt-16 flex items-center justify-start gap-2 border-b border-t border-gray-300 p-2">
 		<img
 			alt="Medal icon"
 			role="img"

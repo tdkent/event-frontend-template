@@ -47,6 +47,7 @@
 				}"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
+					<UDivider class="px-6 pt-0" />
 					<ClassListRingData
 						:data="
 							startDayData.filter((r) => r.ring_title == item.label.slice(9))

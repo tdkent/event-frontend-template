@@ -23,7 +23,7 @@
 			}">
 			<template #header>
 				<div class="flex justify-center">
-					<span class="text-xl">Example 3x5 Card</span>
+					<span class="text-xl">Region 2 Card Format</span>
 				</div>
 			</template>
 

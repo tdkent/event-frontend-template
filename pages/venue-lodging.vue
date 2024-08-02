@@ -9,7 +9,7 @@
 		<!-- TODO: add 'next show dates' component to all pages -->
 		<!-- TODO: add splash image to each page -->
 		<section class="mt-10">
-			<h3>Show Location</h3>
+			<UDivider label="Show Location" />
 			<div class="mt-6 flex w-full items-center justify-start gap-4">
 				<div
 					class="flex h-16 w-16 flex-none items-center justify-center rounded-full border bg-gray-50">
@@ -21,8 +21,8 @@
 					<span class="block text-lg">Davis, California 95616</span>
 				</div>
 			</div>
-			<!-- TODO: Add map component -->
-			<h3 class="mt-10">Directions</h3>
+			<VenueGoogleMap />
+			<UDivider label="Directions" />
 			<div class="mt-6 flex w-full items-center justify-start gap-4">
 				<ul class="ml-4 list-disc">
 					<li>Take I-80 E to Sacramento</li>
@@ -34,11 +34,11 @@
 			</div>
 		</section>
 		<section class="mt-10">
-			<h3>Nearby Restaurants</h3>
+			<UDivider label="Nearby Restaurants" />
 			<VenueRestaurantList />
 		</section>
 		<section class="mt-10">
-			<h3>Nearby Hotels</h3>
+			<UDivider label="Nearby Hotels" />
 			<VenueHotelList />
 		</section>
 	</div>

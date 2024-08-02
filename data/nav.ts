@@ -41,4 +41,5 @@ export const showRulesLinks = [
 	{ label: 'Division Definitions', to: '#division-definitions' },
 	{ label: 'Judging Criteria', to: '#judging-criteria' },
 	{ label: 'Breed Guidelines', to: '#breed-guidelines' },
+	{ label: 'Show Holders', to: '#show-holders' },
 ];

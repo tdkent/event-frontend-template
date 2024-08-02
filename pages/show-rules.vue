@@ -426,7 +426,11 @@
 				<span> Robin Kent </span>
 				<div class="flex items-center gap-1 text-sm">
 					<EnvelopeIcon class="h-4 w-4 translate-y-[1px]" />
-					<a href="mailto:saklani2@gmail.com">saklani2@gmail.com</a>
+					<a
+						href="mailto:saklani2@gmail.com"
+						class="hover:underline"
+						>saklani2@gmail.com</a
+					>
 				</div>
 			</div>
 		</section>
