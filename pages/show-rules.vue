@@ -43,8 +43,8 @@
 					Showers need to provide a 3x5 index card for each entry; shower's name
 					and horse's name go on one side, and the class number, breed, and
 					gender of the horse go on the reverse.
+					<RulesExampleCard />
 				</li>
-				<!-- TODO: card example -->
 				<li>Halters are not recommended for Halter classes.</li>
 				<li>
 					If you have a question about where a horse will go, please ask the

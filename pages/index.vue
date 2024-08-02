@@ -1,6 +1,7 @@
 <script setup>
 	// Imports
 	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/solid';
+	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { divisions } from '~/data/db';
 	// Functions
@@ -67,15 +68,15 @@
 			</div>
 		</section>
 		<!-- DIVISIONS -->
-		<section class="my-8">
-			<h3>Divisions</h3>
+		<section class="mb-4 mt-8">
+			<UDivider label="Divisions" />
 			<div class="my-4 flex flex-col items-center gap-4">
 				<UTable
 					:rows="startDayDivisions"
 					:columns="columns"
 					class="w-full">
 					<template #caption>
-						<caption>
+						<caption class="mb-2">
 							{{
 								showStartDayOfWeek
 							}}
@@ -87,7 +88,7 @@
 					:columns="columns"
 					class="w-full">
 					<template #caption>
-						<caption>
+						<caption class="mb-2">
 							{{
 								showEndDayOfWeek
 							}}
@@ -98,9 +99,9 @@
 		</section>
 		<!-- INFO -->
 		<section>
-			<h3>Info</h3>
-			<div class="mb-6 mt-2">
-				<h4>NAMHSA</h4>
+			<UDivider label="Event Info" />
+			<div class="mb-6">
+				<h4 class="mt-4">NAMHSA</h4>
 				<p>
 					Gold Country Model Horse Show has applied to be a NAMSHA-Approved
 					member show; so that any horse placing 1st or 2nd in its
@@ -129,7 +130,12 @@
 						If you have any questions regarding the show (classes, judges, etc.)
 						or questions about the location (booking rooms, directions, meals),
 						please send them to
-						<a href="mailto:saklani2@gmail.com">Robin Kent</a>.
+						<EnvelopeIcon class="ml-0.5 inline h-4 w-4 -translate-y-[1.5px]" />
+						<a
+							href="mailto:saklani2@gmail.com"
+							class="ml-1 hover:underline"
+							>Robin Kent</a
+						>.
 					</p>
 				</div>
 			</div>
