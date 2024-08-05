@@ -20,9 +20,11 @@
 		@apply text-3xl;
 	}
 	h4 {
-		@apply mb-2 ml-0 mt-10 text-sm font-bold uppercase text-gray-500;
+		@apply mb-2 ml-0 mt-10 text-sm font-normal uppercase text-gray-500;
 	}
-
+	.gold-gradient {
+		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
+	}
 	.show-rules {
 		@apply px-8;
 	}
@@ -34,5 +36,8 @@
 	}
 	.bg-subtle {
 		@apply rounded-lg border border-gray-200 bg-gray-50;
+	}
+	.info-box {
+		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900;
 	}
 }

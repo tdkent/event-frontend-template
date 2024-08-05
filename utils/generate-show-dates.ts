@@ -12,7 +12,7 @@ export default function generateShowDates() {
 		'Saturday',
 	];
 
-	const options: Intl.DateTimeFormatOptions = {
+	const mainOptions: Intl.DateTimeFormatOptions = {
 		weekday: 'long',
 		year: 'numeric',
 		month: 'long',
@@ -20,36 +20,39 @@ export default function generateShowDates() {
 	};
 
 	const headerOptions: Intl.DateTimeFormatOptions = {
-		weekday: 'short',
-		month: 'numeric',
+		month: 'short',
 		day: 'numeric',
+		year: 'numeric',
 	};
 
 	// Format start date
-	const showStartDateString = showStartDate.toLocaleDateString(
+	const mainStartDateString = showStartDate.toLocaleDateString(
 		undefined,
-		options
+		mainOptions
 	);
-	const showStartDateStringHeader = showStartDate.toLocaleDateString(
+	const headerStartDateString = showStartDate.toLocaleDateString(
 		undefined,
 		headerOptions
 	);
-	const showStartDayOfWeek = weekday[showStartDate.getDay()];
+	const startDay = weekday[showStartDate.getDay()];
 
 	// Format end date
-	const showEndDateString = showEndDate.toLocaleDateString(undefined, options);
-	const showEndDateStringHeader = showEndDate.toLocaleDateString(
+	const mainEndDateString = showEndDate.toLocaleDateString(
+		undefined,
+		mainOptions
+	);
+	const headerEndDateString = showEndDate.toLocaleDateString(
 		undefined,
 		headerOptions
 	);
-	const showEndDayOfWeek = weekday[showEndDate.getDay()];
+	const endDay = weekday[showEndDate.getDay()];
 
 	return {
-		showStartDateString,
-		showStartDateStringHeader,
-		showStartDayOfWeek,
-		showEndDateString,
-		showEndDateStringHeader,
-		showEndDayOfWeek,
+		mainStartDateString,
+		headerStartDateString,
+		startDay,
+		mainEndDateString,
+		headerEndDateString,
+		endDay,
 	};
 }

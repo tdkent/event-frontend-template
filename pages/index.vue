@@ -1,16 +1,16 @@
 <script setup>
 	// Imports
-	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/solid';
-	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
+	import {
+		BuildingLibraryIcon,
+		ClockIcon,
+		EnvelopeIcon,
+		ExclamationCircleIcon,
+	} from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { divisions } from '~/data/db';
 	// Functions
-	const {
-		showStartDateString,
-		showEndDateString,
-		showStartDayOfWeek,
-		showEndDayOfWeek,
-	} = generateShowDates();
+	const { mainStartDateString, mainEndDateString, startDay, endDay } =
+		generateShowDates();
 	const startDayDivisions = divisions.filter((d) => d.day === 0);
 	const endDayDivisions = divisions.filter((d) => d.day === 1);
 	const columns = [
@@ -27,23 +27,22 @@
 
 <template>
 	<div>
-		<h2>Welcome</h2>
-		<!-- GENERAL INFORMATION -->
 		<section>
+			<!-- Show Dates -->
 			<div
-				class="my-8 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
+				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
 				<p class="text-xs uppercase text-gray-400">Next Show Dates</p>
-				<p class="font-bold">{{ showStartDateString }}</p>
-				<p class="font-bold">{{ showEndDateString }}</p>
+				<p class="font-serif text-2xl">{{ mainStartDateString }}</p>
+				<p class="font-serif text-2xl">{{ mainEndDateString }}</p>
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
-				<div class="bg-subtle flex w-full justify-between p-2">
+				<div class="info-box flex justify-between">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
-							<BuildingLibraryIcon class="h-5 w-5 fill-yellow-500" />
+							<BuildingLibraryIcon class="h-5 w-5 stroke-blue-900" />
 						</div>
-						<span class="text-xs uppercase text-gray-400">Location</span>
+						<span class="text-xs uppercase">Location</span>
 					</div>
 					<div class="w-1/2 text-left text-sm">
 						<p>Davis Senior Center</p>
@@ -52,12 +51,12 @@
 					</div>
 				</div>
 				<!-- Show Times -->
-				<div class="bg-subtle flex w-full justify-between p-2">
+				<div class="info-box flex justify-between">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
-							<ClockIcon class="h-5 w-5 fill-yellow-500" />
+							<ClockIcon class="h-5 w-5 stroke-blue-900" />
 						</div>
-						<span class="text-xs uppercase text-gray-400">Show Times</span>
+						<span class="text-xs uppercase">Show Times</span>
 					</div>
 					<div class="w-1/2 text-left text-sm">
 						<p>Doors Open: 8 AM</p>
@@ -70,27 +69,29 @@
 		<!-- DIVISIONS -->
 		<section class="mb-4 mt-8">
 			<UDivider label="Divisions" />
-			<div class="my-4 flex flex-col items-center gap-4">
+			<div class="my-4 flex flex-col items-center gap-8">
+				<!-- Saturday -->
 				<UTable
 					:rows="startDayDivisions"
 					:columns="columns"
-					class="w-full">
+					class="w-full rounded-lg border">
 					<template #caption>
-						<caption class="mb-2">
+						<caption class="p-4 text-left text-xl">
 							{{
-								showStartDayOfWeek
+								startDay
 							}}
 						</caption>
 					</template>
 				</UTable>
+				<!-- Sunday -->
 				<UTable
 					:rows="endDayDivisions"
 					:columns="columns"
-					class="w-full">
+					class="w-full rounded-lg border">
 					<template #caption>
-						<caption class="mb-2">
+						<caption class="p-4 text-left text-xl">
 							{{
-								showEndDayOfWeek
+								endDay
 							}}
 						</caption>
 					</template>
@@ -124,16 +125,17 @@
 					A number of items will be available for raffle at the show. Please let
 					Robin know if you have items you would like to donate to the raffle.
 				</p>
-				<div class="bg-subtle mt-12 p-4">
-					<!-- TODO: add mail icon -->
+				<div class="info-box mt-12 p-4">
 					<p>
+						<ExclamationCircleIcon
+							class="inline h-5 w-5 -translate-y-[1.5px] fill-blue-100 stroke-blue-900" />
 						If you have any questions regarding the show (classes, judges, etc.)
 						or questions about the location (booking rooms, directions, meals),
 						please send them to
-						<EnvelopeIcon class="ml-0.5 inline h-4 w-4 -translate-y-[1.5px]" />
+						<!-- <EnvelopeIcon class="ml-0.5 inline h-4 w-4 -translate-y-[1.5px]" /> -->
 						<a
 							href="mailto:saklani2@gmail.com"
-							class="ml-1 hover:underline"
+							class="border-b-2 border-blue-400 px-0.5 font-medium hover:bg-blue-400 hover:text-gray-50"
 							>Robin Kent</a
 						>.
 					</p>

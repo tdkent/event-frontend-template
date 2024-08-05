@@ -1,6 +1,6 @@
 <script setup lang="ts">
 	// Imports
-	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/solid';
+	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { navLinks } from '~/data/nav';
 	// State
@@ -13,8 +13,10 @@
 		<UButton
 			color="white"
 			variant="ghost"
+			size="md"
+			:ui="{ padding: { md: 'p-0' } }"
 			@click="isOpen = true">
-			<Bars3Icon class="size-8 fill-white" />
+			<Bars3Icon class="h-8 w-8 stroke-gray-900" />
 		</UButton>
 		<!-- Slideover -->
 		<USlideover v-model="isOpen">

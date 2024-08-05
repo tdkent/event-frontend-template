@@ -1,14 +1,12 @@
 <script setup lang="ts">
-	const route = useRoute();
-	const { showStartDateStringHeader, showEndDateStringHeader } =
-		generateShowDates();
+	const { headerStartDateString, headerEndDateString } = generateShowDates();
 </script>
 
 <template>
-	<div
-		class="border-b bg-gray-50 px-4 py-1 text-center text-xs"
-		:class="[route.path === '/' && 'hidden']">
-		Next Show Dates: {{ showStartDateStringHeader }} &amp;
-		{{ showEndDateStringHeader }}
+	<div class="border-b bg-blue-950 py-2 text-center text-xs text-gray-50">
+		<span class="block font-bold">Next Show Dates</span>
+		<span class="block">
+			{{ headerStartDateString }} and {{ headerEndDateString }}
+		</span>
 	</div>
 </template>

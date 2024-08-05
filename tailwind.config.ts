@@ -43,8 +43,10 @@ export default <Partial<Config>>{
 			},
 			fontFamily: {
 				sans: ['Open Sans', 'sans'],
+				header: ['Mate SC', 'serif'],
 				display: ['Arvo', 'serif'],
 				script: ['Dancing Script', 'cursive'],
+				serif: ['Cormorant Garamond', 'serif'],
 			},
 		},
 	},

@@ -3,7 +3,7 @@
 	import type { ClassListRing } from '~/models';
 	import type { AccordionItem } from '~/models';
 	import { class_list } from '../data/db/db.json';
-	const { showStartDayOfWeek, showEndDayOfWeek } = generateShowDates();
+	const { startDay, endDay } = generateShowDates();
 	// Coerce imported type
 	const startDayData = [...class_list].filter(
 		(r) => r.day === 1
@@ -32,7 +32,7 @@
 	<div>
 		<h2>Class List</h2>
 		<section>
-			<UDivider :label="showStartDayOfWeek" />
+			<UDivider :label="startDay" />
 			<UAccordion
 				multiple
 				color="white"
@@ -56,7 +56,7 @@
 			</UAccordion>
 		</section>
 		<section>
-			<UDivider :label="showEndDayOfWeek" />
+			<UDivider :label="endDay" />
 			<UAccordion
 				multiple
 				color="white"

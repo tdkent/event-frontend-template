@@ -16,11 +16,14 @@ export default defineAppConfig({
 		},
 		table: {
 			th: {
-				font: 'uppercase text-xs',
+				base: 'w-1/2 text-left bg-blue-50',
+				color: 'text-blue-900',
+				font: 'uppercase text-sm',
 			},
 			td: {
-				base: 'whitespace-normal',
-				font: 'text-xs',
+				base: 'whitespace-normal w-1/2 text-left',
+				color: 'text-gray-900 dark:text-gray-400',
+				font: 'text-sm',
 			},
 		},
 		divider: {
@@ -28,9 +31,12 @@ export default defineAppConfig({
 				base: 'py-8  flex items-center align-center text-center',
 			},
 			container: {
-				base: 'font-sans',
+				base: 'font-header',
 			},
-			label: 'text-lg uppercase text-gray-400',
+			border: {
+				base: 'flex border-blue-100',
+			},
+			label: 'text-xl text-blue-900',
 		},
 		verticalNavigation: {
 			active: 'before:bg-none',
