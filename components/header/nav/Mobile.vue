@@ -25,13 +25,13 @@
 				<UButton
 					color="white"
 					variant="ghost"
-					class="absolute end-4 top-4 z-10"
+					class="absolute start-4 top-4 z-10"
 					@click="isOpen = false">
-					<XMarkIcon class="size-8 fill-gray-500" />
+					<XMarkIcon class="size-8" />
 				</UButton>
-				<div class="mt-16 h-full px-6">
+				<div class="mt-12 h-full px-6">
 					<!-- Slideover Header -->
-					<div class="mt-8 flex justify-center pb-4">
+					<!-- <div class="mt-8 flex justify-center pb-4">
 						<div class="h-20 w-20 rounded-full bg-gray-50 ring-1 ring-gray-300">
 							<img
 								alt="Logo image with a brown horse"
@@ -39,16 +39,19 @@
 								class="h-20 w-20 rounded-full"
 								src="~/assets/icon/NotoV1HorseFace.svg" />
 						</div>
+					</div> -->
+					<div class="border-b pb-4">
+						<HeaderText />
 					</div>
 					<!-- Slideover Navigation -->
-					<nav class="mt-6">
+					<nav>
 						<ul>
 							<li
 								v-for="link in navLinks"
 								:key="link.label"
-								class="border-b border-gray-200 py-4">
+								class="border-b border-gray-200 py-3">
 								<NuxtLink
-									class="font-script text-3xl text-gray-500"
+									class="font-serif text-2xl"
 									:to="link.to"
 									@click="isOpen = false"
 									>{{ link.label }}</NuxtLink
@@ -64,6 +67,6 @@
 
 <style lang="css" scoped>
 	.router-link-active {
-		color: #2bb0ed;
+		color: #de911d;
 	}
 </style>

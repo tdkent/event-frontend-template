@@ -40,4 +40,7 @@
 	.info-box {
 		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900;
 	}
+	.text-link {
+		@apply border-b-2 border-blue-400 px-0.5 font-medium hover:bg-blue-400 hover:text-gray-50;
+	}
 }

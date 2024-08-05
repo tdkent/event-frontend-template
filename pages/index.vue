@@ -135,7 +135,7 @@
 						<!-- <EnvelopeIcon class="ml-0.5 inline h-4 w-4 -translate-y-[1.5px]" /> -->
 						<a
 							href="mailto:saklani2@gmail.com"
-							class="border-b-2 border-blue-400 px-0.5 font-medium hover:bg-blue-400 hover:text-gray-50"
+							class="text-link"
 							>Robin Kent</a
 						>.
 					</p>
