@@ -19,7 +19,7 @@
 	<div class="px-6">
 		<div
 			v-if="judge || judgeBreed || judgeCollect || sponsor"
-			class="mb-8 mt-4 flex flex-col gap-4">
+			class="mb-8 mt-4 flex flex-col gap-4 font-semibold">
 			<p v-if="judge">Judge: {{ judge }}</p>
 			<p v-if="judgeBreed">Judge Breed: {{ judgeBreed }}</p>
 			<p v-if="judgeCollect">Judge Collect: {{ judgeCollect }}</p>
@@ -28,9 +28,12 @@
 		<div
 			v-for="(d, index) in divisions"
 			:key="d.division_title">
-			<span class="my-4 block text-base uppercase text-gray-500">{{
-				d.division_title
-			}}</span>
+			<span class="my-4 block font-header text-xl">{{ d.division_title }}</span>
+			<span
+				v-if="d.sponsor"
+				class="block pb-4 pt-2 font-semibold"
+				>Sponsor: {{ d.sponsor }}</span
+			>
 			<ClassListClass
 				:index="index"
 				:length="divisions.length"

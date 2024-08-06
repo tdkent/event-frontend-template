@@ -101,7 +101,7 @@
 		<!-- INFO -->
 		<section>
 			<UDivider label="Event Info" />
-			<div class="mb-6">
+			<div>
 				<h4 class="mt-4">NAMHSA</h4>
 				<p>
 					Gold Country Model Horse Show has applied to be a NAMSHA-Approved

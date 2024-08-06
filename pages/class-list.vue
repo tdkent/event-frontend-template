@@ -38,13 +38,7 @@
 				color="white"
 				variant="ghost"
 				size="xl"
-				class="my-10 mt-6 w-full"
-				:ui="{
-					container: 'border w-full flex flex-col my-4 rounded-lg bg-gray-50',
-					wrapper: 'w-full flex flex-col',
-					item: { padding: 'py-8' },
-					default: { class: 'py-4 text-sm' },
-				}"
+				class="my-6 w-full"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
 					<UDivider class="px-6 pt-0" />
@@ -62,13 +56,7 @@
 				color="white"
 				variant="ghost"
 				size="xl"
-				class="my-10 mt-6 w-full"
-				:ui="{
-					container: 'border w-full flex flex-col my-4 rounded-lg bg-gray-50',
-					wrapper: 'w-full flex flex-col',
-					item: { padding: 'py-8' },
-					default: { class: 'py-4 text-sm' },
-				}"
+				class="mt-6 w-full"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
 					<ClassListRingData

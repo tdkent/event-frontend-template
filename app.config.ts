@@ -2,7 +2,14 @@ export default defineAppConfig({
 	ui: {
 		strategy: 'override',
 		accordion: {
+			container:
+				'border border-blue-100 bg-blue-50 my-4 rounded-lg w-full flex flex-col text-blue-900',
+			item: {
+				color: 'text-blue-900',
+				padding: 'py-8',
+			},
 			default: {
+				class: 'py-4 text-sm',
 				openIcon: 'i-heroicons-chevron-left-20-solid',
 				closeIcon: 'i-heroicons-chevron-down-20-solid',
 			},

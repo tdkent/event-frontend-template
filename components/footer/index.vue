@@ -4,7 +4,7 @@
 		&copy; 2024
 	</footer> -->
 	<footer
-		class="mt-8 flex h-20 flex-col items-center justify-center border-t border-gray-400 bg-gray-200 text-sm">
+		class="mt-14 flex h-20 flex-col items-center justify-center border-t border-gray-400 bg-gray-200 text-sm">
 		&copy; 2024
 	</footer>
 </template>
