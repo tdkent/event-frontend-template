@@ -1,16 +1,28 @@
 <script setup lang="ts">
+	// Import
+	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
+	// Modal
 	const isOpen = ref(false);
 </script>
 
 <template>
-	<div class="mb-4 mt-6 flex items-center gap-4">
-		<span>See format example:</span>
-		<UButton
-			label="Open"
-			color="blue"
-			variant="solid"
-			size="md"
-			@click="isOpen = true" />
+	<!-- <div class="mb-4 mt-6 flex items-center gap-4">
+		<span
+			role="button"
+			class="text-link block text-sm"
+			@click="isOpen = true"
+			>View card format example</span
+		>
+	</div> -->
+	<div class="group mb-4 mt-6 flex items-center gap-1 text-sm">
+		<a
+			role="button"
+			class="text-link"
+			@click="isOpen = true"
+			>View card format example</a
+		>
+		<ArrowTopRightOnSquareIcon
+			class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[0]" />
 	</div>
 
 	<UModal
@@ -44,12 +56,13 @@
 			</div>
 
 			<template #footer>
-				<div class="flex justify-end">
+				<div class="flex items-center justify-end">
 					<UButton
 						label="Close"
-						color="blue"
-						variant="solid"
+						color="black"
+						variant="link"
 						size="md"
+						:ui="{ color: { black: { link: 'hover:none' } } }"
 						@click="isOpen = false" />
 				</div>
 			</template>

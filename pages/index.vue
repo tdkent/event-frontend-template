@@ -1,11 +1,6 @@
 <script setup>
 	// Imports
-	import {
-		BuildingLibraryIcon,
-		ClockIcon,
-		EnvelopeIcon,
-		ExclamationCircleIcon,
-	} from '@heroicons/vue/24/outline';
+	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { divisions } from '~/data/db';
 	// Functions
@@ -125,21 +120,16 @@
 					A number of items will be available for raffle at the show. Please let
 					Robin know if you have items you would like to donate to the raffle.
 				</p>
-				<div class="info-box mt-12 p-4">
-					<p>
-						<ExclamationCircleIcon
-							class="inline h-5 w-5 -translate-y-[1.5px] fill-blue-100 stroke-blue-900" />
-						If you have any questions regarding the show (classes, judges, etc.)
-						or questions about the location (booking rooms, directions, meals),
-						please send them to
-						<!-- <EnvelopeIcon class="ml-0.5 inline h-4 w-4 -translate-y-[1.5px]" /> -->
-						<a
-							href="mailto:saklani2@gmail.com"
-							class="text-link"
-							>Robin Kent</a
-						>.
-					</p>
-				</div>
+				<MainInfoBox>
+					If you have any questions regarding the show (classes, judges, etc.)
+					or questions about the location (booking rooms, directions, meals),
+					please send them to
+					<a
+						href="mailto:saklani2@gmail.com"
+						class="text-link">
+						Robin Kent</a
+					>.
+				</MainInfoBox>
 			</div>
 		</section>
 	</div>

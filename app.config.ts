@@ -46,7 +46,7 @@ export default defineAppConfig({
 			label: 'text-xl text-blue-900',
 		},
 		verticalNavigation: {
-			active: 'before:bg-none',
+			active: 'before:bg-none hover:bg-blue-100 hover:rounded-none',
 			inactive: 'before:bg-none',
 			size: 'text-base',
 			padding: 'px-2.5 py-2.5',

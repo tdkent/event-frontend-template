@@ -3,6 +3,8 @@
 	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { showRulesLinks } from '~/data/nav';
+	// Intersection Observer API
+	const classLimits = ref(null);
 </script>
 
 <template>
@@ -12,7 +14,7 @@
 			color="white"
 			variant="ghost"
 			size="lg"
-			class="bg-subtle my-10 mt-6"
+			class="my-10 mt-6"
 			:items="[{ label: 'On this page', slot: 'sub-nav' }]">
 			<template #sub-nav>
 				<UVerticalNavigation :links="showRulesLinks" />
@@ -20,7 +22,7 @@
 		</UAccordion>
 
 		<!-- CLASS LIMITS -->
-		<section>
+		<section ref="classLimits">
 			<UDivider
 				id="class-limits"
 				label="Class Limits" />
@@ -283,7 +285,7 @@
 					</ul>
 				</li>
 			</ul>
-			<p class="bg-subtle p-4 text-sm leading-6">
+			<MainInfoBox>
 				Please note: Performance classes will be judged based on USA Equestrian
 				(formerly AHSA) rules, appropriate show association rules or appropriate
 				breed association rules, whichever the judge thinks is most appropriate,
@@ -293,128 +295,132 @@
 				intentions are. Western and English Pleasure classes are open to ALL
 				breeds and each entry will be judged based on that entries' breed
 				standards.
-			</p>
+			</MainInfoBox>
 		</section>
 		<!-- BREED GUIDELINES -->
 		<section class="items-start">
 			<UDivider
 				id="breed-guidelines"
 				label="Breed Guidelines" />
-			<h4 class="mt-0">Arabian</h4>
-			<p>
-				All purebred Arabian strains recognized by the Arabian Horse Registry.
-			</p>
-			<p class="bg-subtle mt-4 p-4 text-sm leading-6">
-				Please Note: The Shagya Arabian although of Arabian ancestry is not "of
-				type" as recognized by AHR and should be shown in Other Sport.
-			</p>
-			<h4>Half-Arabian</h4>
-			<p>
-				All part Arabians of extreme Arab type show in this class. Part Arabians
-				showing more type of their other half should show in Other Light/Part
-				Breed, or where appropriate for their body type. For instance, a QuArab
-				that appears more like a Pure Arab would be shown in Part Arabs in the
-				Arab division, whereas a QuArab that appears more like a Quarter Horse
-				would be shown in Other Stock/ Partbred in the Stock division. National
-				Show Horses- both gaited and non-gaited will show in NSH classes.
-			</p>
-			<h4>European Warmblood</h4>
-			<p>
-				Examples are Belgian Warmblood, Budyonny, Danish Warmblood, Danubian,
-				Dutch Gronigen, Dutch Warmblood, East Bulgarian, Finnish Universal,
-				French Trotter, Gelderlander, Hispano, Holstiener, Hungarian Warmblood,
-				Irish Draft, Kadruber, Knabstrup, Latvia, Mecklenbury, Oldenburg,
-				Rhinelander, Salerno, Selle Francais, Swedish Warmblood.
-			</p>
-			<h4>American Warmblood, Other Warmblood, Sport Horses</h4>
-			<p>
-				Examples are Akhal Teke, American Sport Horse, Appaloosa Sport Horse,
-				Canadian Sport Horse, Furious, Metis Trotter, Nonius, Terek, Waler,
-				Westphalian and all other pure or part of the above breeds showing
-				Warmblood characteristics, used for all aspects of combined training.
-			</p>
-			<h4>Carriage Breeds</h4>
-			<p>
-				Such as Cleveland Bay, Friesian, Hackney Horse, Norman Cob, Orlov
-				Trotter, Welsh Cob, all other pure or part of the above breeds showing
-				Cob, or Carriage characteristics, used for driving.
-			</p>
-			<h4>Gaited Horse</h4>
-			<p>
-				Any breeds exhibiting gaited characteristics, i.e. is NATURALLY inclined
-				to perform gaits other than a walk, trot, and canter (such as a running
-				walk, rack, foxtrot, etc.) A high trot does NOT constitute a specialized
-				gait. The Spanish Walk is a movement that can be taught to any
-				well-conformed breed and is not a gait. Spanish breed or descended
-				breeds such as a Paso Fino or Peruvian Paso are encouraged but not
-				required to show in Spanish Breeds, rather than here. Gaited Pony breeds
-				should show here (Hackney, which is not gaited, go in Ponies) American
-				Saddlebred (5 Gaited only) American Spotted Saddlehorse, Missouri
-				Forxtrotter, TWH, Rocky Mountain Horse, Walkaloosa, all other pure or
-				part breeds showing gaited characteristics.
-			</p>
-			<h4>Ponies</h4>
-			<p>
-				Any breed exhibiting pony characteristics of height and conformation, or
-				those generally recognized as "pony." Gaited ponies (ponies which do
-				more than a walk, trot, or canter-a high trot is NOT a specialized gait)
-				should show in the Gaited Breeds. American Saddle Pony, American
-				Shetland, American Walking Pony, Assateague, Bali, Basque, Batak,
-				British Shetland, British Spotted Pony, Carmargue, Cayuse Indian Pony,
-				Chincogeague, Chinese, Feel Pony, Galiceno, Hackney Pony, Marwari,
-				Mongolian, Paint Pony, POA, Quarter Pony, Rocky Mountain Pony and any
-				other pure or part ponies exhibiting pony characteristics, EXCEPT gaited
-				pony breeds.
-			</p>
-			<h4>American Miniature Horses</h4>
-			<p>
-				Please show your miniature horses in the Ponies section “Other Purebred/
-				Partbred”.
-			</p>
-			<h4>Stock Breeds</h4>
-			<p>
-				Any breed typically used for working stock, or of a body type considered
-				as "stock", Appaloosa, Australian Stock Horse, Canadian Cutter, Colorado
-				Rangerbred, Mustang, Paint, Quarter Horse. All breeds not listed that
-				would be used in its native country or region for working stock or
-				general ranch work. Any other pure- or part-breed exhibiting stock
-				characteristics.
-			</p>
-			<h4>Draft Breeds</h4>
-			<p>
-				Any breed typically used for medium or heavy draft work, including
-				pulling loads, farm work, etc. and exhibiting draft confirmation.
-				Ardennais, Auxios, Belgian, Brabant, Boulannais, Breton, Clydesdale,
-				Comtois, Dole Gubrandsdal, Dutch Draft, Suffolk Punch, Swedish Ardennes,
-				Vladimer Heavy Draft and any pure or part breeds showing draft
-				characteristics or conformation, used for heavy farm/harness work.
-			</p>
-			<h4>Spanish Breeds</h4>
-			<p>
-				Breed originating and perpetuated in the Spanish/Iberian region of
-				Europe and any breed developed and now bred primarily in the New World
-				(North and South America) with roots in the Spanish/Iberian region of
-				Europe. Alter Real, Andalusian, Lipizzan, Lustiano, Azteca, Barb,
-				Criollo, Paso Fino, Peruvian Paso, all other breeds pure or part
-				exhibiting similar characteristics and bred primarily in the
-				Spanish/Iberian region of Europe.
-			</p>
-			<h4>Other Purebreds</h4>
-			<p>
-				Unless there is a class whose specifications suit these breeds, this
-				group to be shown in Other Purebreds: American Cream, Bahskir Curly,
-				Brumby, Don, Kathiawari, Lokai, Malapolski, Turkoman, Wielopolski, all
-				other pure or part breeds of light bone and confirmation, used for
-				general riding purposes, harness and or light draft work. Partbreds
-				should compete in the halter section best suited to their conformation
-				and type.
-			</p>
-			<h4>Longears, Exotics</h4>
-			<p>
-				All non-domesticated, extinct, or living primitive breeds, including
-				Donkeys, Burros, Mules, Przewalski, Tarpan/Wild Pony/ Wild Ass, Onager,
-				Quagga, and Zebra.
-			</p>
+			<div class="">
+				<h4 class="mt-0">Arabian</h4>
+				<p>
+					All purebred Arabian strains recognized by the Arabian Horse Registry.
+				</p>
+				<MainInfoBox class="mb-0">
+					Please Note: The Shagya Arabian although of Arabian ancestry is not
+					"of type" as recognized by AHR and should be shown in Other Sport.
+				</MainInfoBox>
+				<h4>Half-Arabian</h4>
+				<p>
+					All part Arabians of extreme Arab type show in this class. Part
+					Arabians showing more type of their other half should show in Other
+					Light/Part Breed, or where appropriate for their body type. For
+					instance, a QuArab that appears more like a Pure Arab would be shown
+					in Part Arabs in the Arab division, whereas a QuArab that appears more
+					like a Quarter Horse would be shown in Other Stock/ Partbred in the
+					Stock division. National Show Horses- both gaited and non-gaited will
+					show in NSH classes.
+				</p>
+				<h4>European Warmblood</h4>
+				<p>
+					Examples are Belgian Warmblood, Budyonny, Danish Warmblood, Danubian,
+					Dutch Gronigen, Dutch Warmblood, East Bulgarian, Finnish Universal,
+					French Trotter, Gelderlander, Hispano, Holstiener, Hungarian
+					Warmblood, Irish Draft, Kadruber, Knabstrup, Latvia, Mecklenbury,
+					Oldenburg, Rhinelander, Salerno, Selle Francais, Swedish Warmblood.
+				</p>
+				<h4>American Warmblood, Other Warmblood, Sport Horses</h4>
+				<p>
+					Examples are Akhal Teke, American Sport Horse, Appaloosa Sport Horse,
+					Canadian Sport Horse, Furious, Metis Trotter, Nonius, Terek, Waler,
+					Westphalian and all other pure or part of the above breeds showing
+					Warmblood characteristics, used for all aspects of combined training.
+				</p>
+				<h4>Carriage Breeds</h4>
+				<p>
+					Such as Cleveland Bay, Friesian, Hackney Horse, Norman Cob, Orlov
+					Trotter, Welsh Cob, all other pure or part of the above breeds showing
+					Cob, or Carriage characteristics, used for driving.
+				</p>
+				<h4>Gaited Horse</h4>
+				<p>
+					Any breeds exhibiting gaited characteristics, i.e. is NATURALLY
+					inclined to perform gaits other than a walk, trot, and canter (such as
+					a running walk, rack, foxtrot, etc.) A high trot does NOT constitute a
+					specialized gait. The Spanish Walk is a movement that can be taught to
+					any well-conformed breed and is not a gait. Spanish breed or descended
+					breeds such as a Paso Fino or Peruvian Paso are encouraged but not
+					required to show in Spanish Breeds, rather than here. Gaited Pony
+					breeds should show here (Hackney, which is not gaited, go in Ponies)
+					American Saddlebred (5 Gaited only) American Spotted Saddlehorse,
+					Missouri Forxtrotter, TWH, Rocky Mountain Horse, Walkaloosa, all other
+					pure or part breeds showing gaited characteristics.
+				</p>
+				<h4>Ponies</h4>
+				<p>
+					Any breed exhibiting pony characteristics of height and conformation,
+					or those generally recognized as "pony." Gaited ponies (ponies which
+					do more than a walk, trot, or canter-a high trot is NOT a specialized
+					gait) should show in the Gaited Breeds. American Saddle Pony, American
+					Shetland, American Walking Pony, Assateague, Bali, Basque, Batak,
+					British Shetland, British Spotted Pony, Carmargue, Cayuse Indian Pony,
+					Chincogeague, Chinese, Feel Pony, Galiceno, Hackney Pony, Marwari,
+					Mongolian, Paint Pony, POA, Quarter Pony, Rocky Mountain Pony and any
+					other pure or part ponies exhibiting pony characteristics, EXCEPT
+					gaited pony breeds.
+				</p>
+				<h4>American Miniature Horses</h4>
+				<p>
+					Please show your miniature horses in the Ponies section “Other
+					Purebred/ Partbred”.
+				</p>
+				<h4>Stock Breeds</h4>
+				<p>
+					Any breed typically used for working stock, or of a body type
+					considered as "stock", Appaloosa, Australian Stock Horse, Canadian
+					Cutter, Colorado Rangerbred, Mustang, Paint, Quarter Horse. All breeds
+					not listed that would be used in its native country or region for
+					working stock or general ranch work. Any other pure- or part-breed
+					exhibiting stock characteristics.
+				</p>
+				<h4>Draft Breeds</h4>
+				<p>
+					Any breed typically used for medium or heavy draft work, including
+					pulling loads, farm work, etc. and exhibiting draft confirmation.
+					Ardennais, Auxios, Belgian, Brabant, Boulannais, Breton, Clydesdale,
+					Comtois, Dole Gubrandsdal, Dutch Draft, Suffolk Punch, Swedish
+					Ardennes, Vladimer Heavy Draft and any pure or part breeds showing
+					draft characteristics or conformation, used for heavy farm/harness
+					work.
+				</p>
+				<h4>Spanish Breeds</h4>
+				<p>
+					Breed originating and perpetuated in the Spanish/Iberian region of
+					Europe and any breed developed and now bred primarily in the New World
+					(North and South America) with roots in the Spanish/Iberian region of
+					Europe. Alter Real, Andalusian, Lipizzan, Lustiano, Azteca, Barb,
+					Criollo, Paso Fino, Peruvian Paso, all other breeds pure or part
+					exhibiting similar characteristics and bred primarily in the
+					Spanish/Iberian region of Europe.
+				</p>
+				<h4>Other Purebreds</h4>
+				<p>
+					Unless there is a class whose specifications suit these breeds, this
+					group to be shown in Other Purebreds: American Cream, Bahskir Curly,
+					Brumby, Don, Kathiawari, Lokai, Malapolski, Turkoman, Wielopolski, all
+					other pure or part breeds of light bone and confirmation, used for
+					general riding purposes, harness and or light draft work. Partbreds
+					should compete in the halter section best suited to their conformation
+					and type.
+				</p>
+				<h4>Longears, Exotics</h4>
+				<p>
+					All non-domesticated, extinct, or living primitive breeds, including
+					Donkeys, Burros, Mules, Przewalski, Tarpan/Wild Pony/ Wild Ass,
+					Onager, Quagga, and Zebra.
+				</p>
+			</div>
 		</section>
 		<!-- SHOW HOLDERS -->
 		<section>
@@ -422,15 +428,16 @@
 				id="show-holders"
 				label="Show Holders" />
 
-			<div class="flex w-full items-center justify-between">
+			<div class="flex w-full justify-between px-4">
 				<span> Robin Kent </span>
-				<div class="flex items-center gap-1 text-sm">
-					<EnvelopeIcon class="h-4 w-4 translate-y-[1px]" />
+				<div class="group flex items-center gap-1 text-sm">
 					<a
 						href="mailto:saklani2@gmail.com"
-						class="hover:underline"
+						class="text-link"
 						>saklani2@gmail.com</a
 					>
+					<EnvelopeIcon
+						class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[1px]" />
 				</div>
 			</div>
 		</section>
