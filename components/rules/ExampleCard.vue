@@ -6,14 +6,6 @@
 </script>
 
 <template>
-	<!-- <div class="mb-4 mt-6 flex items-center gap-4">
-		<span
-			role="button"
-			class="text-link block text-sm"
-			@click="isOpen = true"
-			>View card format example</span
-		>
-	</div> -->
 	<div class="group mb-4 mt-6 flex items-center gap-1 text-sm">
 		<a
 			role="button"
@@ -22,7 +14,7 @@
 			>View card format example</a
 		>
 		<ArrowTopRightOnSquareIcon
-			class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[0]" />
+			class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[0] max-lg:hidden" />
 	</div>
 
 	<UModal

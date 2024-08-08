@@ -1,28 +1,41 @@
-<script setup>
+<script setup lang="ts">
 	// Imports
 	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { showRulesLinks } from '~/data/nav';
 	// Intersection Observer API
-	const classLimits = ref(null);
+	const intersectPoint: globalThis.Ref<Element | null> = ref(null);
+	const showButton = ref(false);
+	onMounted(() => {
+		const observer = new IntersectionObserver(handleIntersection);
+		observer.observe(intersectPoint.value as Element);
+	});
+	const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+		entries.forEach((entry) => {
+			if (!entry.isIntersecting) {
+				showButton.value = true;
+			} else showButton.value = false;
+		});
+	};
 </script>
 
 <template>
-	<div>
+	<div class="relative">
+		<RulesBackToTop :show="showButton" />
 		<h2>Rules &amp; Regulations</h2>
+		<div ref="intersectPoint" />
 		<UAccordion
 			color="white"
 			variant="ghost"
 			size="lg"
-			class="my-10 mt-6"
+			class="mt-6"
 			:items="[{ label: 'On this page', slot: 'sub-nav' }]">
 			<template #sub-nav>
 				<UVerticalNavigation :links="showRulesLinks" />
 			</template>
 		</UAccordion>
-
 		<!-- CLASS LIMITS -->
-		<section ref="classLimits">
+		<section class="mt-10">
 			<UDivider
 				id="class-limits"
 				label="Class Limits" />
@@ -69,7 +82,6 @@
 					they are judging a class. If you have a question regarding a placing,
 					please ask the judge politely and promptly after the class.
 				</li>
-				<!-- TODO: adjust font weights -->
 				<li>
 					Please do not hover while the judge is judging a class! Likewise,
 					please refrain from interrupting the judges while they are judging a
@@ -428,7 +440,7 @@
 				id="show-holders"
 				label="Show Holders" />
 
-			<div class="flex w-full justify-between px-4">
+			<div class="flex w-full justify-between">
 				<span> Robin Kent </span>
 				<div class="group flex items-center gap-1 text-sm">
 					<a
@@ -437,7 +449,7 @@
 						>saklani2@gmail.com</a
 					>
 					<EnvelopeIcon
-						class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[1px]" />
+						class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[1px] max-lg:hidden" />
 				</div>
 			</div>
 		</section>

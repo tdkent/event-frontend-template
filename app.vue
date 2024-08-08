@@ -1,10 +1,9 @@
 <template>
-	<div>
+	<div id="scroller">
 		<Header />
 		<Main>
 			<NuxtPage />
 		</Main>
-		<MainBackToTop />
 		<Footer />
 	</div>
 </template>
