@@ -1,20 +1,19 @@
 <script setup lang="ts">
 	// Import
-	import { ArrowTopRightOnSquareIcon } from '@heroicons/vue/24/outline';
+	import { ChevronRightIcon } from '@heroicons/vue/24/outline';
 	// Modal
 	const isOpen = ref(false);
 </script>
 
 <template>
-	<div class="group mb-4 mt-6 flex items-center gap-1 text-sm">
+	<div class="group mb-4 mt-6 flex items-center gap-0.5">
+		<ChevronRightIcon class="h-4 w-4 stroke-2" />
 		<a
 			role="button"
-			class="text-link"
+			class=""
 			@click="isOpen = true"
 			>View card format example</a
 		>
-		<ArrowTopRightOnSquareIcon
-			class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[0] max-lg:hidden" />
 	</div>
 
 	<UModal

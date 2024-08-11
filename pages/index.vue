@@ -126,9 +126,9 @@
 					please send them to
 					<a
 						href="mailto:saklani2@gmail.com"
-						class="text-link">
+						class="link text-blue-600">
 						Robin Kent</a
-					>.
+					>
 				</MainInfoBox>
 			</div>
 		</section>

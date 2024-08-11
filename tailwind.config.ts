@@ -40,6 +40,9 @@ export default <Partial<Config>>{
 					800: '#3B3B3B',
 					900: '#222222',
 				},
+				teal: {
+					600: '#199473',
+				},
 			},
 			fontFamily: {
 				sans: ['Open Sans', 'sans'],

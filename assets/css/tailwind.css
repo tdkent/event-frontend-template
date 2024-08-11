@@ -12,9 +12,6 @@
 	h2 {
 		@apply pb-4 pt-12 text-center font-serif text-[2rem] font-extralight;
 	}
-	h3 {
-		@apply font-serif text-3xl;
-	}
 	h4 {
 		@apply mb-2 ml-0 mt-10 text-sm font-normal uppercase text-gray-500;
 	}
@@ -30,19 +27,13 @@
 	.show-rules li > ul > li {
 		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
 	}
-	.bg-subtle {
-		@apply rounded-lg border border-gray-200 bg-gray-50;
-	}
 	.info-box {
 		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900;
 	}
 	.icon-blue {
 		@apply fill-blue-200 stroke-blue-900;
 	}
-	.text-link {
-		@apply font-semibold;
-	}
-	.icon-animate {
-		@apply translate-y-2 opacity-0 transition-all duration-300 group-hover:opacity-100;
+	.link {
+		@apply transition-colors duration-300 hover:text-teal-600;
 	}
 }

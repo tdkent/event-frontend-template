@@ -9,9 +9,15 @@ export type Division = {
 // Restaurant, hotel list items
 export type ListItem = {
 	name: string;
-	url: string;
+	websiteUrl: string;
 	address: string;
+	mapUrl: string;
 	phone: string;
+};
+
+export type VenueList = {
+	label: string;
+	items: ListItem[];
 };
 
 // Class list accordion

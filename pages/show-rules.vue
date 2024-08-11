@@ -442,14 +442,12 @@
 
 			<div class="flex w-full justify-between">
 				<span> Robin Kent </span>
-				<div class="group flex items-center gap-1 text-sm">
+				<div class="flex items-center gap-1">
 					<a
 						href="mailto:saklani2@gmail.com"
-						class="text-link"
+						class="link"
 						>saklani2@gmail.com</a
 					>
-					<EnvelopeIcon
-						class="icon-blue icon-animate h-4 w-4 group-hover:translate-y-[1px] max-lg:hidden" />
 				</div>
 			</div>
 		</section>
