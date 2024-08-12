@@ -5,5 +5,6 @@
 			<NuxtPage />
 		</Main>
 		<Footer />
+		<UNotifications />
 	</div>
 </template>

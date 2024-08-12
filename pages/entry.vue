@@ -5,22 +5,23 @@
 <template>
 	<div>
 		<h2>Entry</h2>
-		<section class="mt-10">
+		<section>
 			<UDivider label="Entry Form" />
 			<div class="flex w-full items-center justify-start gap-4">
-				<div
-					class="flex h-16 w-16 flex-none items-center justify-center rounded-full border bg-gray-50">
-					<DocumentTextIcon class="h-10 w-10 stroke-gray-500 stroke-1" />
+				<!-- <div
+					class="flex h-16 w-16 flex-none items-center justify-center rounded-full border border-blue-100 bg-blue-50">
+					<DocumentTextIcon class="icon-blue h-12 w-12 stroke-1" />
 				</div>
 				<p>
 					Please fill out the electronic entry form
 					<NuxtLink
 						to="https://docs.google.com/forms/d/e/1FAIpQLSeGH28vukKXWPARVIP5kREHRclAI2rhi7gLjY7lEtFRLfbHww/viewform"
 						target="_blank"
-						class="hover:underline">
+						class="link text-blue-600">
 						here
 					</NuxtLink>
-				</p>
+				</p> -->
+				<EntryForm />
 			</div>
 			<UDivider label="Payment Info" />
 			<ul class="show-rules">
