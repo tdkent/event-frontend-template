@@ -1,33 +1,34 @@
+import { MembershipEnum, TableEnum } from '~/models';
 export const membershipTypeOptions = [
 	{
-		value: 'both-days',
+		value: MembershipEnum.enum.both,
 		label: 'Both Days',
 	},
 	{
-		value: 'saturday-only',
+		value: MembershipEnum.enum.sat,
 		label: 'Saturday Only',
 	},
 	{
-		value: 'sunday-only',
+		value: MembershipEnum.enum.sun,
 		label: 'Sunday Only',
 	},
 ];
 
 export const tableOptions = [
 	{
-		value: 'no',
+		value: TableEnum.enum.n,
 		label: 'No',
 	},
 	{
-		value: 'yes-saturday',
+		value: TableEnum.enum['y-sat'],
 		label: 'Yes: Saturday Only',
 	},
 	{
-		value: 'yes-sunday',
+		value: TableEnum.enum['y-sun'],
 		label: 'Yes: Sunday Only',
 	},
 	{
-		value: 'yes-both-days',
+		value: TableEnum.enum['y-both'],
 		label: 'Yes: Both Days',
 	},
 ];

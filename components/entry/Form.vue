@@ -1,72 +1,68 @@
 <script setup lang="ts">
 	// Imports
 	import { z } from 'zod';
-	import type { FormSubmitEvent } from '#ui/types';
 	// Internal Imports
 	import { membershipTypeOptions, tableOptions } from '~/data/form';
-	// Toast
-	const toast = useToast();
+	import type { EntryForm } from '~/models';
+	import { defaultFormState, MembershipEnum, TableEnum } from '~/models';
 	// Form Schema
 	const schema = z.object({
-		name: z.string(),
-		phone: z.string(),
-		email: z.string().email('Invalid email'),
+		name: z.string().trim().min(1, 'Please enter your name'),
+		email: z.string().email('Please enter a valid email address'),
+		membership: MembershipEnum,
+		table: TableEnum,
 	});
-	type Schema = z.output<typeof schema>;
 	// Form State
-	const state = reactive({
-		name: undefined,
-		phone: undefined,
-		email: undefined,
-		membership: 'both-days',
-		table: 'no',
-	});
+	const formState = useState<EntryForm>('formState', () => defaultFormState);
 	const isLoading = ref(false);
+	// Modal
+	const isOpen = ref(false);
 	// Form Submit
-	async function onSubmit(event: FormSubmitEvent<Schema>) {
-		// Do something with data
-		console.log(event.data);
+	async function onSubmit() {
 		isLoading.value = true;
+		// Simulate network delay
 		setTimeout(() => {
 			isLoading.value = false;
-			toast.add({ title: 'You have been registered! ' });
-		}, 2000);
+			isOpen.value = true;
+		}, 1500);
 	}
 </script>
 
 <template>
+	<EntrySuccessModal v-model="isOpen" />
 	<UForm
 		:schema="schema"
-		:state="state"
+		:state="formState"
 		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4"
 		@submit="onSubmit">
 		<UFormGroup
 			label="Name"
 			name="name"
 			class="input-required">
-			<UInput v-model="state.name" />
+			<UInput
+				v-model="formState.name"
+				:disabled="isLoading" />
 		</UFormGroup>
 		<UFormGroup
 			label="Email"
 			name="email"
 			class="input-required">
-			<UInput v-model="state.email" />
-		</UFormGroup>
-		<UFormGroup
-			label="Phone"
-			name="phone">
-			<UInput v-model="state.phone" />
+			<UInput
+				v-model="formState.email"
+				:disabled="isLoading" />
 		</UFormGroup>
 		<URadioGroup
-			v-model="state.membership"
+			v-model="formState.membership"
 			legend="Membership Type"
 			:options="membershipTypeOptions"
-			class="legend-required" />
+			class="legend-required"
+			:disabled="isLoading" />
 		<URadioGroup
-			v-model="state.table"
+			v-model="formState.table"
 			legend="Extra Table?"
 			:options="tableOptions"
-			class="legend-required" />
+			class="legend-required"
+			:disabled="isLoading" />
 		<UButton
 			type="submit"
 			size="xl"

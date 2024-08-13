@@ -1,3 +1,5 @@
+// Imports
+import { z } from 'zod';
 // Division list
 export type Division = {
 	id: number;
@@ -48,4 +50,23 @@ export type ClassListRing = {
 	ring_number: number;
 	ring_title: string;
 	sponsor: string;
+};
+
+// Entry form
+export const MembershipEnum = z.enum(['both', 'sat', 'sun']);
+
+export const TableEnum = z.enum(['n', 'y-sat', 'y-sun', 'y-both']);
+
+export type EntryForm = {
+	name: string;
+	email: string;
+	membership: z.infer<typeof MembershipEnum>;
+	table: z.infer<typeof TableEnum>;
+};
+
+export const defaultFormState: EntryForm = {
+	name: '',
+	email: '',
+	membership: 'both',
+	table: 'n',
 };
