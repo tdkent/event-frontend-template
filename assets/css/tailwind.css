@@ -36,4 +36,8 @@
 	.link {
 		@apply transition-colors duration-300 hover:text-teal-600;
 	}
+	div.input-required label,
+	div.legend-required legend {
+		@apply after:ml-0.5 after:text-red-600 after:content-['*'];
+	}
 }

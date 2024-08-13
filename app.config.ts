@@ -1,6 +1,5 @@
 export default defineAppConfig({
 	ui: {
-		strategy: 'override',
 		accordion: {
 			container:
 				'border border-blue-100 bg-blue-50 my-4 rounded-lg w-full flex flex-col text-blue-900',
@@ -50,6 +49,32 @@ export default defineAppConfig({
 			inactive: 'before:bg-none',
 			size: 'text-base',
 			padding: 'px-2.5 py-2.5',
+		},
+		formGroup: {
+			default: {
+				size: 'xl',
+			},
+		},
+		input: {
+			default: {
+				color: 'white',
+				size: 'xl',
+			},
+			color: {
+				white: {
+					outline: 'focus:ring-blue-500',
+				},
+			},
+		},
+		radioGroup: {
+			default: {
+				color: 'blue',
+			},
+			legend: 'text-base',
+		},
+		radio: {
+			label: 'text-base',
+			wrapper: 'py-0.5',
 		},
 	},
 });

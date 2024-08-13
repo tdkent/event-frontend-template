@@ -38,33 +38,40 @@
 	<UForm
 		:schema="schema"
 		:state="state"
-		class="space-y-4"
+		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4"
 		@submit="onSubmit">
 		<UFormGroup
 			label="Name"
-			name="name">
+			name="name"
+			class="input-required">
 			<UInput v-model="state.name" />
+		</UFormGroup>
+		<UFormGroup
+			label="Email"
+			name="email"
+			class="input-required">
+			<UInput v-model="state.email" />
 		</UFormGroup>
 		<UFormGroup
 			label="Phone"
 			name="phone">
 			<UInput v-model="state.phone" />
 		</UFormGroup>
-		<UFormGroup
-			label="Email"
-			name="email">
-			<UInput v-model="state.email" />
-		</UFormGroup>
 		<URadioGroup
 			v-model="state.membership"
 			legend="Membership Type"
-			:options="membershipTypeOptions" />
+			:options="membershipTypeOptions"
+			class="legend-required" />
 		<URadioGroup
 			v-model="state.table"
 			legend="Extra Table?"
-			:options="tableOptions" />
+			:options="tableOptions"
+			class="legend-required" />
 		<UButton
 			type="submit"
+			size="xl"
+			color="blue"
+			block
 			:loading="isLoading">
 			{{ isLoading ? '' : 'Submit' }}
 		</UButton>
