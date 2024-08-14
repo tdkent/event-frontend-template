@@ -2,9 +2,7 @@
 import { z } from 'zod';
 // Division list
 export type Division = {
-	id: number;
 	name: string;
-	day: number;
 	judge: string;
 };
 
@@ -44,8 +42,6 @@ export type ClassListRing = {
 	day: 1 | 2;
 	divisions: ClassListDivision[];
 	judge: string;
-	judge_breed: string;
-	judge_collect: string;
 	medal_title: string;
 	ring_number: number;
 	ring_title: string;
@@ -53,9 +49,9 @@ export type ClassListRing = {
 };
 
 // Entry form
-export const MembershipEnum = z.enum(['both', 'sat', 'sun']);
+export const MembershipEnum = z.enum(['both', 'day1', 'day2']);
 
-export const TableEnum = z.enum(['n', 'y-sat', 'y-sun', 'y-both']);
+export const TableEnum = z.enum(['n', 'y-day1', 'y-day2', 'y-both']);
 
 export type EntryForm = {
 	name: string;

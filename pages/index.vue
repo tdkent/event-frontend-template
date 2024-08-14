@@ -1,23 +1,10 @@
-<script setup>
+<script setup lang="ts">
 	// Imports
 	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
-	import { divisions } from '~/data/db';
 	// Functions
-	const { mainStartDateString, mainEndDateString, startDay, endDay } =
-		generateShowDates();
-	const startDayDivisions = divisions.filter((d) => d.day === 0);
-	const endDayDivisions = divisions.filter((d) => d.day === 1);
-	const columns = [
-		{
-			key: 'name',
-			label: 'Name',
-		},
-		{
-			key: 'judge',
-			label: 'Judges',
-		},
-	];
+	// const { mainStartDateString, mainEndDateString, startDay, endDay } =
+	// 	generateShowDates();
 </script>
 
 <template>
@@ -27,8 +14,8 @@
 			<div
 				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
 				<p class="text-xs uppercase text-gray-400">Next Show Dates</p>
-				<p class="font-serif text-2xl">{{ mainStartDateString }}</p>
-				<p class="font-serif text-2xl">{{ mainEndDateString }}</p>
+				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
+				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
@@ -66,31 +53,13 @@
 			<UDivider label="Divisions" />
 			<div class="my-4 flex flex-col items-center gap-8">
 				<!-- Saturday -->
-				<UTable
-					:rows="startDayDivisions"
-					:columns="columns"
-					class="w-full rounded-lg border">
-					<template #caption>
-						<caption class="p-4 text-left text-xl">
-							{{
-								startDay
-							}}
-						</caption>
-					</template>
-				</UTable>
+				<HomeDivisionTable
+					:data="dayOneTableRows"
+					:day="dayOneDayOfWeek" />
 				<!-- Sunday -->
-				<UTable
-					:rows="endDayDivisions"
-					:columns="columns"
-					class="w-full rounded-lg border">
-					<template #caption>
-						<caption class="p-4 text-left text-xl">
-							{{
-								endDay
-							}}
-						</caption>
-					</template>
-				</UTable>
+				<HomeDivisionTable
+					:data="dayTwoTableRows"
+					:day="dayTwoDayOfWeek" />
 			</div>
 		</section>
 		<!-- INFO -->

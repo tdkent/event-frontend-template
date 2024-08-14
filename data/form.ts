@@ -5,12 +5,12 @@ export const membershipTypeOptions = [
 		label: 'Both Days',
 	},
 	{
-		value: MembershipEnum.enum.sat,
-		label: 'Saturday Only',
+		value: MembershipEnum.enum.day1,
+		label: dayOneDayOfWeek + ' Only',
 	},
 	{
-		value: MembershipEnum.enum.sun,
-		label: 'Sunday Only',
+		value: MembershipEnum.enum.day2,
+		label: dayTwoDayOfWeek + ' Only',
 	},
 ];
 
@@ -20,12 +20,12 @@ export const tableOptions = [
 		label: 'No',
 	},
 	{
-		value: TableEnum.enum['y-sat'],
-		label: 'Yes: Saturday Only',
+		value: TableEnum.enum['y-day1'],
+		label: 'Yes: ' + dayOneDayOfWeek + ' Only',
 	},
 	{
-		value: TableEnum.enum['y-sun'],
-		label: 'Yes: Sunday Only',
+		value: TableEnum.enum['y-day2'],
+		label: 'Yes: ' + dayTwoDayOfWeek + ' Only',
 	},
 	{
 		value: TableEnum.enum['y-both'],

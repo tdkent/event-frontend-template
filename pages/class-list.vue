@@ -1,38 +1,8 @@
-<script setup lang="ts">
-	// Internal Imports
-	import type { ClassListRing } from '~/models';
-	import type { AccordionItem } from '~/models';
-	import { class_list } from '../data/db/db.json';
-	const { startDay, endDay } = generateShowDates();
-	// Coerce imported type
-	const startDayData = [...class_list].filter(
-		(r) => r.day === 1
-	) as ClassListRing[];
-	const endDayData = [...class_list].filter(
-		(r) => r.day === 2
-	) as ClassListRing[];
-	// NuxtUI Accordion items
-	const startDayAccordionItems: AccordionItem[] = [];
-	for (const r of startDayData) {
-		startDayAccordionItems.push({
-			label: 'Ring ' + r.ring_number + ' - ' + r.ring_title,
-			slot: 'ring-data',
-		});
-	}
-	const endDayAccordionItems: AccordionItem[] = [];
-	for (const r of endDayData) {
-		endDayAccordionItems.push({
-			label: 'Ring ' + r.ring_number + ' - ' + r.ring_title,
-			slot: 'ring-data',
-		});
-	}
-</script>
-
 <template>
 	<div>
 		<h2>Class List</h2>
 		<section>
-			<UDivider :label="startDay" />
+			<UDivider :label="dayOneDayOfWeek" />
 			<UAccordion
 				multiple
 				color="black"
@@ -50,7 +20,7 @@
 			</UAccordion>
 		</section>
 		<section>
-			<UDivider :label="endDay" />
+			<UDivider :label="dayTwoDayOfWeek" />
 			<UAccordion
 				multiple
 				color="black"
