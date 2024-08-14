@@ -23,7 +23,7 @@
 		<h2>Rules &amp; Regulations</h2>
 		<div ref="intersectPoint" />
 		<UAccordion
-			color="white"
+			color="black"
 			variant="ghost"
 			size="lg"
 			class="mt-6"

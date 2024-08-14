@@ -2,7 +2,7 @@ export default defineAppConfig({
 	ui: {
 		accordion: {
 			container:
-				'border border-blue-100 bg-blue-50 my-4 rounded-lg w-full flex flex-col text-blue-900',
+				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900',
 			item: {
 				color: 'text-blue-900',
 				padding: 'py-8',
@@ -16,10 +16,10 @@ export default defineAppConfig({
 		button: {
 			color: {
 				white: {
-					ghost: 'hover:bg-none',
+					ghost: 'hover:bg-none focus-visible:ring-blue-500',
 				},
 				black: {
-					link: 'hover:no-underline',
+					link: 'hover:no-underline focus-visible:ring-blue-500',
 				},
 			},
 		},
@@ -48,8 +48,8 @@ export default defineAppConfig({
 			label: 'text-xl text-blue-900',
 		},
 		verticalNavigation: {
-			active: 'before:bg-none hover:bg-blue-100 hover:rounded-none',
-			inactive: 'before:bg-none',
+			active:
+				'before:bg-blue-50 before:hover:bg-blue-100 before:hover:rounded-none',
 			size: 'text-base',
 			padding: 'px-2.5 py-2.5',
 		},

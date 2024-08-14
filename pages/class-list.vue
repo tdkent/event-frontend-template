@@ -35,7 +35,7 @@
 			<UDivider :label="startDay" />
 			<UAccordion
 				multiple
-				color="white"
+				color="black"
 				variant="ghost"
 				size="xl"
 				class="my-6 w-full"
@@ -53,7 +53,7 @@
 			<UDivider :label="endDay" />
 			<UAccordion
 				multiple
-				color="white"
+				color="black"
 				variant="ghost"
 				size="xl"
 				class="mt-6 w-full"

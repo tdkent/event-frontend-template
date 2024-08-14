@@ -41,9 +41,9 @@
 								<NuxtLink
 									class="font-serif text-2xl"
 									:to="link.to"
-									@click="isOpen = false"
-									>{{ link.label }}</NuxtLink
-								>
+									@click="isOpen = false">
+									{{ link.label }}
+								</NuxtLink>
 							</li>
 						</ul>
 					</nav>
