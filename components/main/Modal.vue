@@ -1,4 +1,7 @@
 <script setup lang="ts">
+	// Imports
+	import { XCircleIcon } from '@heroicons/vue/24/outline';
+	// Props
 	const { header } = defineProps<{
 		header: string;
 		close: () => void;
@@ -19,13 +22,15 @@
 			<slot />
 
 			<template #footer>
-				<div class="flex items-center justify-end">
+				<div class="flex items-center justify-center">
 					<UButton
-						label="Close"
-						color="black"
-						variant="link"
-						size="lg"
-						@click="close" />
+						color="gray"
+						variant="ghost"
+						size="xl"
+						@click="close">
+						<XCircleIcon class="size-5" />
+						Close
+					</UButton>
 				</div>
 			</template>
 		</UCard>

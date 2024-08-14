@@ -21,6 +21,10 @@ export default defineAppConfig({
 				black: {
 					link: 'hover:no-underline focus-visible:ring-blue-500',
 				},
+				gray: {
+					ghost:
+						'text-gray-900 hover:text-gray-700 hover:bg-gray-100 focus-visible:ring-blue-500',
+				},
 			},
 		},
 		table: {
