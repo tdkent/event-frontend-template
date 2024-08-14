@@ -20,7 +20,7 @@ export const navLinks = [
 	},
 
 	{
-		label: 'Entry',
+		label: 'Entry Form',
 		to: '/entry',
 	},
 ];

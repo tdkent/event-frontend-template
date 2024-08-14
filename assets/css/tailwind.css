@@ -40,4 +40,10 @@
 	div.legend-required legend {
 		@apply after:ml-0.5 after:text-red-600 after:content-['*'];
 	}
+	.reg-details p {
+		@apply font-medium;
+	}
+	.reg-details span {
+		@apply font-normal;
+	}
 }

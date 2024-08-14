@@ -18,6 +18,9 @@ export default defineAppConfig({
 				white: {
 					ghost: 'hover:bg-none',
 				},
+				black: {
+					link: 'hover:no-underline',
+				},
 			},
 		},
 		table: {
@@ -75,6 +78,19 @@ export default defineAppConfig({
 		radio: {
 			label: 'text-base',
 			wrapper: 'py-0.5',
+		},
+		modal: {
+			overlay: {
+				background: 'bg-black/50',
+			},
+		},
+		card: {
+			header: {
+				background: 'bg-gray-50 rounded-t-lg',
+			},
+			footer: {
+				background: 'bg-gray-50 rounded-b-lg',
+			},
 		},
 	},
 });

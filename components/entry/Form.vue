@@ -17,6 +17,15 @@
 	const isLoading = ref(false);
 	// Modal
 	const isOpen = ref(false);
+	const modalHeader = 'Event Registration';
+	function closeModal() {
+		isOpen.value = false;
+		// Reset form inputs
+		formState.value.name = '';
+		formState.value.email = '';
+		formState.value.membership = 'both';
+		formState.value.table = 'n';
+	}
 	// Form Submit
 	async function onSubmit() {
 		isLoading.value = true;
@@ -29,8 +38,17 @@
 </script>
 
 <template>
-	<EntrySuccessModal v-model="isOpen" />
+	<MainModal
+		v-model="isOpen"
+		:header="modalHeader"
+		:close="closeModal">
+		<EntryModalContent
+			v-model="isOpen"
+			:data="formState" />
+	</MainModal>
+
 	<UForm
+		ref="formRef"
 		:schema="schema"
 		:state="formState"
 		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4"
