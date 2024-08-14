@@ -89,7 +89,7 @@
 					A number of items will be available for raffle at the show. Please let
 					Robin know if you have items you would like to donate to the raffle.
 				</p>
-				<MainInfoBox>
+				<MainInfoBox class="mb-0">
 					If you have any questions regarding the show (classes, judges, etc.)
 					or questions about the location (booking rooms, directions, meals),
 					please send them to
