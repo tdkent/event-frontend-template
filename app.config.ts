@@ -62,6 +62,7 @@ export default defineAppConfig({
 			default: {
 				size: 'xl',
 			},
+			error: 'mt-0 text-xs',
 		},
 		input: {
 			default: {

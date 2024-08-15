@@ -8,7 +8,7 @@
 	// Form Schema
 	const schema = z.object({
 		name: z.string().trim().min(1, 'Please enter your name'),
-		email: z.string().email('Please enter a valid email address'),
+		email: z.string().trim().email('Please enter a valid email address'),
 		membership: MembershipEnum,
 		table: TableEnum,
 	});
@@ -60,6 +60,11 @@
 			<UInput
 				v-model="formState.name"
 				:disabled="isLoading" />
+			<template #error="{ error }: { error: string }">
+				<div class="absolute ml-0.5 mt-1 h-4">
+					{{ error ? error : '' }}
+				</div>
+			</template>
 		</UFormGroup>
 		<UFormGroup
 			label="Email"
@@ -68,6 +73,11 @@
 			<UInput
 				v-model="formState.email"
 				:disabled="isLoading" />
+			<template #error="{ error }: { error: string }">
+				<div class="absolute ml-0.5 mt-1 h-4">
+					{{ error ? error : '' }}
+				</div>
+			</template>
 		</UFormGroup>
 		<URadioGroup
 			v-model="formState.membership"
