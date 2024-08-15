@@ -7,7 +7,11 @@
 	import { defaultFormState, MembershipEnum, TableEnum } from '~/models';
 	// Form Schema
 	const schema = z.object({
-		name: z.string().trim().min(1, 'Please enter your name'),
+		name: z
+			.string()
+			.trim()
+			.min(1, 'Please enter your name')
+			.max(36, 'Name exceeds max character limit (36)'),
 		email: z.string().trim().email('Please enter a valid email address'),
 		membership: MembershipEnum,
 		table: TableEnum,

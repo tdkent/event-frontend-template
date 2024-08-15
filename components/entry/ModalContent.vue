@@ -23,10 +23,10 @@
 		<div class="info-box border">
 			<p class="text-center font-medium">Registration details</p>
 			<div class="reg-details flex flex-col gap-1.5 p-4 text-sm">
-				<p>
+				<p class="truncate">
 					Name: <span>{{ formData.name }}</span>
 				</p>
-				<p>
+				<p class="truncate">
 					Email: <span>{{ formData.email }}</span>
 				</p>
 				<p>
@@ -34,21 +34,21 @@
 					<span v-if="formData.membership === MembershipEnum.enum.both">
 						Both Days
 					</span>
-					<span v-if="formData.membership === MembershipEnum.enum.sat">
-						Saturday Only
+					<span v-if="formData.membership === MembershipEnum.enum.day1">
+						{{ dayOneDayOfWeek }} Only
 					</span>
-					<span v-if="formData.membership === MembershipEnum.enum.sun">
-						Sunday Only
+					<span v-if="formData.membership === MembershipEnum.enum.day2">
+						{{ dayTwoDayOfWeek }} Only
 					</span>
 				</p>
 				<p>
 					Extra Table Options:
 					<span v-if="formData.table === TableEnum.enum.n">None</span>
-					<span v-if="formData.table === TableEnum.enum['y-sat']">
-						Yes, Saturday Only
+					<span v-if="formData.table === TableEnum.enum['y-day1']">
+						Yes, {{ dayOneDayOfWeek }} Only
 					</span>
-					<span v-if="formData.table === TableEnum.enum['y-sun']">
-						Yes, Sunday Only
+					<span v-if="formData.table === TableEnum.enum['y-day2']">
+						Yes, {{ dayTwoDayOfWeek }} Only
 					</span>
 					<span v-if="formData.table === TableEnum.enum['y-both']">
 						Yes, Both Days
