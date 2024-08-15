@@ -17,11 +17,13 @@
 			<!-- Event Dates -->
 			<div
 				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
-				<p class="text-xs uppercase text-gray-400">Next Event Dates</p>
+				<p class="text-xs uppercase text-gray-400">Event Dates</p>
 				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
 				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
 				<div class="my-2">
-					<p class="text-sm">This event has ended&hellip;</p>
+					<p class="text-sm before:content-['*']">
+						This event has ended&hellip;
+					</p>
 					<p class="mb-2 mt-3">
 						<span class="relative">
 							<span

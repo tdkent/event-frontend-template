@@ -28,15 +28,15 @@
 						<span class="block text-lg">Davis, California 95616</span>
 					</div>
 				</div>
-				<div class="group ml-20 mt-4 flex items-center gap-1 text-sm">
+				<div class="ml-20 mt-4 flex items-center gap-1 text-sm">
 					<NuxtLink
 						href="https://maps.app.goo.gl/tE6QcyTB6R1Yot7dA"
 						target="_blank"
-						class="hover:text-teal-600">
+						class="peer hover:text-teal-600">
 						View location on map
 					</NuxtLink>
 					<ArrowTopRightOnSquareIcon
-						class="hidden size-4 stroke-teal-600 group-hover:inline" />
+						class="hidden size-4 stroke-teal-600 peer-hover:inline" />
 				</div>
 			</div>
 		</section>

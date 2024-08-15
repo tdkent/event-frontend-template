@@ -22,7 +22,7 @@
 		@apply px-6;
 	}
 	.show-rules li {
-		@apply list-disc py-2;
+		@apply list-disc py-2 marker:text-blue-500;
 	}
 	.show-rules li > ul > li {
 		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
