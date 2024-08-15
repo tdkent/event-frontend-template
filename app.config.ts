@@ -53,7 +53,7 @@ export default defineAppConfig({
 		},
 		verticalNavigation: {
 			active:
-				'before:bg-blue-50 before:hover:bg-blue-100 before:hover:rounded-none',
+				'text-blue-900 	before:bg-blue-50 before:hover:bg-blue-100 before:hover:rounded-none',
 			size: 'text-base',
 			padding: 'px-2.5 py-2.5',
 		},

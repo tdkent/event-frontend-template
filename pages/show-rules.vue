@@ -170,7 +170,7 @@
 			<ul class="show-rules">
 				<li>
 					The raffle will be held at approximately 2-3pm each day. We gladly
-					accept donations for the raffle up to and including the show date.
+					accept donations for the raffle up to and including the event date.
 				</li>
 			</ul>
 		</section>

@@ -5,19 +5,15 @@
 		ClockIcon,
 		EnvelopeIcon,
 	} from '@heroicons/vue/24/outline';
-	// Internal Imports
-	// Functions
-	// const { mainStartDateString, mainEndDateString, startDay, endDay } =
-	// 	generateShowDates();
 </script>
 
 <template>
 	<div>
 		<section>
-			<!-- Show Dates -->
+			<!-- Event Dates -->
 			<div
 				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
-				<p class="text-xs uppercase text-gray-400">Next Show Dates</p>
+				<p class="text-xs uppercase text-gray-400">Next Event Dates</p>
 				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
 				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
 			</div>

@@ -29,6 +29,7 @@
 				class="mt-6 w-full"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
+					<UDivider class="px-6 pt-0" />
 					<ClassListRingData
 						:data="
 							endDayData.filter((r) => r.ring_title === item.label.slice(9))

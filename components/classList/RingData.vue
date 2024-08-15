@@ -12,7 +12,7 @@
 	<div class="px-6">
 		<div
 			v-if="judge || sponsor"
-			class="mb-8 mt-4 flex flex-col gap-4">
+			class="mb-8 mt-4 flex flex-col gap-4 text-base">
 			<p v-if="judge">Judge: {{ judge }}</p>
 			<p v-if="sponsor">Sponsor: {{ sponsor }}</p>
 		</div>
