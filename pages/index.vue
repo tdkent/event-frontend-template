@@ -97,13 +97,13 @@
 					If you have any questions regarding the show (classes, judges, etc.)
 					or questions about the location (booking rooms, directions, meals),
 					please send them to
-					<a
+					<NuxtLink
 						href="mailto:saklani2@gmail.com"
 						class="link peer text-blue-600">
-						Robin Kent</a
-					>
+						Robin Kent
+					</NuxtLink>
 					<EnvelopeIcon
-						class="ml-1 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline" />
+						class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline" />
 				</MainInfoBox>
 			</div>
 		</section>

@@ -443,11 +443,11 @@
 			<div class="flex w-full justify-between">
 				<span> Robin Kent </span>
 				<div class="flex items-center gap-1">
-					<a
+					<NuxtLink
 						href="mailto:saklani2@gmail.com"
-						class="link peer"
-						>saklani2@gmail.com</a
-					>
+						class="link peer">
+						saklani2@gmail.com
+					</NuxtLink>
 					<EnvelopeIcon
 						class="ml-0.5 size-4 translate-y-[0.5px] stroke-teal-600 opacity-0 peer-hover:opacity-100" />
 				</div>

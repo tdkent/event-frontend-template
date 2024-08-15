@@ -12,12 +12,12 @@
 <template>
 	<div class="group mb-4 mt-6 flex items-center gap-0.5">
 		<ChevronRightIcon class="h-3 w-3" />
-		<a
+		<NuxtLink
 			role="button"
-			class="text-sm"
-			@click="isOpen = true"
-			>View card format example</a
-		>
+			class="link text-sm"
+			@click="isOpen = true">
+			View card format example
+		</NuxtLink>
 	</div>
 	<MainModal
 		v-model="isOpen"
