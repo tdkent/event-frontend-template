@@ -1,3 +1,10 @@
+<script setup lang="ts">
+	// Metadata
+	useHead({
+		title: 'Class List',
+	});
+</script>
+
 <template>
 	<div>
 		<h2>Class List</h2>

@@ -3,7 +3,11 @@
 	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { showRulesLinks } from '~/data/nav';
-	// Intersection Observer API
+	// Metadata
+	useHead({
+		title: 'Show Rules',
+	});
+	// Intersection API
 	const intersectPoint: globalThis.Ref<Element | null> = ref(null);
 	const showButton = ref(false);
 	onMounted(() => {
@@ -42,8 +46,8 @@
 			<ul class="show-rules">
 				<li>3 entries per shower, per class.</li>
 				<li>
-					Extra horses may be added for an additional $1 a model to a maximum of
-					6 models.
+					Extra horses may be added for an additional &#36;1 a model to a
+					maximum of 6 models.
 				</li>
 			</ul>
 		</section>

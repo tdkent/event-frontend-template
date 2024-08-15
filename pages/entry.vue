@@ -1,3 +1,10 @@
+<script setup lang="ts">
+	// Metadata
+	useHead({
+		title: 'Entry Form',
+	});
+</script>
+
 <template>
 	<div>
 		<h2>Entry Form</h2>

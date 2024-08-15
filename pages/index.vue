@@ -5,6 +5,10 @@
 		ClockIcon,
 		EnvelopeIcon,
 	} from '@heroicons/vue/24/outline';
+	// Metadata
+	useHead({
+		title: 'Home',
+	});
 </script>
 
 <template>

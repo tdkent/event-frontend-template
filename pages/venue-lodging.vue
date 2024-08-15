@@ -4,6 +4,10 @@
 		BuildingLibraryIcon,
 		ArrowTopRightOnSquareIcon,
 	} from '@heroicons/vue/24/outline';
+	// Metadata
+	useHead({
+		title: 'Venue & Lodging',
+	});
 </script>
 
 <template>
