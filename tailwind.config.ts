@@ -49,6 +49,26 @@ export default <Partial<Config>>{
 				header: ['Mate SC', 'serif'],
 				serif: ['Cormorant Garamond', 'serif'],
 			},
+			keyframes: {
+				'dissolve-1': {
+					'0%': { opacity: '0' },
+					'8.5%': { opacity: '100' },
+					'41.5%': { opacity: '100' },
+					'50%': { opacity: '0' },
+					'100%': { opacity: '0' },
+				},
+				'dissolve-2': {
+					'0%': { opacity: '0' },
+					'50%': { opacity: '0' },
+					'58.5%': { opacity: '100' },
+					'91.5%': { opacity: '100' },
+					'100%': { opacity: '0' },
+				},
+			},
+			animation: {
+				'text-dissolve-1': 'dissolve-1 15s linear infinite',
+				'text-dissolve-2': 'dissolve-2 15s linear infinite',
+			},
 		},
 	},
 };
