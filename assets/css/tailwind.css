@@ -34,7 +34,7 @@
 		@apply fill-blue-200 stroke-blue-900;
 	}
 	.link {
-		@apply transition-colors duration-300 hover:text-teal-600;
+		@apply hover:text-teal-600;
 	}
 	div.input-required label,
 	div.legend-required legend {

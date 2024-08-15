@@ -1,4 +1,6 @@
 <script setup lang="ts">
+	// Imports
+	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { showRulesLinks } from '~/data/nav';
 	// Intersection Observer API
@@ -443,9 +445,11 @@
 				<div class="flex items-center gap-1">
 					<a
 						href="mailto:saklani2@gmail.com"
-						class="link"
+						class="link peer"
 						>saklani2@gmail.com</a
 					>
+					<EnvelopeIcon
+						class="ml-0.5 size-4 translate-y-[0.5px] stroke-teal-600 opacity-0 peer-hover:opacity-100" />
 				</div>
 			</div>
 		</section>
