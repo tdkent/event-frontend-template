@@ -20,6 +20,20 @@
 				<p class="text-xs uppercase text-gray-400">Next Event Dates</p>
 				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
 				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
+				<div class="my-2">
+					<p class="text-sm">This event has ended&hellip;</p>
+					<p class="mb-2 mt-3">
+						<span class="relative">
+							<span
+								class="absolute -inset-1 block -skew-y-2 rounded-sm bg-teal-400 shadow-lg"
+								aria-hidden="true">
+							</span>
+							<span class="relative px-2 italic text-gray-50">
+								Join us next time!
+							</span>
+						</span>
+					</p>
+				</div>
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->
