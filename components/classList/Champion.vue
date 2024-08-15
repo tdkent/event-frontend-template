@@ -10,6 +10,6 @@
 			role="img"
 			class="h-12 w-12 rounded-full stroke-1"
 			src="~/assets/icon/FluentRibbonStar20Regular.svg" />
-		<span class="font-display text-xl">{{ medal }}</span>
+		<span class="font-header text-xl">{{ medal }}</span>
 	</div>
 </template>

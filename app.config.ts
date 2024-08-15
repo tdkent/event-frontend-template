@@ -1,5 +1,6 @@
 export default defineAppConfig({
 	ui: {
+		primary: 'blue',
 		accordion: {
 			container:
 				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900',
