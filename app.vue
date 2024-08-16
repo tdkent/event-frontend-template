@@ -16,11 +16,7 @@
 </script>
 
 <template>
-	<div id="scroller">
-		<Header />
-		<Main>
-			<NuxtPage />
-		</Main>
-		<Footer />
-	</div>
+	<NuxtLayout>
+		<NuxtPage />
+	</NuxtLayout>
 </template>
