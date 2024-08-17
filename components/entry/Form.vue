@@ -65,9 +65,7 @@
 				v-model="formState.name"
 				:disabled="isLoading" />
 			<template #error="{ error }: { error: string }">
-				<div class="absolute ml-0.5 mt-1 h-4">
-					{{ error ? error : '' }}
-				</div>
+				{{ error ? error : '' }}
 			</template>
 		</UFormGroup>
 		<UFormGroup
@@ -78,9 +76,7 @@
 				v-model="formState.email"
 				:disabled="isLoading" />
 			<template #error="{ error }: { error: string }">
-				<div class="absolute ml-0.5 mt-1 h-4">
-					{{ error ? error : '' }}
-				</div>
+				{{ error ? error : '' }}
 			</template>
 		</UFormGroup>
 		<URadioGroup
