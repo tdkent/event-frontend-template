@@ -17,15 +17,18 @@
 
 <template>
 	<NuxtLayout>
-		<div class="mt-20 flex flex-col items-center justify-center">
-			<ExclamationTriangleIcon class="inline size-12 stroke-red-200" />
-			<p class="mt-4 overflow-hidden text-clip">
-				{{ error.statusMessage || 'An unknown error occurred' }}
-			</p>
+		<div class="flex flex-col items-center justify-center">
+			<div class="mt-20 flex flex-col items-center">
+				<ExclamationTriangleIcon class="inline size-12 stroke-red-200" />
+				<p class="mt-4 overflow-hidden text-clip">
+					{{ error.statusMessage || 'An unknown error occurred' }}
+				</p>
+			</div>
 		</div>
-		<div class="mt-20 flex items-center justify-center">
+		<div class="flex items-center justify-center">
 			<UButton
 				variant="outline"
+				class="mt-20"
 				@click="handleClearError">
 				<ArrowLeftIcon class="size-4" />
 				Home
