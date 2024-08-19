@@ -9,6 +9,7 @@
 			Website developed by
 			<NuxtLink
 				to="https://www.timdkent.com/"
+				target="_blank"
 				class="link peer">
 				Tim Kent
 			</NuxtLink>
