@@ -4,7 +4,7 @@
 	// Internal Imports
 	import { membershipTypeOptions, tableOptions } from '~/data/form';
 	import type { EntryForm } from '~/models';
-	import { defaultFormState, MembershipEnum, TableEnum } from '~/models';
+	import { defaultFormState, zMembershipEnum, zTableEnum } from '~/models';
 	// Form Schema
 	const schema = z.object({
 		name: z
@@ -13,12 +13,13 @@
 			.min(1, 'Please enter your name')
 			.max(36, 'Name exceeds max character limit (36)'),
 		email: z.string().trim().email('Please enter a valid email address'),
-		membership: MembershipEnum,
-		table: TableEnum,
+		membership: zMembershipEnum,
+		table: zTableEnum,
 	});
 	// Form State
 	const formState = useState<EntryForm>('formState', () => defaultFormState);
 	const isLoading = ref(false);
+	const isValidationError = ref(false);
 	// Modal
 	const isOpen = ref(false);
 	const modalHeader = 'Event Registration';
@@ -32,6 +33,25 @@
 	}
 	// Form Submit
 	async function onSubmit() {
+		// Validate radio group mismatches
+		if (formState.value.membership === zMembershipEnum.enum.day1) {
+			if (
+				formState.value.table === zTableEnum.enum.yday2 ||
+				formState.value.table === zTableEnum.enum.yboth
+			) {
+				isValidationError.value = true;
+				return;
+			}
+		}
+		if (formState.value.membership === zMembershipEnum.enum.day2) {
+			if (
+				formState.value.table === zTableEnum.enum.yday1 ||
+				formState.value.table === zTableEnum.enum.yboth
+			) {
+				isValidationError.value = true;
+				return;
+			}
+		}
 		isLoading.value = true;
 		// Simulate network delay
 		setTimeout(() => {
@@ -50,7 +70,6 @@
 			v-model="isOpen"
 			:data="formState" />
 	</MainModal>
-
 	<UForm
 		ref="formRef"
 		:schema="schema"
@@ -79,18 +98,29 @@
 				{{ error ? error : '' }}
 			</template>
 		</UFormGroup>
-		<URadioGroup
-			v-model="formState.membership"
-			legend="Membership Type"
-			:options="membershipTypeOptions"
-			class="legend-required"
-			:disabled="isLoading" />
-		<URadioGroup
-			v-model="formState.table"
-			legend="Extra Table?"
-			:options="tableOptions"
-			class="legend-required"
-			:disabled="isLoading" />
+		<div class="legend-required relative flex items-start">
+			<URadioGroup
+				v-model="formState.membership"
+				legend="Membership Type"
+				:options="membershipTypeOptions"
+				:disabled="isLoading"
+				@change="isValidationError = false" />
+		</div>
+		<div class="legend-required relative flex items-start">
+			<URadioGroup
+				v-model="formState.table"
+				legend="Membership Type"
+				:options="tableOptions"
+				:disabled="isLoading"
+				@change="isValidationError = false" />
+		</div>
+		<div class="h-6 leading-4">
+			<span
+				v-if="isValidationError"
+				class="text-xs text-red-500">
+				Membership and table options have mismatched dates. Please try again.
+			</span>
+		</div>
 		<UButton
 			type="submit"
 			size="xl"

@@ -1,34 +1,40 @@
-import { MembershipEnum, TableEnum } from '~/models';
+import {
+	MembershipEnum,
+	TableEnum,
+	zMembershipEnum,
+	zTableEnum,
+} from '~/models';
+
+// Form radio group options
 export const membershipTypeOptions = [
 	{
-		value: MembershipEnum.enum.both,
-		label: 'Both Days',
+		value: zMembershipEnum.enum.both,
+		label: MembershipEnum.b,
 	},
 	{
-		value: MembershipEnum.enum.day1,
-		label: dayOneDayOfWeek + ' Only',
+		value: zMembershipEnum.enum.day1,
+		label: MembershipEnum.day1,
 	},
 	{
-		value: MembershipEnum.enum.day2,
-		label: dayTwoDayOfWeek + ' Only',
+		value: zMembershipEnum.enum.day2,
+		label: MembershipEnum.day2,
 	},
 ];
-
 export const tableOptions = [
 	{
-		value: TableEnum.enum.n,
-		label: 'No',
+		value: zTableEnum.enum.n,
+		label: TableEnum.n,
 	},
 	{
-		value: TableEnum.enum['y-day1'],
-		label: 'Yes: ' + dayOneDayOfWeek + ' Only',
+		value: zTableEnum.enum['yday1'],
+		label: TableEnum.yday1,
 	},
 	{
-		value: TableEnum.enum['y-day2'],
-		label: 'Yes: ' + dayTwoDayOfWeek + ' Only',
+		value: zTableEnum.enum['yday2'],
+		label: TableEnum.yday2,
 	},
 	{
-		value: TableEnum.enum['y-both'],
-		label: 'Yes: Both Days',
+		value: zTableEnum.enum['yboth'],
+		label: TableEnum.yboth,
 	},
 ];

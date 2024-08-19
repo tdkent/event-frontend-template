@@ -3,7 +3,12 @@
 	import { CheckCircleIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import type { EntryForm } from '~/models';
-	import { MembershipEnum, TableEnum } from '~/models';
+	import {
+		MembershipEnum,
+		TableEnum,
+		zMembershipEnum,
+		zTableEnum,
+	} from '~/models';
 	// State
 	const formData = useState<EntryForm>('formState');
 </script>
@@ -31,27 +36,29 @@
 				</p>
 				<p>
 					Membership:
-					<span v-if="formData.membership === MembershipEnum.enum.both">
-						Both Days
+					<span v-if="formData.membership === zMembershipEnum.enum.both">
+						{{ MembershipEnum.b }}
 					</span>
-					<span v-if="formData.membership === MembershipEnum.enum.day1">
-						{{ dayOneDayOfWeek }} Only
+					<span v-if="formData.membership === zMembershipEnum.enum.day1">
+						{{ MembershipEnum.day1 }}
 					</span>
-					<span v-if="formData.membership === MembershipEnum.enum.day2">
-						{{ dayTwoDayOfWeek }} Only
+					<span v-if="formData.membership === zMembershipEnum.enum.day2">
+						{{ MembershipEnum.day2 }}
 					</span>
 				</p>
 				<p>
 					Extra Table Options:
-					<span v-if="formData.table === TableEnum.enum.n">None</span>
-					<span v-if="formData.table === TableEnum.enum['y-day1']">
-						Yes, {{ dayOneDayOfWeek }} Only
+					<span v-if="formData.table === zTableEnum.enum.n">
+						{{ TableEnum.n }}
 					</span>
-					<span v-if="formData.table === TableEnum.enum['y-day2']">
-						Yes, {{ dayTwoDayOfWeek }} Only
+					<span v-if="formData.table === zTableEnum.enum['yday1']">
+						{{ TableEnum.yday1 }}
 					</span>
-					<span v-if="formData.table === TableEnum.enum['y-both']">
-						Yes, Both Days
+					<span v-if="formData.table === zTableEnum.enum['yday2']">
+						{{ TableEnum.yday2 }}
+					</span>
+					<span v-if="formData.table === zTableEnum.enum['yboth']">
+						{{ TableEnum.yboth }}
 					</span>
 				</p>
 			</div>
