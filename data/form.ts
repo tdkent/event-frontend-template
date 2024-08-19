@@ -9,7 +9,7 @@ import {
 export const membershipTypeOptions = [
 	{
 		value: zMembershipEnum.enum.both,
-		label: MembershipEnum.b,
+		label: MembershipEnum.both,
 	},
 	{
 		value: zMembershipEnum.enum.day1,
@@ -22,8 +22,8 @@ export const membershipTypeOptions = [
 ];
 export const tableOptions = [
 	{
-		value: zTableEnum.enum.n,
-		label: TableEnum.n,
+		value: zTableEnum.enum.no,
+		label: TableEnum.no,
 	},
 	{
 		value: zTableEnum.enum['yday1'],

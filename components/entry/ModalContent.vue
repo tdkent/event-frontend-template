@@ -3,14 +3,9 @@
 	import { CheckCircleIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import type { EntryForm } from '~/models';
-	import {
-		MembershipEnum,
-		TableEnum,
-		zMembershipEnum,
-		zTableEnum,
-	} from '~/models';
+	import { MembershipEnum, TableEnum } from '~/models';
 	// State
-	const formData = useState<EntryForm>('formState');
+	const { data } = defineProps<{ data: EntryForm }>();
 </script>
 
 <template>
@@ -21,46 +16,20 @@
 		</div>
 		<div class="text-center">
 			<p>
-				Thanks {{ formData.name }}, your registration information has been
-				received.
+				Thanks {{ data.name }}, your registration information has been received.
 			</p>
 		</div>
 		<div class="info-box border">
 			<p class="text-center font-medium">Registration details</p>
 			<div class="reg-details flex flex-col gap-1.5 p-4 text-sm">
 				<p class="truncate">
-					Name: <span>{{ formData.name }}</span>
+					Name: <span>{{ data.name }}</span>
 				</p>
 				<p class="truncate">
-					Email: <span>{{ formData.email }}</span>
+					Email: <span>{{ data.email }}</span>
 				</p>
-				<p>
-					Membership:
-					<span v-if="formData.membership === zMembershipEnum.enum.both">
-						{{ MembershipEnum.b }}
-					</span>
-					<span v-if="formData.membership === zMembershipEnum.enum.day1">
-						{{ MembershipEnum.day1 }}
-					</span>
-					<span v-if="formData.membership === zMembershipEnum.enum.day2">
-						{{ MembershipEnum.day2 }}
-					</span>
-				</p>
-				<p>
-					Extra Table Options:
-					<span v-if="formData.table === zTableEnum.enum.n">
-						{{ TableEnum.n }}
-					</span>
-					<span v-if="formData.table === zTableEnum.enum['yday1']">
-						{{ TableEnum.yday1 }}
-					</span>
-					<span v-if="formData.table === zTableEnum.enum['yday2']">
-						{{ TableEnum.yday2 }}
-					</span>
-					<span v-if="formData.table === zTableEnum.enum['yboth']">
-						{{ TableEnum.yboth }}
-					</span>
-				</p>
+				<p>Membership: {{ MembershipEnum[data.membership] }}</p>
+				<p>Extra Table Options: {{ TableEnum[data.table] }}</p>
 			</div>
 		</div>
 		<div class="px-4">

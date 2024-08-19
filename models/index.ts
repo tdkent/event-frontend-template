@@ -49,24 +49,23 @@ export type ClassListRing = {
 };
 
 // Entry form
-
 // Pseudo-enum asserts 'as const' to use computed values
 export const MembershipEnum = {
-	b: 'Both Days',
+	both: 'Both Days',
 	day1: dayOneDayOfWeek + ' Only',
 	day2: dayTwoDayOfWeek + ' Only',
 } as const;
 
 export const TableEnum = {
-	n: 'No',
-	yday1: 'Yes: ' + dayOneDayOfWeek + ' Only',
-	yday2: 'Yes: ' + dayTwoDayOfWeek + ' Only',
-	yboth: 'Yes: Both Days',
+	no: 'No',
+	yday1: 'Yes, ' + dayOneDayOfWeek + ' Only',
+	yday2: 'Yes, ' + dayTwoDayOfWeek + ' Only',
+	yboth: 'Yes, Both Days',
 } as const;
 
 // Zod enums need to be hardcoded to work correctly
 export const zMembershipEnum = z.enum(['both', 'day1', 'day2']);
-export const zTableEnum = z.enum(['n', 'yday1', 'yday2', 'yboth']);
+export const zTableEnum = z.enum(['no', 'yday1', 'yday2', 'yboth']);
 
 export type EntryForm = {
 	name: string;
@@ -78,6 +77,6 @@ export type EntryForm = {
 export const defaultFormState: EntryForm = {
 	name: '',
 	email: '',
-	membership: 'both',
-	table: 'n',
+	membership: zMembershipEnum.enum.both,
+	table: zTableEnum.enum.no,
 };

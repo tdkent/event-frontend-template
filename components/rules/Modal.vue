@@ -1,9 +1,10 @@
 <script setup lang="ts">
-	// Import
+	// Imports
 	import { ChevronRightIcon } from '@heroicons/vue/24/outline';
+	// Internal Imports
+	import { CARD_MODAL_HEADER } from '~/constants';
 	// Modal
 	const isOpen = ref(false);
-	const modalHeader = 'Region 2 Card Format';
 	function closeModal() {
 		isOpen.value = false;
 	}
@@ -21,7 +22,7 @@
 	</div>
 	<MainModal
 		v-model="isOpen"
-		:header="modalHeader"
+		:header="CARD_MODAL_HEADER"
 		:close="closeModal">
 		<RulesModalContent />
 	</MainModal>
