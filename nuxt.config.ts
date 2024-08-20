@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
 	compatibilityDate: '2024-04-03',
 	devtools: { enabled: false },
-	modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', "@nuxtjs/google-fonts", "@nuxt/scripts"],
+	modules: ['@nuxt/ui', '@nuxtjs/tailwindcss', "@nuxtjs/google-fonts", "@nuxt/scripts", '@nuxtjs/color-mode'],
 	//TODO: change preference to 'system'
 	colorMode: {
 		preference: 'light'
