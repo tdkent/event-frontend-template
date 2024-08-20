@@ -28,5 +28,7 @@
 			<span class="font-header text-[1.1rem]">Champion {{ division }}</span>
 		</div>
 	</div>
-	<UDivider v-if="index !== length - 1" />
+	<UDivider
+		v-if="index !== length - 1"
+		:ui="{ border: { base: 'dark:border-blue-700' } }" />
 </template>

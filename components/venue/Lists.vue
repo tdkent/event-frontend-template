@@ -27,22 +27,22 @@
 				<NuxtLink
 					target="_blank"
 					:to="item.mapUrl"
-					class="peer ml-4 hover:text-teal-600">
+					class="peer ml-4 hover:text-teal-600 dark:hover:text-teal-400">
 					{{ item.address }}
 				</NuxtLink>
 				<ArrowTopRightOnSquareIcon
-					class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline" />
+					class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
 			</span>
 			<span class="my-1 flex items-center text-sm">
 				<GlobeAltIcon class="h-4 w-4" />
 				<NuxtLink
 					target="_blank"
 					:to="item.websiteUrl"
-					class="peer ml-4 hover:text-teal-600">
+					class="peer ml-4 hover:text-teal-600 dark:hover:text-teal-400">
 					Visit Website
 				</NuxtLink>
 				<ArrowTopRightOnSquareIcon
-					class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline" />
+					class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
 			</span>
 		</div>
 	</section>

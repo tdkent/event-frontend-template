@@ -14,16 +14,20 @@
 </script>
 
 <template>
-	<UButton
-		variant="ghost"
-		color="white"
-		aria-label="Color Theme"
-		@click="isDark = !isDark">
-		<SunIcon
-			v-if="colorMode.value === 'light'"
-			class="h-7 w-7 stroke-gray-900" />
-		<MoonIcon
-			v-if="colorMode.value === 'dark'"
-			class="h-7 w-7 stroke-gray-100" />
-	</UButton>
+	<div>
+		<UButton
+			variant="ghost"
+			color="white"
+			aria-label="Color Theme"
+			size="md"
+			:ui="{ padding: { md: 'p-0' } }"
+			@click="isDark = !isDark">
+			<SunIcon
+				v-if="colorMode.value === 'light'"
+				class="h-7 w-7 stroke-gray-900" />
+			<MoonIcon
+				v-if="colorMode.value === 'dark'"
+				class="h-7 w-7 stroke-gray-100" />
+		</UButton>
+	</div>
 </template>

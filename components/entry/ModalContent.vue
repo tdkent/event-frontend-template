@@ -11,8 +11,8 @@
 <template>
 	<div class="flex flex-col gap-8">
 		<div class="flex items-center justify-center gap-1">
-			<CheckCircleIcon class="size-6 stroke-teal-600" />
-			<span class="text-xl text-teal-600">Success!</span>
+			<CheckCircleIcon class="size-6 stroke-teal-600 dark:stroke-teal-400" />
+			<span class="text-xl text-teal-600 dark:text-teal-400">Success!</span>
 		</div>
 		<div class="text-center">
 			<p>

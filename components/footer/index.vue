@@ -3,7 +3,7 @@
 </script>
 <template>
 	<footer
-		class="flex h-20 flex-col items-start gap-2.5 border-t border-gray-400 bg-gray-200 p-4 text-xs text-gray-700">
+		class="flex h-20 flex-col items-start gap-2.5 border-t border-gray-400 bg-gray-200 p-4 text-xs text-gray-700 dark:bg-gray-800 dark:text-gray-100">
 		<p>Copyright &copy; 2024 Gold Country Model Horse Show</p>
 		<p>
 			Website developed by
@@ -14,7 +14,7 @@
 				Tim Kent
 			</NuxtLink>
 			<ArrowTopRightOnSquareIcon
-				class="hidden size-4 -translate-y-0.5 stroke-teal-600 peer-hover:inline" />
+				class="hidden size-4 -translate-y-0.5 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
 		</p>
 	</footer>
 </template>

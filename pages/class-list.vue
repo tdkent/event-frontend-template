@@ -18,7 +18,9 @@
 				class="my-6 w-full"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
-					<UDivider class="px-6 pt-0" />
+					<UDivider
+						class="px-6 pt-0"
+						:ui="{ border: { base: 'dark:border-blue-700' } }" />
 					<ClassListRingData
 						:data="
 							startDayData.filter((r) => r.ring_title == item.label.slice(9))
@@ -36,7 +38,9 @@
 				class="mt-6 w-full"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
-					<UDivider class="px-6 pt-0" />
+					<UDivider
+						class="px-6 pt-0"
+						:ui="{ border: { base: 'dark:border-blue-700' } }" />
 					<ClassListRingData
 						:data="
 							endDayData.filter((r) => r.ring_title === item.label.slice(9))

@@ -4,7 +4,7 @@
 
 @layer base {
 	body {
-		@apply font-sans text-gray-800;
+		@apply bg-gray-50 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-100;
 	}
 	section {
 		@apply flex flex-col items-center;
@@ -13,7 +13,7 @@
 		@apply pb-4 pt-12 text-center font-serif text-[2rem] font-extralight;
 	}
 	h4 {
-		@apply mb-2 ml-0 mt-10 text-sm font-normal uppercase text-gray-500;
+		@apply mb-2 ml-0 mt-10 text-sm font-normal uppercase text-gray-500 dark:text-gray-400;
 	}
 	.gold-gradient {
 		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
@@ -28,13 +28,13 @@
 		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
 	}
 	.info-box {
-		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900;
+		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900 dark:bg-blue-900 dark:text-blue-100;
 	}
 	.icon-blue {
-		@apply fill-blue-200 stroke-blue-900;
+		@apply fill-blue-200 stroke-blue-900 dark:fill-gray-700 dark:stroke-blue-100;
 	}
 	.link {
-		@apply hover:text-teal-600;
+		@apply hover:text-teal-600 dark:hover:text-teal-400;
 	}
 	div.input-required label,
 	div.legend-required legend {

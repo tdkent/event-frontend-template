@@ -3,9 +3,9 @@ export default defineAppConfig({
 		primary: 'blue',
 		accordion: {
 			container:
-				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900',
+				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900 dark:bg-blue-900 dark:text-blue-100 dark:border-blue-600',
 			item: {
-				color: 'text-blue-900',
+				color: 'text-blue-900 dark:text-blue-100',
 				padding: 'py-8',
 			},
 			default: {
@@ -17,7 +17,8 @@ export default defineAppConfig({
 		button: {
 			color: {
 				white: {
-					ghost: 'hover:bg-none focus-visible:ring-blue-500',
+					ghost:
+						'hover:bg-transparent dark:hover:bg-transparent focus-visible:ring-blue-500',
 				},
 				black: {
 					link: 'hover:no-underline focus-visible:ring-blue-500',
@@ -30,31 +31,31 @@ export default defineAppConfig({
 		},
 		table: {
 			th: {
-				base: 'w-1/2 text-left bg-blue-50',
-				color: 'text-blue-900',
+				base: 'w-1/2 text-left bg-blue-50 dark:bg-blue-900',
+				color: 'text-blue-900 dark:text-blue-100',
 				font: 'uppercase text-sm',
 			},
 			td: {
 				base: 'whitespace-normal w-1/2 text-left',
-				color: 'text-gray-900 dark:text-gray-400',
+				color: 'text-gray-800 dark:text-gray-100',
 				font: 'text-sm',
 			},
 		},
 		divider: {
 			wrapper: {
-				base: 'py-8  flex items-center align-center text-center',
+				base: 'py-8 flex items-center align-center text-center',
 			},
 			container: {
 				base: 'font-header',
 			},
 			border: {
-				base: 'flex border-blue-100',
+				base: 'flex border-blue-100 dark:border-blue-900',
 			},
-			label: 'text-xl text-blue-900',
+			label: 'text-xl text-blue-900 dark:text-blue-100',
 		},
 		verticalNavigation: {
 			active:
-				'text-blue-900 	before:bg-blue-50 before:hover:bg-blue-100 before:hover:rounded-none',
+				'text-blue-900 dark:text-gray-100 font-light before:bg-blue-50 dark:before:bg-blue-900 before:hover:bg-blue-100 dark:before:hover:bg-blue-800 before:hover:rounded-none',
 			size: 'text-base',
 			padding: 'px-2.5 py-2.5',
 		},
@@ -92,11 +93,14 @@ export default defineAppConfig({
 		},
 		card: {
 			header: {
-				background: 'bg-gray-50 rounded-t-lg',
+				background: 'bg-gray-50 dark:bg-gray-900 rounded-t-lg',
 			},
 			footer: {
-				background: 'bg-gray-50 rounded-b-lg',
+				background: 'bg-gray-50 dark:bg-gray-900 rounded-b-lg',
 			},
+		},
+		slideover: {
+			background: 'bg-gray-50',
 		},
 	},
 });

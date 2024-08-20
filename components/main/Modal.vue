@@ -9,9 +9,7 @@
 </script>
 
 <template>
-	<UModal
-		class="top-4"
-		prevent-close>
+	<UModal class="top-4">
 		<UCard>
 			<template #header>
 				<div class="flex justify-center">

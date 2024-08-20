@@ -76,7 +76,7 @@
 		ref="formRef"
 		:schema="schema"
 		:state="state"
-		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4"
+		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-800"
 		@submit="onSubmit">
 		<UFormGroup
 			label="Name"
@@ -119,7 +119,7 @@
 		<div class="h-6 leading-4">
 			<span
 				v-if="isValidationError"
-				class="text-xs text-red-500">
+				class="text-xs text-red-600 dark:text-red-400">
 				Membership and table options have mismatched dates. Please try again.
 			</span>
 		</div>

@@ -453,7 +453,7 @@
 						saklani2@gmail.com
 					</NuxtLink>
 					<EnvelopeIcon
-						class="ml-0.5 size-4 translate-y-[0.5px] stroke-teal-600 opacity-0 peer-hover:opacity-100" />
+						class="ml-0.5 size-4 translate-y-[1px] stroke-teal-600 opacity-0 peer-hover:opacity-100 dark:stroke-teal-400" />
 				</div>
 			</div>
 		</section>

@@ -27,7 +27,7 @@
 					<p class="mb-2 mt-3">
 						<span class="relative">
 							<span
-								class="absolute -inset-1 block -skew-y-2 rounded-sm bg-teal-400 shadow-lg"
+								class="absolute -inset-1 block -skew-y-2 rounded-sm bg-teal-400 shadow-lg dark:bg-teal-600"
 								aria-hidden="true">
 							</span>
 							<span class="relative px-2 italic text-gray-50">
@@ -42,7 +42,7 @@
 				<div class="info-box flex justify-between">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
-							<BuildingLibraryIcon class="h-5 w-5 stroke-blue-900" />
+							<BuildingLibraryIcon class="icon-blue h-5 w-5" />
 						</div>
 						<span class="text-xs uppercase">Location</span>
 					</div>
@@ -56,7 +56,7 @@
 				<div class="info-box flex justify-between">
 					<div class="flex w-1/2 items-center gap-2">
 						<div class="rounded-full p-1.5">
-							<ClockIcon class="h-5 w-5 stroke-blue-900" />
+							<ClockIcon class="icon-blue h-5 w-5" />
 						</div>
 						<span class="text-xs uppercase">Show Times</span>
 					</div>
@@ -115,11 +115,11 @@
 					please send them to
 					<NuxtLink
 						href="mailto:saklani2@gmail.com"
-						class="link peer text-blue-600">
+						class="link peer text-blue-600 dark:text-blue-400">
 						Robin Kent
 					</NuxtLink>
 					<EnvelopeIcon
-						class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline" />
+						class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
 				</MainInfoBox>
 			</div>
 		</section>
