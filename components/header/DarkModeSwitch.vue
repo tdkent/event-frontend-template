@@ -23,10 +23,10 @@
 			:ui="{ padding: { md: 'p-0' } }"
 			@click="isDark = !isDark">
 			<SunIcon
-				v-if="colorMode.value === 'light'"
+				v-show="colorMode.value === 'light'"
 				class="h-7 w-7 stroke-gray-900" />
 			<MoonIcon
-				v-if="colorMode.value === 'dark'"
+				v-show="colorMode.value === 'dark'"
 				class="h-7 w-7 stroke-gray-100" />
 		</UButton>
 	</div>

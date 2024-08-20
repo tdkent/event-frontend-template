@@ -38,7 +38,7 @@
 	}
 	div.input-required label,
 	div.legend-required legend {
-		@apply after:ml-0.5 after:text-red-600 after:content-['*'];
+		@apply after:ml-0.5 after:text-red-600 after:content-['*'] dark:after:text-red-400;
 	}
 	.reg-details p {
 		@apply font-medium;
