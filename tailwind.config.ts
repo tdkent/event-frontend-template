@@ -2,12 +2,6 @@ import type { Config } from 'tailwindcss';
 
 export default <Partial<Config>>{
 	theme: {
-		screens: {
-			sm: '480px',
-			md: '648px', // tablet layout
-			lg: '1026px', // switch to desktop view
-			xl: '1440px', // max width of main content
-		},
 		extend: {
 			colors: {
 				yellow: {
