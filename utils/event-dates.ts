@@ -1,5 +1,5 @@
-const dayOneDate = new Date(2023, 8, 16);
-const dayTwoDate = new Date(2023, 8, 17);
+const dayOneDate = new Date(2024, 8, 14);
+const dayTwoDate = new Date(2024, 8, 15);
 
 const weekday = [
 	'Sunday',

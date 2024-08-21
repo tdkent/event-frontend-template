@@ -5,6 +5,15 @@
 		ClockIcon,
 		EnvelopeIcon,
 	} from '@heroicons/vue/24/outline';
+	// Internal Imports
+	import {
+		dayOneLongDateString,
+		dayOneDayOfWeek,
+		dayOneTableRows,
+		dayTwoLongDateString,
+		dayTwoDayOfWeek,
+		dayTwoTableRows,
+	} from '#imports';
 	// Metadata
 	useHead({
 		title: 'Home',
@@ -20,22 +29,12 @@
 				<p class="text-xs uppercase text-gray-400">Event Dates</p>
 				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
 				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
-				<div class="my-2">
-					<p class="text-sm before:content-['*']">
-						This event has ended&hellip;
-					</p>
-					<p class="mb-2 mt-3">
-						<span class="relative">
-							<span
-								class="absolute -inset-1 block -skew-y-2 rounded-sm bg-teal-400 shadow-lg dark:bg-teal-600"
-								aria-hidden="true">
-							</span>
-							<span class="relative px-2 italic text-gray-50">
-								Join us next time!
-							</span>
-						</span>
-					</p>
-				</div>
+				<UButton
+					label="Register Now"
+					size="lg"
+					variant="outline"
+					class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110"
+					to="/entry" />
 			</div>
 			<div class="flex w-full flex-col gap-y-6">
 				<!-- Location -->

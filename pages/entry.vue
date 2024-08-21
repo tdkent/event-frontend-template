@@ -11,9 +11,9 @@
 		<section>
 			<div class="w-full">
 				<MainInfoBox>
-					Please note: Registrations are no longer being processed. This form is
-					for demonstration purposes only. Submissions will not be saved or
-					shared.
+					Please note: This form is for demonstration purposes only.
+					Registrations for this event are not being processed at this time.
+					Submissions will not be saved or shared.
 				</MainInfoBox>
 				<EntryForm />
 			</div>
