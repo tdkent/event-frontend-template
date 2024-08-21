@@ -2,6 +2,13 @@ import type { Config } from 'tailwindcss';
 
 export default <Partial<Config>>{
 	theme: {
+		screens: {
+			xs: '360px',
+			sm: '480px',
+			md: '648px',
+			lg: '1026px',
+			xl: '1440px',
+		},
 		extend: {
 			colors: {
 				yellow: {
