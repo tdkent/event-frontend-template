@@ -21,25 +21,30 @@
 </script>
 
 <template>
-	<div>
+	<div class="main-content">
 		<section>
 			<!-- Event Dates -->
 			<div
-				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-5">
-				<p class="text-xs uppercase text-gray-400">Event Dates</p>
-				<p class="font-serif text-2xl">{{ dayOneLongDateString }}</p>
-				<p class="font-serif text-2xl">{{ dayTwoLongDateString }}</p>
+				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-6 lg:gap-y-4 lg:py-8">
+				<!-- <p class="text-xs uppercase text-gray-400">Event Dates</p> -->
+				<h4 class="mt-0">Event Dates</h4>
+				<p class="font-serif text-2xl lg:text-3xl">
+					{{ dayOneLongDateString }}
+				</p>
+				<p class="font-serif text-2xl lg:text-3xl">
+					{{ dayTwoLongDateString }}
+				</p>
 				<UButton
 					label="Register Now"
 					size="lg"
 					variant="outline"
-					class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110"
+					class="mt-2.5 font-semibold transition-all duration-200 hover:scale-110 lg:mt-6"
 					to="/entry" />
 			</div>
-			<div class="flex w-full flex-col gap-y-6">
+			<div class="flex w-full flex-col gap-y-6 lg:gap-y-8">
 				<!-- Location -->
 				<div class="info-box flex justify-between">
-					<div class="flex w-1/2 items-center gap-2">
+					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<BuildingLibraryIcon class="icon-blue h-5 w-5" />
 						</div>
@@ -53,7 +58,7 @@
 				</div>
 				<!-- Show Times -->
 				<div class="info-box flex justify-between">
-					<div class="flex w-1/2 items-center gap-2">
+					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<ClockIcon class="icon-blue h-5 w-5" />
 						</div>
@@ -70,7 +75,8 @@
 		<!-- DIVISIONS -->
 		<section class="mb-4 mt-8">
 			<UDivider label="Divisions" />
-			<div class="my-4 flex flex-col items-center gap-8">
+			<div
+				class="my-4 flex w-full flex-col items-center gap-y-6 lg:w-3/5 lg:gap-y-8">
 				<!-- Saturday -->
 				<HomeDivisionTable
 					:data="dayOneTableRows"
@@ -84,7 +90,7 @@
 		<!-- INFO -->
 		<section>
 			<UDivider label="Event Info" />
-			<div>
+			<div class="lg:px-20">
 				<h4 class="mt-4">NAMHSA</h4>
 				<p>
 					Gold Country Model Horse Show has applied to be a NAMSHA-Approved
@@ -108,19 +114,19 @@
 					A number of items will be available for raffle at the show. Please let
 					Robin know if you have items you would like to donate to the raffle.
 				</p>
-				<MainInfoBox class="mb-0">
-					If you have any questions regarding the show (classes, judges, etc.)
-					or questions about the location (booking rooms, directions, meals),
-					please send them to
-					<NuxtLink
-						href="mailto:saklani2@gmail.com"
-						class="link peer text-blue-600 dark:text-blue-400">
-						Robin Kent
-					</NuxtLink>
-					<EnvelopeIcon
-						class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
-				</MainInfoBox>
 			</div>
+			<MainInfoBox class="mb-0 lg:mt-20">
+				If you have any questions regarding the show (classes, judges, etc.) or
+				questions about the location (booking rooms, directions, meals), please
+				send them to
+				<NuxtLink
+					href="mailto:saklani2@gmail.com"
+					class="link peer text-blue-600 dark:text-blue-400">
+					Robin Kent
+				</NuxtLink>
+				<EnvelopeIcon
+					class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
+			</MainInfoBox>
 		</section>
 	</div>
 </template>

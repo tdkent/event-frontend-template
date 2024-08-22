@@ -28,7 +28,7 @@
 		@apply mx-6 my-2 list-[circle] py-1 text-[0.9rem];
 	}
 	.info-box {
-		@apply w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900 dark:bg-blue-900 dark:text-blue-100;
+		@apply mx-auto w-full rounded-lg border border-blue-100 bg-blue-50 p-2 text-blue-900 lg:w-3/5 dark:bg-blue-900 dark:text-blue-100;
 	}
 	.icon-blue {
 		@apply fill-blue-200 stroke-blue-900 dark:fill-gray-700 dark:stroke-blue-100;
@@ -48,5 +48,8 @@
 	}
 	.router-link-active {
 		@apply text-yellow-600;
+	}
+	.main-content {
+		@apply mx-auto max-w-screen-lg;
 	}
 }

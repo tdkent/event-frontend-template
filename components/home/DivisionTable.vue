@@ -1,6 +1,8 @@
 <script setup lang="ts">
 	// Internal Imports
 	import type { Division } from '~/models';
+	import { tableColumns } from '#imports';
+	// Table column data
 	const { data, day } = defineProps<{ data: Division[]; day: string }>();
 </script>
 
