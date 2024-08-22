@@ -46,4 +46,7 @@
 	.reg-details span {
 		@apply font-normal;
 	}
+	.router-link-active {
+		@apply text-yellow-600;
+	}
 }

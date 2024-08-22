@@ -2,7 +2,7 @@
 	// Imports
 	import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
-	// import { navLinks } from '~/data/nav';
+	import { navLinks } from '~/data/nav';
 	// State
 	const isOpen = ref(false);
 </script>
@@ -13,7 +13,7 @@
 		color="white"
 		variant="ghost"
 		size="md"
-		class="flex grow justify-center"
+		class="flex grow justify-center md:grow-0"
 		aria-label="Navigation"
 		:ui="{ padding: { md: 'p-0' } }"
 		@click="isOpen = true">
@@ -33,29 +33,22 @@
 				<div class="border-b pb-4">
 					<HeaderText />
 				</div>
-				<!-- <nav>
+				<nav>
 					<ul>
 						<li
 							v-for="link in navLinks"
 							:key="link.label"
 							class="border-b border-gray-200 py-3">
 							<NuxtLink
-								class="font-serif text-2xl"
+								class="font-serif text-2xl font-light"
 								:to="link.to"
 								@click="isOpen = false">
 								{{ link.label }}
 							</NuxtLink>
 						</li>
 					</ul>
-				</nav> -->
-				<HeaderNavLinks />
+				</nav>
 			</div>
 		</div>
 	</USlideover>
 </template>
-
-<style lang="css" scoped>
-	.router-link-active {
-		color: #de911d;
-	}
-</style>

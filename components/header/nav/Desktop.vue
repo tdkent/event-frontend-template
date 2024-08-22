@@ -1,21 +1,18 @@
 <script setup lang="ts">
 	// Internal Imports
 	import { navLinks } from '~/data/nav';
-	//TODO: component could use a slot instead of hardcoding NuxtLink into it?
-	// State
-	const isOpen = ref(false);
 </script>
+
 <template>
 	<nav>
-		<ul>
+		<ul class="my-4 flex gap-12">
 			<li
 				v-for="link in navLinks"
 				:key="link.label"
-				class="border-b border-gray-200 py-3">
+				class="">
 				<NuxtLink
-					class="font-serif text-2xl"
-					:to="link.to"
-					@click="isOpen = false">
+					class="font-serif text-xl font-light hover:text-yellow-600"
+					:to="link.to">
 					{{ link.label }}
 				</NuxtLink>
 			</li>

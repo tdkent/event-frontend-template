@@ -3,12 +3,21 @@
 </script>
 
 <template>
-	<header id="header">
-		<div
-			class="flex h-16 items-center border-b lg:h-24 lg:justify-between lg:px-6">
-			<HeaderNavMobile v-if="viewport.isLessThan('lg')" />
-			<HeaderText />
-			<HeaderDarkModeSwitch />
+	<header
+		id="header"
+		class="mx-auto max-w-screen-xl">
+		<div class="flex flex-col pt-2 md:px-8 xl:px-4">
+			<div class="flex items-center justify-between">
+				<HeaderNavMobile v-if="viewport.isLessThan('lg')" />
+				<HeaderText />
+				<HeaderDarkModeSwitch v-if="viewport.isLessThan('lg')" />
+			</div>
+			<div
+				v-if="viewport.isGreaterOrEquals('lg')"
+				class="flex justify-between">
+				<HeaderNavDesktop />
+				<HeaderDarkModeSwitch />
+			</div>
 		</div>
 		<HeaderSplash />
 	</header>

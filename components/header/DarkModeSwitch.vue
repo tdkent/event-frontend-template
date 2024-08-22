@@ -19,7 +19,7 @@
 		color="white"
 		aria-label="Color Theme"
 		size="md"
-		class="flex grow justify-center lg:grow-0"
+		class="flex grow justify-center md:grow-0"
 		:ui="{ padding: { md: 'p-0' } }"
 		@click="isDark = !isDark">
 		<SunIcon
