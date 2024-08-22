@@ -57,6 +57,7 @@ export default <Partial<Config>>{
 				sans: ['Open Sans', 'sans'],
 				header: ['Mate SC', 'serif'],
 				serif: ['Cormorant Garamond', 'serif'],
+				splash: ['Urbanist', 'sans'],
 			},
 			keyframes: {
 				'dissolve-1': {
