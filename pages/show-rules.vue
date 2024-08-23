@@ -24,7 +24,7 @@
 </script>
 
 <template>
-	<div class="relative">
+	<div class="main-content relative">
 		<h2>Rules &amp; Regulations</h2>
 
 		<template v-if="viewport.isLessThan('lg')">
@@ -32,7 +32,11 @@
 			<div ref="intersectPoint" />
 			<RulesMobileSubNav />
 		</template>
-
-		<RulesContent />
+		<div class="lg:grid lg:grid-cols-4 lg:gap-8">
+			<RulesContent class="lg:col-span-3" />
+			<RulesDesktopSubNav
+				v-if="viewport.isGreaterOrEquals('lg')"
+				class="lg:col-span-1" />
+		</div>
 	</div>
 </template>
