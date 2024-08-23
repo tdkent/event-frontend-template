@@ -10,7 +10,7 @@
 		@apply flex flex-col items-center;
 	}
 	h2 {
-		@apply pb-4 pt-12 text-center font-serif text-[2rem] font-extralight;
+		@apply pb-4 pt-12 text-center font-serif text-[2rem] font-extralight lg:pb-16 lg:pt-24 lg:text-6xl;
 	}
 	h4 {
 		@apply mb-2 ml-0 mt-10 text-sm font-normal uppercase text-gray-500 dark:text-gray-400;

@@ -1,4 +1,13 @@
 <script setup lang="ts">
+	// Internal Imports
+	import {
+		dayOneDayOfWeek,
+		dayTwoDayOfWeek,
+		startDayData,
+		endDayData,
+		startDayAccordionItems,
+		endDayAccordionItems,
+	} from '#imports';
 	// Metadata
 	useHead({
 		title: 'Class List',
@@ -6,7 +15,7 @@
 </script>
 
 <template>
-	<div>
+	<div class="main-content">
 		<h2>Class List</h2>
 		<section>
 			<UDivider :label="dayOneDayOfWeek" />
@@ -15,7 +24,7 @@
 				color="black"
 				variant="ghost"
 				size="xl"
-				class="my-6 w-full"
+				class="my-6 w-full lg:w-3/4"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
 					<UDivider
@@ -35,7 +44,7 @@
 				color="black"
 				variant="ghost"
 				size="xl"
-				class="mt-6 w-full"
+				class="mt-6 w-full lg:w-3/4"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
 					<UDivider

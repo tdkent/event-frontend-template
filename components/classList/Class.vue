@@ -23,9 +23,11 @@
 			<img
 				alt="Small ribbon icon"
 				role="img"
-				class="h-6 w-6"
+				class="h-6 w-6 lg:h-7 lg:w-7"
 				src="~/assets/icon/FluentRibbon20Regular.svg" />
-			<span class="font-header text-[1.1rem]">Champion {{ division }}</span>
+			<span class="font-header text-[1.1rem] lg:text-xl">
+				Champion {{ division }}
+			</span>
 		</div>
 	</div>
 	<UDivider

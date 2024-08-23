@@ -5,11 +5,11 @@ export default defineAppConfig({
 			container:
 				'border border-blue-100 bg-blue-50 my-4 rounded-lg text-blue-900 dark:bg-blue-900 dark:text-blue-100 dark:border-blue-600',
 			item: {
-				color: 'text-blue-900 dark:text-blue-100',
+				color: 'text-blue-900 dark:text-blue-100 lg:text-base',
 				padding: 'py-8',
 			},
 			default: {
-				class: 'py-4 text-sm',
+				class: 'py-4 text-sm lg:text-lg',
 				openIcon: 'i-heroicons-chevron-left-20-solid',
 				closeIcon: 'i-heroicons-chevron-down-20-solid',
 			},
@@ -51,7 +51,7 @@ export default defineAppConfig({
 			border: {
 				base: 'flex border-blue-100 dark:border-blue-900',
 			},
-			label: 'text-xl text-blue-900 dark:text-blue-100',
+			label: 'text-xl lg:text-2xl text-blue-900 dark:text-blue-100',
 		},
 		verticalNavigation: {
 			active:

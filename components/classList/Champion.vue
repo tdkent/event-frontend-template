@@ -8,8 +8,8 @@
 		<img
 			alt="Medal icon"
 			role="img"
-			class="h-12 w-12 rounded-full stroke-1"
+			class="h-12 w-12 stroke-1 lg:h-14 lg:w-14"
 			src="~/assets/icon/FluentRibbonStar20Regular.svg" />
-		<span class="font-header text-xl">{{ medal }}</span>
+		<span class="font-header text-xl lg:text-3xl">{{ medal }}</span>
 	</div>
 </template>
