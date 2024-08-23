@@ -24,7 +24,7 @@
 				color="black"
 				variant="ghost"
 				size="xl"
-				class="my-6 w-full lg:w-3/4"
+				class="inner-padding my-4 lg:my-8"
 				:items="startDayAccordionItems">
 				<template #ring-data="{ item }">
 					<UDivider
@@ -44,7 +44,7 @@
 				color="black"
 				variant="ghost"
 				size="xl"
-				class="mt-6 w-full lg:w-3/4"
+				class="inner-padding my-4 lg:my-8"
 				:items="endDayAccordionItems">
 				<template #ring-data="{ item }">
 					<UDivider

@@ -10,7 +10,7 @@
 			<UDivider
 				id="class-limits"
 				label="Class Limits" />
-			<ul class="show-rules">
+			<ul class="show-rules w-full">
 				<li>3 entries per shower, per class.</li>
 				<li>
 					Extra horses may be added for an additional &#36;1 a model to a
@@ -268,24 +268,26 @@
 					</ul>
 				</li>
 			</ul>
-			<MainInfoBox>
-				Please note: Performance classes will be judged based on USA Equestrian
-				(formerly AHSA) rules, appropriate show association rules or appropriate
-				breed association rules, whichever the judge thinks is most appropriate,
-				unless documentation is presented stating otherwise. It is highly
-				recommended that documentation be included on all performance entries,
-				and that the entrant never assume the judge will know what your
-				intentions are. Western and English Pleasure classes are open to ALL
-				breeds and each entry will be judged based on that entries' breed
-				standards.
-			</MainInfoBox>
+			<div class="inner-padding">
+				<MainInfoBox>
+					Please note: Performance classes will be judged based on USA
+					Equestrian (formerly AHSA) rules, appropriate show association rules
+					or appropriate breed association rules, whichever the judge thinks is
+					most appropriate, unless documentation is presented stating otherwise.
+					It is highly recommended that documentation be included on all
+					performance entries, and that the entrant never assume the judge will
+					know what your intentions are. Western and English Pleasure classes
+					are open to ALL breeds and each entry will be judged based on that
+					entries' breed standards.
+				</MainInfoBox>
+			</div>
 		</section>
 		<!-- BREED GUIDELINES -->
 		<section class="items-start">
 			<UDivider
 				id="breed-guidelines"
 				label="Breed Guidelines" />
-			<div class="lg:px-20">
+			<div class="inner-padding">
 				<h4 class="mt-0">Arabian</h4>
 				<p>
 					All purebred Arabian strains recognized by the Arabian Horse Registry.
@@ -411,7 +413,7 @@
 				id="show-holders"
 				label="Show Holders" />
 
-			<div class="flex w-full justify-between">
+			<div class="inner-padding flex w-full justify-between">
 				<span> Robin Kent </span>
 				<div class="flex items-center gap-1">
 					<NuxtLink

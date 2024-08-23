@@ -19,7 +19,7 @@
 		@apply bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent;
 	}
 	.show-rules {
-		@apply px-6 lg:px-20;
+		@apply px-8 md:px-16 lg:px-32;
 	}
 	.show-rules li {
 		@apply list-disc py-2 marker:text-blue-500;
@@ -51,5 +51,8 @@
 	}
 	.main-content {
 		@apply mx-auto max-w-screen-lg;
+	}
+	.inner-padding {
+		@apply sm:px-2 md:px-8 lg:px-32;
 	}
 }
