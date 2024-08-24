@@ -23,7 +23,7 @@
 					font: 'font-light',
 					ring: '',
 					active:
-						'text-gray-600 hover:text-yellow-600 dark:text-gray-100 dark:hover:text-blue-400',
+						'text-gray-600 hover:text-blue-600 dark:text-gray-100 dark:hover:text-blue-400',
 					inactive:
 						'border-transparent hover:border-gray-400 dark:hover:border-gray-500 text-gray-700 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300',
 				}" />

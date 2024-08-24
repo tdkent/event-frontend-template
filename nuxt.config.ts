@@ -34,7 +34,7 @@ export default defineNuxtConfig({
 			'Open Sans': [100, 200, 300, 400, 500, 600, 700, 800, 900],
 			'Mate SC': [400],
 			'Cormorant Garamond': [300, 400],
-			'Urbanist': [300]
+			'Urbanist': [300, 500]
 		}
 	},
 })

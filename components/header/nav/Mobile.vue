@@ -52,3 +52,9 @@
 		</div>
 	</USlideover>
 </template>
+
+<style scoped lang="css">
+	.router-link-active {
+		color: #de911d;
+	}
+</style>

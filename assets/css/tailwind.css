@@ -46,9 +46,6 @@
 	.reg-details span {
 		@apply font-normal;
 	}
-	.router-link-active {
-		@apply text-yellow-600;
-	}
 	.main-content {
 		@apply mx-auto max-w-screen-lg;
 	}
