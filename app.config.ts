@@ -53,12 +53,6 @@ export default defineAppConfig({
 			},
 			label: 'text-xl lg:text-2xl text-blue-900 dark:text-blue-100',
 		},
-		verticalNavigation: {
-			active:
-				'text-blue-900 dark:text-gray-100 font-light before:bg-blue-50 dark:before:bg-blue-900 before:hover:bg-blue-100 dark:before:hover:bg-blue-800 before:hover:rounded-none',
-			size: 'text-base',
-			padding: 'px-2.5 py-2.5',
-		},
 		formGroup: {
 			default: {
 				size: 'xl',
