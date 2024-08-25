@@ -28,7 +28,8 @@
 		<div class="flex items-center justify-center">
 			<UButton
 				variant="outline"
-				class="mt-20"
+				size="lg"
+				class="mt-20 font-semibold transition-all duration-200 hover:scale-110"
 				@click="handleClearError">
 				<ArrowLeftIcon class="size-4" />
 				Home
