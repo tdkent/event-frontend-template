@@ -76,7 +76,7 @@
 		ref="formRef"
 		:schema="schema"
 		:state="state"
-		class="my-12 space-y-8 rounded-lg border bg-gray-50 p-4 dark:border-gray-600 dark:bg-gray-800"
+		class="mb-12 mt-8 space-y-8 rounded-lg border bg-gray-50 p-4 md:p-8 lg:p-12 dark:border-gray-600 dark:bg-gray-800"
 		@submit="onSubmit">
 		<UFormGroup
 			label="Name"
@@ -111,7 +111,7 @@
 		<div class="legend-required relative flex items-start">
 			<URadioGroup
 				v-model="state.table"
-				legend="Membership Type"
+				legend="Table Options"
 				:options="tableOptions"
 				:disabled="isLoading"
 				@change="isValidationError = false" />
@@ -119,7 +119,7 @@
 		<div class="h-6 leading-4">
 			<span
 				v-if="isValidationError"
-				class="text-xs text-red-600 dark:text-red-400">
+				class="text-xs text-red-600 lg:text-sm dark:text-red-400">
 				Membership and table options have mismatched dates. Please try again.
 			</span>
 		</div>

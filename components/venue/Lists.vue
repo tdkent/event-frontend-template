@@ -18,7 +18,7 @@
 			<div
 				v-for="item in list.items"
 				:key="item.name"
-				class="flex h-40 flex-col justify-evenly rounded-2xl border px-6 transition-all duration-300 md:h-60 md:border md:border-gray-200 md:px-6 md:shadow-[1px_1px_1px_0_rgba(0,0,0,0.3)] md:hover:scale-105 lg:h-64 lg:justify-between lg:py-6 dark:border-blue-900">
+				class="flex h-40 flex-col justify-evenly rounded-2xl border px-6 transition-transform duration-300 md:h-60 md:border md:border-gray-200 md:px-6 md:shadow-[1px_1px_1px_0_rgba(0,0,0,0.3)] md:hover:scale-105 lg:h-64 lg:justify-between lg:py-6 dark:border-blue-900">
 				<h4
 					class="mt-0 text-sm normal-case text-blue-600 md:text-base lg:text-lg dark:text-blue-400">
 					{{ item.name }}
