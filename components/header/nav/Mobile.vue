@@ -13,7 +13,7 @@
 		color="white"
 		variant="ghost"
 		size="md"
-		class="flex grow justify-center md:grow-0"
+		class="flex grow justify-center max-lg:focus:outline-none md:grow-0"
 		aria-label="Navigation"
 		:ui="{ padding: { md: 'p-0' } }"
 		@click="isOpen = true">
