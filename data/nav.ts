@@ -26,10 +26,7 @@ export const navLinks = [
 ];
 
 export const showRulesLinks = [
-	{
-		label: 'Class Limits',
-		to: '#class-limits',
-	},
+	{ label: 'Class Limits', to: '#class-limits' },
 	{ label: 'General Rules', to: '#general-rules' },
 	{ label: 'General Class Information', to: '#general-class-information' },
 	{ label: 'Documentation', to: '#documentation' },
