@@ -22,8 +22,10 @@
 			<!-- Event Dates -->
 			<div
 				class="my-12 flex w-full flex-col items-center gap-y-2 border-y border-gray-200 py-6 lg:gap-y-4 lg:py-8">
-				<!-- <p class="text-xs uppercase text-gray-400">Event Dates</p> -->
-				<h4 class="mt-0">Event Dates</h4>
+				<span
+					class="mb-2 ml-0 mt-0 text-sm font-normal uppercase text-gray-500 dark:text-gray-400">
+					Event Dates
+				</span>
 				<p class="font-serif text-2xl lg:text-3xl">
 					{{ dayOneLongDateString }}
 				</p>
