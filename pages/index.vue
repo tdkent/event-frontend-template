@@ -1,10 +1,6 @@
 <script setup lang="ts">
 	// Imports
-	import {
-		BuildingLibraryIcon,
-		ClockIcon,
-		EnvelopeIcon,
-	} from '@heroicons/vue/24/outline';
+	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import {
 		dayOneLongDateString,
@@ -112,20 +108,8 @@
 				<h4>Raffle</h4>
 				<p>
 					A number of items will be available for raffle at the show. Please let
-					Robin know if you have items you would like to donate to the raffle.
+					us know if you have items you would like to donate to the raffle.
 				</p>
-				<MainInfoBox class="mb-0 lg:mt-20">
-					If you have any questions regarding the show (classes, judges, etc.)
-					or questions about the location (booking rooms, directions, meals),
-					please send them to
-					<NuxtLink
-						href="mailto:saklani2@gmail.com"
-						class="link peer text-blue-600 dark:text-blue-400">
-						Robin Kent
-					</NuxtLink>
-					<EnvelopeIcon
-						class="ml-0.5 hidden size-4 -translate-y-[1.5px] stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
-				</MainInfoBox>
 			</div>
 		</section>
 	</div>

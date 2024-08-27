@@ -1,8 +1,3 @@
-<script setup lang="ts">
-	// Imports
-	import { EnvelopeIcon } from '@heroicons/vue/24/outline';
-</script>
-
 <template>
 	<div>
 		<!-- CLASS LIMITS -->
@@ -405,25 +400,6 @@
 					Donkeys, Burros, Mules, Przewalski, Tarpan/Wild Pony/ Wild Ass,
 					Onager, Quagga, and Zebra.
 				</p>
-			</div>
-		</section>
-		<!-- SHOW HOLDERS -->
-		<section>
-			<UDivider
-				id="show-holders"
-				label="Show Holders" />
-
-			<div class="inner-padding flex w-full justify-between">
-				<span> Robin Kent </span>
-				<div class="flex items-center gap-1">
-					<NuxtLink
-						href="mailto:saklani2@gmail.com"
-						class="link peer">
-						saklani2@gmail.com
-					</NuxtLink>
-					<EnvelopeIcon
-						class="ml-0.5 size-4 translate-y-[1px] stroke-teal-600 opacity-0 peer-hover:opacity-100 dark:stroke-teal-400" />
-				</div>
 			</div>
 		</section>
 	</div>
