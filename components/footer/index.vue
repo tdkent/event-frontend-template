@@ -12,6 +12,7 @@
 				<NuxtLink
 					to="https://www.timdkent.com/"
 					target="_blank"
+					rel="noopener"
 					class="link peer">
 					Tim Kent
 				</NuxtLink>

@@ -33,6 +33,7 @@
 					<NuxtLink
 						href="https://maps.app.goo.gl/tE6QcyTB6R1Yot7dA"
 						target="_blank"
+						rel="noopener"
 						class="peer hover:text-teal-600 dark:hover:text-teal-400">
 						View location on map
 					</NuxtLink>

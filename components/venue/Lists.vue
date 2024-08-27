@@ -33,6 +33,7 @@
 						<MapPinIcon class="h-3 w-3 stroke-gray-500 lg:h-4 lg:w-4" />
 						<NuxtLink
 							target="_blank"
+							rel="noopener"
 							:to="item.mapUrl"
 							class="peer ml-4 hover:text-teal-600 dark:hover:text-teal-400">
 							{{ item.address }}
@@ -44,6 +45,7 @@
 				<span class="flex items-center text-xs">
 					<NuxtLink
 						target="_blank"
+						rel="noopener"
 						:to="item.websiteUrl"
 						class="peer font-splash font-medium uppercase text-blue-600 hover:text-teal-600 dark:text-blue-400 dark:hover:text-teal-400">
 						Learn More
