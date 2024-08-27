@@ -89,7 +89,7 @@
 		<section>
 			<UDivider label="Event Info" />
 			<div class="inner-padding">
-				<h4 class="mt-4">NAMHSA</h4>
+				<h3 class="mt-4">NAMHSA</h3>
 				<p>
 					Gold Country Model Horse Show has applied to be a NAMSHA-Approved
 					member show; so that any horse placing 1st or 2nd in its
@@ -97,17 +97,17 @@
 					the 2024-2027 North American Model Horse Showers' Association National
 					Show.
 				</p>
-				<h4>Golden West Champ Show</h4>
+				<h3>Golden West Champ Show</h3>
 				<p>
 					This show will be a qualifier for the 2024 and 2025 Golden West Champ
 					Shows for Region 2.
 				</p>
-				<h4>Awards &amp; Prizes</h4>
+				<h3>Awards &amp; Prizes</h3>
 				<p>
 					Custom ribbons to 5th place in all classes. Rosettes to Champions and
 					Reserves.
 				</p>
-				<h4>Raffle</h4>
+				<h3>Raffle</h3>
 				<p>
 					A number of items will be available for raffle at the show. Please let
 					us know if you have items you would like to donate to the raffle.

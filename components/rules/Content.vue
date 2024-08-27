@@ -283,7 +283,7 @@
 				id="breed-guidelines"
 				label="Breed Guidelines" />
 			<div class="inner-padding">
-				<h4 class="mt-0">Arabian</h4>
+				<h3 class="mt-0">Arabian</h3>
 				<p>
 					All purebred Arabian strains recognized by the Arabian Horse Registry.
 				</p>
@@ -291,7 +291,7 @@
 					Please Note: The Shagya Arabian although of Arabian ancestry is not
 					"of type" as recognized by AHR and should be shown in Other Sport.
 				</MainInfoBox>
-				<h4>Half-Arabian</h4>
+				<h3>Half-Arabian</h3>
 				<p>
 					All part Arabians of extreme Arab type show in this class. Part
 					Arabians showing more type of their other half should show in Other
@@ -302,7 +302,7 @@
 					Stock division. National Show Horses- both gaited and non-gaited will
 					show in NSH classes.
 				</p>
-				<h4>European Warmblood</h4>
+				<h3>European Warmblood</h3>
 				<p>
 					Examples are Belgian Warmblood, Budyonny, Danish Warmblood, Danubian,
 					Dutch Gronigen, Dutch Warmblood, East Bulgarian, Finnish Universal,
@@ -310,20 +310,20 @@
 					Warmblood, Irish Draft, Kadruber, Knabstrup, Latvia, Mecklenbury,
 					Oldenburg, Rhinelander, Salerno, Selle Francais, Swedish Warmblood.
 				</p>
-				<h4>American Warmblood, Other Warmblood, Sport Horses</h4>
+				<h3>American Warmblood, Other Warmblood, Sport Horses</h3>
 				<p>
 					Examples are Akhal Teke, American Sport Horse, Appaloosa Sport Horse,
 					Canadian Sport Horse, Furious, Metis Trotter, Nonius, Terek, Waler,
 					Westphalian and all other pure or part of the above breeds showing
 					Warmblood characteristics, used for all aspects of combined training.
 				</p>
-				<h4>Carriage Breeds</h4>
+				<h3>Carriage Breeds</h3>
 				<p>
 					Such as Cleveland Bay, Friesian, Hackney Horse, Norman Cob, Orlov
 					Trotter, Welsh Cob, all other pure or part of the above breeds showing
 					Cob, or Carriage characteristics, used for driving.
 				</p>
-				<h4>Gaited Horse</h4>
+				<h3>Gaited Horse</h3>
 				<p>
 					Any breeds exhibiting gaited characteristics, i.e. is NATURALLY
 					inclined to perform gaits other than a walk, trot, and canter (such as
@@ -337,7 +337,7 @@
 					Missouri Forxtrotter, TWH, Rocky Mountain Horse, Walkaloosa, all other
 					pure or part breeds showing gaited characteristics.
 				</p>
-				<h4>Ponies</h4>
+				<h3>Ponies</h3>
 				<p>
 					Any breed exhibiting pony characteristics of height and conformation,
 					or those generally recognized as "pony." Gaited ponies (ponies which
@@ -350,12 +350,12 @@
 					other pure or part ponies exhibiting pony characteristics, EXCEPT
 					gaited pony breeds.
 				</p>
-				<h4>American Miniature Horses</h4>
+				<h3>American Miniature Horses</h3>
 				<p>
 					Please show your miniature horses in the Ponies section “Other
 					Purebred/ Partbred”.
 				</p>
-				<h4>Stock Breeds</h4>
+				<h3>Stock Breeds</h3>
 				<p>
 					Any breed typically used for working stock, or of a body type
 					considered as "stock", Appaloosa, Australian Stock Horse, Canadian
@@ -364,7 +364,7 @@
 					working stock or general ranch work. Any other pure- or part-breed
 					exhibiting stock characteristics.
 				</p>
-				<h4>Draft Breeds</h4>
+				<h3>Draft Breeds</h3>
 				<p>
 					Any breed typically used for medium or heavy draft work, including
 					pulling loads, farm work, etc. and exhibiting draft confirmation.
@@ -374,7 +374,7 @@
 					draft characteristics or conformation, used for heavy farm/harness
 					work.
 				</p>
-				<h4>Spanish Breeds</h4>
+				<h3>Spanish Breeds</h3>
 				<p>
 					Breed originating and perpetuated in the Spanish/Iberian region of
 					Europe and any breed developed and now bred primarily in the New World
@@ -384,7 +384,7 @@
 					exhibiting similar characteristics and bred primarily in the
 					Spanish/Iberian region of Europe.
 				</p>
-				<h4>Other Purebreds</h4>
+				<h3>Other Purebreds</h3>
 				<p>
 					Unless there is a class whose specifications suit these breeds, this
 					group to be shown in Other Purebreds: American Cream, Bahskir Curly,
@@ -394,7 +394,7 @@
 					should compete in the halter section best suited to their conformation
 					and type.
 				</p>
-				<h4>Longears, Exotics</h4>
+				<h3>Longears, Exotics</h3>
 				<p>
 					All non-domesticated, extinct, or living primitive breeds, including
 					Donkeys, Burros, Mules, Przewalski, Tarpan/Wild Pony/ Wild Ass,
