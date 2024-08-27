@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+	--header-height-sm: 77px;
+	--header-height-lg: 117px;
+	--footer-height: 96px;
+}
+
 @layer base {
 	body {
 		@apply bg-gray-50 font-sans text-gray-800 dark:bg-gray-900 dark:text-gray-100;
