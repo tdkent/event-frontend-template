@@ -48,7 +48,7 @@
 						rel="noopener"
 						:to="item.websiteUrl"
 						class="peer font-splash font-medium uppercase text-blue-600 hover:text-teal-600 dark:text-blue-400 dark:hover:text-teal-400">
-						Learn More
+						Visit Website
 					</NuxtLink>
 					<ArrowTopRightOnSquareIcon
 						class="ml-1 hidden size-4 stroke-teal-600 peer-hover:inline dark:stroke-teal-400" />
