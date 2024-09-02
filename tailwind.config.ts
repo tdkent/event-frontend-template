@@ -67,24 +67,82 @@ export default <Partial<Config>>{
 				splash: ['Urbanist', 'sans'],
 			},
 			keyframes: {
-				'dissolve-1': {
-					'0%': { opacity: '0' },
-					'8.5%': { opacity: '100' },
-					'41.5%': { opacity: '100' },
-					'50%': { opacity: '0' },
-					'100%': { opacity: '0' },
+				'pic-1': {
+					'0': {
+						transform: 'scale(1)',
+						opacity: '100',
+					},
+					'22.5%': { opacity: '100' },
+					'25%': {
+						transform: 'scale(1.1)',
+						opacity: '0',
+					},
+					'97.5%': { opacity: '0' },
+					'100%': { opacity: '100' },
 				},
-				'dissolve-2': {
-					'0%': { opacity: '0' },
-					'50%': { opacity: '0' },
-					'58.5%': { opacity: '100' },
-					'91.5%': { opacity: '100' },
-					'100%': { opacity: '0' },
+				'pic-2': {
+					'0%': {
+						opacity: '0',
+					},
+					'22.5%': {
+						opacity: '0',
+						transform: 'scale(1.05)',
+					},
+					'25%, 47.5%': {
+						opacity: '100',
+					},
+					'50%': {
+						transform: 'scale(1)',
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '0',
+					},
+				},
+				'pic-3': {
+					'0%': {
+						opacity: '0',
+					},
+					'47.5%': {
+						transform: 'scale(1)',
+						opacity: '0',
+					},
+					'50%, 72.5%': {
+						opacity: '100',
+					},
+					'75%': {
+						transform: 'scale(1.1)',
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '0',
+					},
+				},
+				'pic-4': {
+					'0%': {
+						opacity: '0',
+					},
+					'72.5%': {
+						transform: 'scale(1.1)',
+						opacity: '0',
+					},
+					'75%': {
+						opacity: '100',
+					},
+					'97.5%': {
+						opacity: '100',
+					},
+					'100%': {
+						transform: 'scale(1)',
+						opacity: '0',
+					},
 				},
 			},
 			animation: {
-				'text-dissolve-1': 'dissolve-1 15s linear infinite',
-				'text-dissolve-2': 'dissolve-2 15s linear infinite',
+				'slide-1': 'pic-1 20s linear infinite',
+				'slide-2': 'pic-2 20s linear infinite',
+				'slide-3': 'pic-3 20s linear infinite',
+				'slide-4': 'pic-4 20s linear infinite',
 			},
 		},
 	},
