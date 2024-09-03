@@ -24,14 +24,18 @@
 							class="h-12 w-12 fill-blue-200 stroke-blue-900 stroke-1" />
 					</div>
 					<div>
-						<span class="block text-lg md:text-2xl">Davis Senior Center</span>
-						<span class="block md:text-lg">646 A St</span>
-						<span class="block md:text-lg">Davis, California 95616</span>
+						<p class="font-serif text-2xl lg:text-3xl">
+							<span
+								class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
+								TBD</span
+							>
+							Davis, California
+						</p>
 					</div>
 				</div>
 				<div class="ml-20 mt-6 flex items-center gap-1 text-sm md:ml-24">
 					<NuxtLink
-						href="https://maps.app.goo.gl/tE6QcyTB6R1Yot7dA"
+						href="https://maps.app.goo.gl/DdBq41QyPreWSzSY9"
 						target="_blank"
 						rel="noopener"
 						class="peer hover:text-teal-600 dark:hover:text-teal-400">

@@ -62,12 +62,7 @@
 					sportsmanship, will be asked to leave the show hall with no refund.
 					The judge's decisions are final.
 				</li>
-				<li>
-					NO SMOKING in the building. You may smoke outside, away from the door,
-					as long as you properly dispose of the butts.
-				</li>
-				<li>NO ALCOHOLIC BEVERAGES on the premises.</li>
-				<li>Questions? Please ask the judge or one of the showholders.</li>
+				<li>Smoking and alcoholic beverages are not allowed.</li>
 			</ul>
 		</section>
 		<!-- GENERAL CLASS INFORMATION -->
@@ -93,7 +88,7 @@
 					for unusual breeds, colors, or coat patterns. Please don&apos;t assume
 					the judges know everything there is to know about every breed and
 					color. As a courtesy to other showers, please limit the size of your
-					documentation to a maximum of 8-1/2 x 11 inches. DO NOT include
+					documentation to a maximum of 8-1/2 x 11 inches. Do not include
 					documentation for common breeds, unless the model is showing with an
 					unusual color.
 				</li>
@@ -108,7 +103,7 @@
 				<li>
 					Team entries (mother/daughter, sisters, wife/husband) are considered
 					as one entrant unless individual fees are paid for both. Team models
-					may be shown under either person’s name or barn name. The team is
+					may be shown under either person&apos;s name or barn name. The team is
 					allowed only the individual number of entries per class unless full
 					individual fees for each person have been paid.
 				</li>
@@ -137,22 +132,6 @@
 				<li>
 					The raffle will be held at approximately 2-3pm each day. We gladly
 					accept donations for the raffle up to and including the event date.
-				</li>
-			</ul>
-		</section>
-		<!-- FOOD -->
-		<section>
-			<UDivider
-				id="food"
-				label="Food" />
-			<ul class="show-rules">
-				<li>
-					No lunch will be provided. You are welcome to bring lunch, or to get
-					something from one of the several places nearby. There is also a local
-					grocery store. We will provide approximately an hour break for lunch
-					starting around 12-noon. Judges' food will be ordered through DoorDash
-					the night before. Please check with me if you want to order and
-					pre-pay for your food that way.
 				</li>
 			</ul>
 		</section>
@@ -325,7 +304,7 @@
 				</p>
 				<h3>Gaited Horse</h3>
 				<p>
-					Any breeds exhibiting gaited characteristics, i.e. is NATURALLY
+					Any breeds exhibiting gaited characteristics, i.e. is naturally
 					inclined to perform gaits other than a walk, trot, and canter (such as
 					a running walk, rack, foxtrot, etc.) A high trot does NOT constitute a
 					specialized gait. The Spanish Walk is a movement that can be taught to
@@ -341,13 +320,13 @@
 				<p>
 					Any breed exhibiting pony characteristics of height and conformation,
 					or those generally recognized as "pony." Gaited ponies (ponies which
-					do more than a walk, trot, or canter-a high trot is NOT a specialized
+					do more than a walk, trot, or canter-a high trot is not a specialized
 					gait) should show in the Gaited Breeds. American Saddle Pony, American
 					Shetland, American Walking Pony, Assateague, Bali, Basque, Batak,
 					British Shetland, British Spotted Pony, Carmargue, Cayuse Indian Pony,
 					Chincogeague, Chinese, Feel Pony, Galiceno, Hackney Pony, Marwari,
 					Mongolian, Paint Pony, POA, Quarter Pony, Rocky Mountain Pony and any
-					other pure or part ponies exhibiting pony characteristics, EXCEPT
+					other pure or part ponies exhibiting pony characteristics, except
 					gaited pony breeds.
 				</p>
 				<h3>American Miniature Horses</h3>

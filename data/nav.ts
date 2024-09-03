@@ -33,7 +33,6 @@ export const showRulesLinks = [
 	{ label: 'Team Entries', to: '#team-entries' },
 	{ label: 'Proxy Showing', to: '#proxy-showing' },
 	{ label: 'Raffle', to: '#raffle' },
-	{ label: 'Food', to: '#food' },
 	{ label: 'Show Hall', to: '#show-hall' },
 	{ label: 'Division Definitions', to: '#division-definitions' },
 	{ label: 'Judging Criteria', to: '#judging-criteria' },

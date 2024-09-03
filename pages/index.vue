@@ -3,10 +3,8 @@
 	import { BuildingLibraryIcon, ClockIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import {
-		dayOneLongDateString,
 		dayOneDayOfWeek,
 		dayOneTableRows,
-		dayTwoLongDateString,
 		dayTwoDayOfWeek,
 		dayTwoTableRows,
 	} from '#imports';
@@ -27,10 +25,22 @@
 					Event Dates
 				</span>
 				<p class="font-serif text-2xl lg:text-3xl">
-					{{ dayOneLongDateString }}
+					<!-- {{ dayOneLongDateString }} -->
+					Saturday
+					<span
+						class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
+						TBD</span
+					>
+					2025
 				</p>
 				<p class="font-serif text-2xl lg:text-3xl">
-					{{ dayTwoLongDateString }}
+					<!-- {{ dayTwoLongDateString }} -->
+					Sunday
+					<span
+						class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
+						TBD</span
+					>
+					2025
 				</p>
 				<UButton
 					label="Register Now"
@@ -41,21 +51,25 @@
 			</div>
 			<div class="inner-padding flex w-full flex-col gap-y-6 lg:gap-y-8">
 				<!-- Location -->
-				<div class="info-box flex justify-between">
+				<div class="info-box flex min-h-20 justify-between">
 					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<BuildingLibraryIcon class="icon-blue h-5 w-5" />
 						</div>
 						<span class="text-xs uppercase">Location</span>
 					</div>
-					<div class="w-1/2 text-left text-sm">
-						<p>Davis Senior Center</p>
-						<p>646 A Street</p>
-						<p>Davis, CA 95616</p>
+					<div class="flex w-1/2 items-center text-left text-sm">
+						<p>
+							<span
+								class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
+								TBD</span
+							>
+							Davis, California
+						</p>
 					</div>
 				</div>
 				<!-- Show Times -->
-				<div class="info-box flex justify-between">
+				<div class="info-box flex min-h-20 justify-between">
 					<div class="flex w-1/2 items-center gap-2 lg:justify-center">
 						<div class="rounded-full p-1.5">
 							<ClockIcon class="icon-blue h-5 w-5" />
@@ -91,16 +105,28 @@
 			<div class="inner-padding">
 				<h3 class="mt-4">NAMHSA</h3>
 				<p>
-					Gold Country Model Horse Show has applied to be a NAMSHA-Approved
-					member show; so that any horse placing 1st or 2nd in its
-					NAN-qualifying class will receive a NAN card and be eligible to enter
-					the 2024-2027 North American Model Horse Showers' Association National
-					Show.
+					Any horse placing 1st or 2nd in its NAN-qualifying class will receive
+					a NAN card and be eligible to enter the 2025-2028
+					<NuxtLink
+						to="https://namhsa.org/"
+						target="_blank"
+						rel="noopener"
+						class="link font-semibold">
+						North American Model Horse Shows Association</NuxtLink
+					>
+					national show.
 				</p>
 				<h3>Golden West Champ Show</h3>
 				<p>
-					This show will be a qualifier for the 2024 and 2025 Golden West Champ
-					Shows for Region 2.
+					This show will be a qualifier for the 2025 and 2026
+					<NuxtLink
+						to="https://r2champshow.weebly.com/"
+						target="_blank"
+						rel="noopener"
+						class="link font-semibold"
+						>Golden West Champ Shows</NuxtLink
+					>
+					for Region 2.
 				</p>
 				<h3>Awards &amp; Prizes</h3>
 				<p>
