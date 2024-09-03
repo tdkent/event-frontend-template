@@ -24,12 +24,12 @@
 							class="h-12 w-12 fill-blue-200 stroke-blue-900 stroke-1" />
 					</div>
 					<div>
-						<p class="font-serif text-2xl lg:text-3xl">
+						<p class="text-2xl lg:text-3xl">
 							<span
 								class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
 								TBD</span
 							>
-							Davis, California
+							Davis, CA
 						</p>
 					</div>
 				</div>

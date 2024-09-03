@@ -26,7 +26,7 @@
 				</span>
 				<p class="font-serif text-2xl lg:text-3xl">
 					<!-- {{ dayOneLongDateString }} -->
-					Saturday
+					{{ dayOneDayOfWeek }}
 					<span
 						class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
 						TBD</span
@@ -35,7 +35,7 @@
 				</p>
 				<p class="font-serif text-2xl lg:text-3xl">
 					<!-- {{ dayTwoLongDateString }} -->
-					Sunday
+					{{ dayTwoDayOfWeek }}
 					<span
 						class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
 						TBD</span
@@ -64,7 +64,7 @@
 								class="mx-0.5 bg-teal-300 px-1.5 font-splash font-light text-gray-50 dark:bg-teal-400">
 								TBD</span
 							>
-							Davis, California
+							Davis, CA
 						</p>
 					</div>
 				</div>
