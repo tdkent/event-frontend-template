@@ -1,6 +1,4 @@
 <script setup lang="ts">
-	// Imports
-	import { ChevronRightIcon } from '@heroicons/vue/24/outline';
 	// Internal Imports
 	import { CARD_MODAL_HEADER } from '~/constants';
 	// Modal
@@ -11,15 +9,18 @@
 </script>
 
 <template>
-	<div class="group mb-4 mt-6 flex items-center gap-0.5">
-		<ChevronRightIcon class="h-3 w-3" />
+	<li>
+		This is a 3x5-card show. Standard Region 2 card format will be used. Showers
+		need to provide a 3x5 index card for each entry; shower's name and horse's
+		name go on one side, and the class number, breed, and gender of the horse go
+		on the reverse.
 		<NuxtLink
 			role="button"
-			class="link text-sm"
-			@click="isOpen = true">
-			View card format example
-		</NuxtLink>
-	</div>
+			class="link font-semibold"
+			@click="isOpen = true"
+			>View 3x5 card format example</NuxtLink
+		>
+	</li>
 	<MainModal
 		v-model="isOpen"
 		:header="CARD_MODAL_HEADER"
