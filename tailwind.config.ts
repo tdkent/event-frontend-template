@@ -137,12 +137,54 @@ export default <Partial<Config>>{
 						opacity: '0',
 					},
 				},
+				'text-1': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateX(40%) skewY(-10deg)',
+					},
+					'3%, 50%': {
+						opacity: '100',
+						transform: 'translate(0%) skewY(0deg)',
+					},
+					'53%': {
+						transform: 'translate(-40%)',
+						opacity: '0',
+					},
+					'100%': {
+						opacity: '0',
+						transform: 'translateX(40%)',
+					},
+				},
+				'text-2': {
+					'0%, 53%': {
+						opacity: '0',
+						transform: 'translateX(40%) skewY(-10deg)',
+					},
+					'56%, 97%': {
+						opacity: '100',
+						transform: 'translate(0%) skewY(0deg)',
+					},
+					'100%': {
+						transform: 'translate(-40%)',
+						opacity: '0',
+					},
+				},
+				'scale-text': {
+					'0%': {
+						transform: 'scale(1)',
+					},
+					'100%': {
+						transform: 'scale(1.4)',
+					},
+				},
 			},
 			animation: {
 				'slide-1': 'pic-1 20s linear infinite',
 				'slide-2': 'pic-2 20s linear infinite',
 				'slide-3': 'pic-3 20s linear infinite',
 				'slide-4': 'pic-4 20s linear infinite',
+				'text-1': 'text-1 8s ease-in infinite',
+				'text-2': 'text-2 8s ease-in infinite',
 			},
 		},
 	},
