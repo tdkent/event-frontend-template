@@ -48,5 +48,24 @@ export default defineNuxtConfig({
 				 ? { preset: ['default', { discardComments: { removeAll: true } }] }
 				 : false, // disable cssnano when not in production
 		},
- }
+ },
+	head: {
+		meta: [
+			{
+				name: 'apple-mobile-web-app-capable',
+				content: 'yes'
+			},
+			{
+				name: 'apple-mobile-web-app-status-bar-style',
+				content: 'black-translucent'
+			},
+		],
+		link: [
+			{
+				rel: 'apple-touch-icon',
+				type: 'image/png',
+				href: 'https://gcmhs.netlify.app/apple-touch-icon.png'
+			}
+		]
+ 	}
 })
